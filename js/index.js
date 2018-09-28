@@ -21,12 +21,23 @@ $('.login-register a').hover(function() {
         'background': '#52b0ef'
     });
 });
+
 $(window).scroll(function() {
-    // console.log($('.header').offset().top);
     if ($('.header').offset().top > 0) {
-        $('.header').animate({ 'backgroundColor': '#4eb1f4' }, 1000);
+        $('.header').stop().animate({ 'backgroundColor': '#4eb1f4' }, 1000);
     } else if ($('.header').offset().top == 0) {
-        console.log(1);
-        $('.header').animate({ 'backgroundColor': 'transparent' }, 1000);
+        $('.header').stop(true, true).animate({ 'backgroundColor': 'transparent' }, 1000);
     }
+});
+
+$('.btn-default-outline').hover(function() {
+    $(this).stop(true, true).animate({
+        'backgroundColor': '#fff',
+        'color': 'black'
+    }, 500);
+}, function() {
+    $(this).stop(true, true).animate({
+        'backgroundColor': 'transparent',
+        'color': '#fff'
+    }, 500);
 });
