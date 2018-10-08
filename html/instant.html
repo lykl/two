@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="../icon/xh/instant/font_c5ybbbkkp97/iconfont.css">
+    <link rel="stylesheet" href="../css/instant.css">
+</head>
+
+<body>
+    <div class="header-mobile">
+        <a href="" class="logo"></a>
+        <nav>
+            <a href="" class="im">即时通讯云</a>
+            <a href="" class="cs">客户互动云</a>
+        </nav>
+        <div class="menu">
+            <svg></svg>
+            <button></button>
+        </div>
+        <div class="nav-collapse" style="display: none;">
+            <div id="dummy" class="dummy">
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-default-outline" href="/product/im">即时通讯云产品</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-default-outline" href="/product/cs">客户互动云产品</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/customer/im">案例</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/customer/cs">案例</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/pricing/im">价格</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/pricing/cs">价格</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/download/im">下载</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/download/cs">下载</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="http://docs.easemob.com/im" target="_blank">文档</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="http://docs.easemob.com/cs" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+            <div class="entry container-fluid">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a class="btn btn-default-outline btn-block" href="https://console.easemob.com/index_register.html" target="_blank">注册即时通讯云</a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a class="btn btn-default-outline btn-block" href="https://kefu.easemob.com/mo/register" target="_blank">注册客户互动云</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                <a class="navbar-brand" href="" title="IM,即时通讯云,CEC,客户互动云,在线客服,在线客服系统">
+                    <img src="https://www.easemob.com/themes/official_v3/Public/img/logo.png" class="logo hidden-xs hidden-sm">
+                    <i class="logo easeicon ease-logo visible-xs-inline-block visible-sm-inline-block"></i>
+                </a>
+            </div>
+            <div id="main-navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--li><a href="/" rel="nofollow">首页</a></li-->
+                    <li>
+                        <a href="/product/im">即时通讯云</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/product/im">功能</a></li>
+                                <li><a href="/customer/im" rel="nofollow">案例</a></li>
+                                <li><a href="/pricing/im">价格</a></li>
+                                <li><a href="http://docs.easemob.com/im/" target="_blank">文档</a></li>
+                                <li><a href="/download/im">下载</a></li>
+                                <li><a href="/product/im/live">直播方案</a></li>
+                                <li><a href="/product/im/antispam">智能反垃圾</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/product/cs">客户互动云</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/product/cs">功能</a></li>
+                                <li><a href="/customer/cs" rel="nofollow">案例</a></li>
+                                <li><a href="/pricing/cs">价格</a></li>
+                                <li><a href="http://docs.easemob.com/cs/" target="_blank">文档</a></li>
+                                <li><a href="/download/cs">下载</a></li>
+                                <li><a href="/product/cs/vpc">私有云</a></li>
+                                <li><a href="/product/cs/video">视频客服</a></li>
+                                <li><a href="/product/cs/voice">客户声音</a></li>
+                                <li><a href="/product/cs/ticket">智慧工单</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="/product/rtc">音视频云</a> </li>
+                    <li> <a href="/product/ai">机器人</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/product/ai">功能</a></li>
+                                <li><a href="/customer/cs" rel="nofollow">案例</a></li>
+                                <li><a href="http://docs.easemob.com/cs/200admin/40robot" target="_blank">文档</a></li>
+                                <li><a href="/product/ai/call">外呼机器人</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;">案例</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/customer/im" rel="nofollow">即时通讯云</a></li>
+                                <li><a href="/customer/cs" rel="nofollow">客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;">价格</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/pricing/im">即时通讯云</a></li>
+                                <li><a href="/pricing/cs">客户互动云</a></li>
+                                <li><a href="/pricing/private">私有化部署</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="http://docs.easemob.com" target="_blank">文档</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="http://docs.easemob.com/im/" target="_blank">即时通讯云</a></li>
+                                <li><a href="http://docs.easemob.com/cs/" target="_blank">客户互动云</a></li>
+                                <li><a href="http://docs.easemob.com/cs/200admin/40robot" target="_blank">机器人</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;">下载</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/download/im">即时通讯云</a></li>
+                                <li><a href="/download/cs">客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="http://community.easemob.com" rel="nofollow">社区</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/question" target="_blank">问题</a></li>
+                                <li><a href="http://www.imgeek.org/activity/" target="_blank" rel="nofollow">活动</a></li>
+                                <li><a href="http://www.imgeek.org/video/" target="_blank" rel="nofollow">视频</a></li>
+                                <li><a href="http://www.imgeek.org/code/" target="_blank" rel="nofollow">代码</a></li>
+                                <li><a href="http://www.imgeek.org/article/" target="_blank" rel="nofollow">文章</a></li>
+                                <li><a href="http://www.imgeek.org/help/" target="_blank" rel="nofollow">帮助</a></li>
+                                <li><a href="http://www.imgeek.org/topic/" target="_blank" rel="nofollow">话题</a></li>
+                            </ul>
+                            <ul class="list-unstyled extend">
+                                <li><a href="/weekly" target="_blank" rel="nofollow">环信周刊</a></li>
+                                <li><a href="/news" target="_blank" rel="nofollow">新闻资讯</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-sm btn-default-outline navbar-btn" style="background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255);" href="javascript:;" rel="nofollow">登录</button>
+                        <div class="sub-menu login-register blue">
+                            <ul class="list-unstyled">
+                                <li><a href="https://console.easemob.com/index.html" target="_blank" rel="nofollow">登录即时通讯云</a></li>
+                                <li class="active"><a href="https://kefu.easemob.com" target="_blank" rel="nofollow">登录客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-sm btn-danger navbar-btn" href="javascript:;" rel="nofollow">注册</button>
+                        <div class="sub-menu login-register blue">
+                            <ul class="list-unstyled">
+                                <li><a href="https://console.easemob.com/index_register.html" target="_blank" rel="nofollow">注册即时通讯云</a></li>
+                                <li class="active"><a href="https://kefu.easemob.com/mo/register" target="_blank" rel="nofollow">注册客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="container-fluid">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="../img/xh/instant/im.jpg" alt="...">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/xh/instant/case.jpg" alt="...">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../img/xh/instant/zyzx.jpg" alt="...">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="section try">
+        <div class="container">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入您的手机号">
+                <span class="input-group-btn">
+                    <button class="btn try-trigger" type="button">免费试用</button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-scene" class="section scene section-muted">
+        <div class="tab">
+            <div class="container">
+                <h2 class="title">
+                    <b>六大场景：</b>开启即时通讯云+时代
+                </h2>
+                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage clear">
+                            <div class="owl-item active">
+                                <div class="item" style="width: 165px;">
+                                    APP社交
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 165px;">
+                                <div class="item">
+                                    协同办公
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 165px;">
+                                <div class="item">
+                                    直播互动
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 165px;">
+                                <div class="item">
+                                    指挥调度
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 165px;">
+                                <div class="item">
+                                    智能硬件
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 165px;">
+                                <div class="item">
+                                    在线客服
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="stage">
+            <div class="container">
+                <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="stage" style="transform: translate3d(0px, 0px, 0px); transition: 0.3s; width: 5940px;">
+                            <div class="owl-item" style="width: 990px;">
+                                <div class="row">
+                                    <div class="col-md-7 col-md-push-5">
+                                        <img class="img-responsive inset" src="../img/xh/instant/scene-social@2x.png" alt="">
+                                    </div>
+                                    <div class="col-md-5 col-md-pull-7">
+                                        <h4 class="head">APP社交</h4>
+                                        <ul>
+                                            <li>无需修改现有APP用户体系，开源UI Demo即插即用</li>
+                                            <li>单聊集成仅需1天，群聊集成3天，完整在线开发文档</li>
+                                            <li>支持单聊、群聊、聊天室、实时音视频等多种沟通方式</li>
+                                            <li>提供实时回调、社交大数据、智能反垃圾、人脸特效、消息漫游等多项增值服务</li>
+                                        </ul>
+                                        <h5 class="head">典型案例：</h5>
+                                        <ul class="list-inline">
+                                            <li><img src="../img/xh/instant/kuaiya.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/liepin.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/xinyang.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/zhs.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 990px;">
+                                <div class="row">
+                                    <div class="col-md-7 col-md-push-5">
+                                        <img class="img-responsive inset" src="../img/xh/instant/scene-oa@2x.png" alt="">
+                                    </div>
+                                    <div class="col-md-5 col-md-pull-7">
+                                        <h4 class="head">协同办公</h4>
+                                        <ul>
+                                            <li>基于环信即时通讯云实现企业OA</li>
+                                            <li>基于通讯录建立完善的企业内部沟通协作机制</li>
+                                            <li>跨平台，PC端和移动端全覆盖</li>
+                                            <li>按需定制私有部署，帮助企业更高效</li>
+                                        </ul>
+                                        <h5 class="head">典型案例：</h5>
+                                        <ul class="list-inline">
+                                            <li><img src="../img/xh/instant/hqyx.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/sina.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/wq365.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/xyjt.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 990px;">
+                                <div class="row">
+                                    <div class="col-md-7 col-md-push-5">
+                                        <img class="img-responsive inset" src="../img/xh/instant/scene-live@2x.png" alt="">
+                                    </div>
+                                    <div class="col-md-5 col-md-pull-7">
+                                        <h4 class="head">直播互动</h4>
+                                        <ul>
+                                            <li>直播聊天室人数无上限</li>
+                                            <li>支持实时配置的消息分级策略，确保重要消息优先必达</li>
+                                            <li>支持直播聊天室后台管理及审核功能，提供直播相关数据统计</li>
+                                            <li>提供智能反垃圾和自定义敏感词过滤功能</li>
+                                            <li>快速集成，demo提供高质量代码示例，计费灵活，可根据运营情况随时扩展</li>
+                                        </ul>
+                                        <h5 class="head">典型案例：</h5>
+                                        <ul class="list-inline">
+                                            <li><img src="../img/xh/instant/mejr.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/cx.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/zhs.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/yanku.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 990px;">
+                                <div class="row">
+                                    <div class="col-md-7 col-md-push-5">
+                                        <img class="img-responsive inset" src="../img/xh/instant/scene-dispatch@2x.png" alt="">
+                                    </div>
+                                    <div class="col-md-5 col-md-pull-7">
+                                        <h4 class="head">指挥调度</h4>
+                                        <ul>
+                                            <li>提供远程协作与应急处理的完整解决方案</li>
+                                            <li>消息必达的高可用IM服务确保指令及时传达</li>
+                                            <li>端到端加密措施为数据安全传输保驾护航</li>
+                                        </ul>
+                                        <h5 class="head">典型案例：</h5>
+                                        <ul class="list-inline">
+                                            <li><img src="../img/xh/instant/huawei.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/zheng.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/byjc.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/zto.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 990px;">
+                                <div class="row">
+                                    <div class="col-md-7 col-md-push-5">
+                                        <img class="img-responsive inset" src="../img/xh/instant/scene-hardware@2x.png" alt="">
+                                    </div>
+                                    <div class="col-md-5 col-md-pull-7">
+                                        <h4 class="head">智能硬件</h4>
+                                        <ul>
+                                            <li>支持将SDK内置到各种智能硬件中</li>
+                                            <li>为智能硬件提供稳定可靠的通讯能力</li>
+                                            <li>满足多种业务场景的IM需求</li>
+                                        </ul>
+                                        <h5 class="head">典型案例：</h5>
+                                        <ul class="list-inline">
+                                            <li><img src="../img/xh/instant/dingdong.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/wwqq.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/zzhd.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/zhgy.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 990px;">
+                                <div class="row">
+                                    <div class="col-md-7 col-md-push-5">
+                                        <img class="img-responsive inset" src="../img/xh/instant/scene-cec@2x.png" alt="">
+                                    </div>
+                                    <div class="col-md-5 col-md-pull-7">
+                                        <h4 class="head">在线客服</h4>
+                                        <ul>
+                                            <li>支持全媒体全渠道接入</li>
+                                            <li>基于环信业界领先的IM长连接技术保证消息必达</li>
+                                            <li>通过智能客服机器人技术降低人工客服工作量</li>
+                                            <li>客户声音帮助企业优化运营，提高跨渠道客服体验</li>
+                                        </ul>
+                                        <h5 class="head">典型案例：</h5>
+                                        <ul class="list-inline">
+                                            <li><img src="../img/xh/instant/gome.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/zhongxin.png" alt=""></li>
+                                            <li><img src="../img/xh/instant/zyzx.png" alt=""></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-function" class="section function">
+        <div class="container">
+            <div class="chat">
+                <h2 class="title">
+                    <b>产品功能：</b>20余种基础功能，覆盖全社交场景
+                </h2>
+                <img width="675" src="../img/xh/instant/function@2x.png" alt="">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <h5>单聊</h5>
+                        <p>一对一沟通，保持用户强社交关系</p>
+                    </div>
+                    <div class="col-xs-4">
+                        <h5>群聊</h5>
+                        <p>支持高达万人群聊，满足各种兴趣组创建</p>
+                    </div>
+                    <div class="col-xs-4">
+                        <h5>聊天室</h5>
+                        <p>提高应用活跃度，让App沸腾起来</p>
+                    </div>
+                </div>
+                <div class="action">
+                    <a class="btn btn-lg btn-success-outline" target="_blank" href="">了解更多</a>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="msg">
+                <h3 class="title">支持消息格式</h3>
+                <div class="row">
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_wz"></i>
+                            <h5 class="head">文字</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_bq"></i>
+                            <h5 class="head">表情</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_tp"></i>
+                            <h5 class="head">图片</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_ssysp"></i>
+                            <h5 class="head">实时音视频</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_weizhi"></i>
+                            <h5 class="head">位置</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_hb"></i>
+                            <h5 class="head">红包</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_yhjf"></i>
+                            <h5 class="head">阅后即焚</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_kzxx"></i>
+                            <h5 class="head">扩展消息</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_sphy"></i>
+                            <h5 class="head">视频会议</h5>
+                        </div>
+                    </div>
+                    <div class="col-xs-4 col-md-2">
+                        <div class="item">
+                            <i class="iconfont icon-im_cpgn_fj"></i>
+                            <h5 class="head">附件</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-advantage" class="section advantage">
+        <div class="above">
+            <div class="container">
+                <h3>
+                    <b>技术优势：</b>
+                    <br class="hidden-xs">冰山之下，所有复杂功能环信都为你解决
+                </h3>
+                <img src="../img/xh/instant/mountain@2x.png" class="img-responsive" width="372" alt="">
+            </div>
+        </div>
+        <div class="under">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-7">
+                        <img src="../img/xh/instant/framework@2x.png" width="458" alt="">
+                    </div>
+                    <div class="col-sm-6 col-md-5">
+                        <ul class="list-unstyled">
+                            <li>
+                                <i></i>
+                                <p>水平扩展
+                                    <b>亿级高并发</b>架构，稳定健壮，保证
+                                    <b>消息必达</b>
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>环信即时通讯SDK为移动设备深度优化，
+                                    <b>极简集成</b>、一天时间快速上线
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>基于TCP研发的二进制
+                                    <b>私有协议</b>“msync”更省流量更高效
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>数据传输
+                                    <b>全程加密</b>，提供端到端的安全保障
+                                </p>
+                            </li>
+                            <li>
+                                <i></i>
+                                <p>
+                                    <b>海外AWS数据中心</b>及多地区海外代理，拓展海外用户自此无忧
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="action">
+                    <a class="btn btn-lg btn-default-outline" target="=_blank" href="">了解更多</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-feature" class="section feature">
+        <div class="container">
+            <h2 class="title">七大特色服务</h2>
+            <dic class="row">
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        <li class="active">
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phonebg@2x.png" width="340" alt="">
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phone-bigdata@2x.png" width="340" alt="">
+                            <h5 class="head">社交大数据</h5>
+                            <p>环信社交大数据平台洞察APP活力，12大指标组数十项指标，用数据说话，全面剖析用户黏性</p>
+                        </li>
+                        <li>
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phonebg@2x.png" width="340" alt="">
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phone-sms@2x.png" width="340" alt="">
+                            <h5 class="head">短信平台：</h5>
+                            <p>支持验证码/通知、营销类短信发送，提供多种服务包和极具竞争力的价格供开发者自由选择</p>
+                        </li>
+                        <li>
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phonebg@2x.png" width="340" alt="">
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phone-antispam@2x.png" width="340" alt="">
+                            <h5 class="head">智能反垃圾：</h5>
+                            <p>智能反垃圾服务 提供实时消息过滤及关键词屏蔽功能</p>
+                            <a class="btn btn-default-outline" href="" target="_blank">免费试用</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-4">
+                    <img class="img-responsive slide active" src="../img/xh/instant/phone-bigdata@2x.png" width="340" alt="">
+                    <img class="img-responsive slide" src="../img/xh/instant/phone-sms@2x.png" width="340" alt="">
+                    <a target="_blank" href="">
+                        <img class="img-responsive slide" src="../img/xh/instant/phone-antispam@2x.png" width="340" alt="">
+                    </a>
+                    <a target="_blank" href="">
+                        <img class="img-responsive slide" src="../img/xh/instant/phone-live@2x.png" width="340" alt="">
+                    </a>
+                    <img class="img-responsive slide" src="../img/xh/instant/phone-face@2x.png" width="340" alt="">
+                    <img class="img-responsive slide" src="../img/xh/instant/phone-redbao@2x.png" width="340" alt="">
+                    <img class="img-responsive slide" src="../img/xh/instant/phone-wxpub@2x.png" alt="">
+                    <img class="img-responsive slide" src="../img/xh/instant/phonebg@2x.png" width="340" alt="">
+                </div>
+                <div class="col-sm-4">
+                    <ul class="list-unstyled">
+                        <li>
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phonebg@2x.png" width="340" alt="">
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phone-live@2x.png" width="340" alt="">
+                            <h5 class="head">直播聊天室：</h5>
+                            <p>直播完整解决方案 轻松应对万人聊天室高并发</p>
+                            <a class="btn btn-default-outline" href="" target="_blank">免费试用</a>
+                        </li>
+                        <li>
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phonebg@2x.png" width="340" alt="">
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phone-face@2x.png" width="340" alt="">
+                            <h5 class="head">人脸特效：</h5>
+                            <p>实时视频人脸动态捕捉 支持贴纸及美颜等多种特效</p>
+                        </li>
+                        <li>
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phonebg@2x.png" width="340" alt="">
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phone-redbao@2x.png" width="340" alt="">
+                            <h5 class="head">红包服务：</h5>
+                            <p>用红包点燃用户的社交热情，迅速提升用户活跃度</p>
+                        </li>
+                        <li>
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phonebg@2x.png" width="340" alt="">
+                            <img class="img-responsive snapshot" src="../img/xh/instant/phone-wxpub@2x.png" alt="">
+                            <h5 class="head">公众平台：</h5>
+                            <p>通过公众平台为环信的十余万APP提供服务，紧密连接人与商业 </p>
+                        </li>
+                    </ul>
+                </div>
+            </dic>
+        </div>
+    </div>
+
+    <div id="section-added" class="section added">
+        <div class="container">
+            <h2 class="title">五大增值服务</h2>
+            <div class="road">
+                <div class="item active">
+                    <h5 class="head">
+                        <i></i>
+                        <span>实时回调</span>
+                    </h5>
+                    <p>通过REST接口实现自动回复或实时获取聊天记录</p>
+                </div>
+                <div class="item">
+                    <h5 class="head">
+                        <i></i>
+                        <span>实时音视频</span>
+                    </h5>
+                    <p>超清实时音视频让沟通零距离</p>
+                </div>
+                <div class="item">
+                    <h5 class="head">
+                        <i></i>
+                        <span>海外代理</span>
+                    </h5>
+                    <p>环信提供海外数据中心及多地区海外代理服务，全球沟通无障碍</p>
+                </div>
+                <div class="item">
+                    <h5 class="head">
+                        <i></i>
+                        <span>多设备同步</span>
+                    </h5>
+                    <p>同一账号在不同平台的不同设备上同时登录并同步数据</p>
+                </div>
+                <div class="item">
+                    <h5 class="head">
+                        <i></i>
+                        <span>消息漫游</span>
+                    </h5>
+                    <p>支持用户在不同设备上从云端同步历史消息</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-deploy" class="section deploy">
+        <div class="container">
+            <h2 class="title">
+                <b>四大部署模式：</b>零成本开启您的环信云端之旅
+            </h2>
+            <img class="img-responsive" width="990" src="../img/xh/instant/idc@2x.png" alt="">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="item">
+                        <i></i>
+                        <div class="wrap">
+                            <h5 class="head">公有云</h5>
+                            <p>公有云分为普通集群和VIP集群，提供多平台SDK及代码示例，多项增值服务满足深层次需求；VIP集群提供专职运维确保服务高可用性，SLA不低于99.90%</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item">
+                        <i></i>
+                        <div class="wrap">
+                            <h5 class="head">私有云</h5>
+                            <p>对数据安全有特殊需求的客户可选择私有化部署方案，支持结合使用场景进行定制化开发</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item">
+                        <i></i>
+                        <div class="wrap">
+                            <h5 class="head">托管云</h5>
+                            <p>为不具备运维条件的客户提供托管云部署方案，让客户专注于自身业务，免除后顾之忧</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="item">
+                        <i></i>
+                        <div class="wrap">
+                            <h5 class="head">海外数据中心</h5>
+                            <p>环信提供海外数据中心及多地区海外代理服务，全球沟通无障碍</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="action">
+                <a class="btn btn-lg btn-primary-outline" href="" target="_blank">查看价格</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="section-case" class="section case">
+        <div class="container">
+            <h2 class="title">稳定健壮、消息必达，176940家优秀客户选择</h2>
+            <h6 class="sub-title">―― 数据截至2017年底</h6>
+            <div class="row">
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/智慧树.png" alt="">
+                        <p class="ellipsis">智慧树</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/爱帮公交.png" alt="">
+                        <p class="ellipsis">爱帮公交</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/经纬名片通.png" alt="">
+                        <p class="ellipsis">经纬名片通</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/国美在线.jpg" alt="">
+                        <p class="ellipsis">国美在线</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/我要当学霸.png" alt="">
+                        <p class="ellipsis">我要当学霸</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/家长通.png" alt="">
+                        <p class="ellipsis">家长通</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/约单.png" alt="">
+                        <p class="ellipsis">约单</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/海尔优家.png" alt="">
+                        <p class="ellipsis">海尔优家</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/酷米客.png" alt="">
+                        <p class="ellipsis">酷米客</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/快手看片.jpg" alt="">
+                        <p class="ellipsis">快手看片</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/节操精选.png" alt="">
+                        <p class="ellipsis">节操精选</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/易直播.png" alt="">
+                        <p class="ellipsis">易直播</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/养车宝.png" alt="">
+                        <p class="ellipsis">养车宝</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/口袋贵金属.png" alt="">
+                        <p class="ellipsis">口袋贵金属</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/萌店.png" alt="">
+                        <p class="ellipsis">萌店</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/东软集团.jpg" alt="">
+                        <p class="ellipsis">东软集团</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/当当读书.png" alt="">
+                        <p class="ellipsis">当当读书</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/摩擦.png" alt="">
+                        <p class="ellipsis">摩擦</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/运满满.png" alt="">
+                        <p class="ellipsis">运满满</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/掌心宝贝.png" alt="">
+                        <p class="ellipsis">掌心宝贝</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/触电新闻.png" alt="">
+                        <p class="ellipsis">触电新闻</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/华为.jpg" alt="">
+                        <p class="ellipsis">华为</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/Zank.png" alt="">
+                        <p class="ellipsis">Zank</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/航美在线.png" alt="">
+                        <p class="ellipsis">航美在线</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/新氧美容.png" alt="">
+                        <p class="ellipsis">新氧美容</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/数字天堂.png" alt="">
+                        <p class="ellipsis">数字天堂</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/快牙.png" alt="">
+                        <p class="ellipsis">快牙</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/江苏电信.png" alt="">
+                        <p class="ellipsis">江苏电信</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/中移在线.png" alt="">
+                        <p class="ellipsis">中移在线</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/窝牛装修.png" alt="">
+                        <p class="ellipsis">窝牛装修</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/播呀.png" alt="">
+                        <p class="ellipsis">播呀</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/知米背单词.png" alt="">
+                        <p class="ellipsis">知米背单词</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/泡泡-情趣助手.png" alt="">
+                        <p class="ellipsis">泡泡-情趣助手</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/爱医.png" alt="">
+                        <p class="ellipsis">爱医</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/爱上Radio.png" alt="">
+                        <p class="ellipsis">爱上Radio</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/快约.png" alt="">
+                        <p class="ellipsis">快约</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/长江证券.jpg" alt="">
+                        <p class="ellipsis">长江证券</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/嫁吧.png" alt="">
+                        <p class="ellipsis">嫁吧</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/每日瑜伽.png" alt="">
+                        <p class="ellipsis">每日瑜伽</p>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-2">
+                    <div class="item">
+                        <img class="img-responsive" width="64" height="64" src="../img/xh/instant/易特思维.png" alt="">
+                        <p class="ellipsis">易特思维</p>
+                    </div>
+                </div>
+            </div>
+            <div class="action">
+                <a class="btn btn-lg btn-default-outline" href="">免费试用</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="authentication" style="width: 222px; height: 250px; ">
+        <div class="aut-main" style="display: block">
+            <div class="aut-header">
+                <i class="aut-icon i-logo"></i>
+                <a class="aut-fold" href="">
+                    <span class="fold">收起</span>
+                    <i class="arrow right"></i>
+                </a>
+            </div>
+            <div class="aut-ct">
+                <div class="aut-info">
+                    <h2>北京易掌云峰科技有限公司</h2>
+                    <div class="aut-if clear">
+                        <i class="aut-icon i-v"></i>
+                        <div class="level-tip">
+                            <p class="custnum">BDV-353447994</p>
+                            <p>累计时间：<span class="b">54</span>个月</p>
+                            <p class="clear">
+                                <span class="kb">
+                                        <span class="b">92%</span>好评
+                                </span>
+                                <span class="act">
+                                        <a href="">评价</a>
+                                        <span class="divide">|</span>
+                                <a href="">举报</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="aut-m">
+                    <div class="aut-i">
+                        <p class="title clear">
+                            <span>认证类型</span>
+                            <a href="" target="_blank">更多</a>
+                        </p>
+                        <p class="info">实名认证</p>
+                    </div>
+                    <div class="aut-search">
+                        <input type="text" value="北京易掌云峰科技有限公司@v" name="" id="">
+                        <i class="aut-icon i-search"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aut-unfold aut-icon" style="top: 0px; right: 0px; display: none;"></div>
+    </div>
+
+    <div id="try-kefu" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content image-background">
+            <form role="form" method="post" action="/api/guestbook/addmsg" class="form-horizontal">
+                <h2 class="title">申请试用</h2>
+                <h6 class="sub-title">提交后工作人员会尽快与您联系进行功能演示</h6>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="phone" maxlength="11" pattern="[0-9]{11}" placeholder="手机号" required="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="full_name" placeholder="姓名" required="">
+                    </div>
+                </div>
+                <div class="form-group verify">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="verify" placeholder="验证码" required="" autocomplete="off">
+                            <span class="input-group-addon">
+                                    <img class="verify_img" src=""  style="cursor:pointer;vertical-align: top;" title="点击获取">
+                                </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary btn-block submit">提交</button>
+                            <button type="button" class="btn btn-default btn-block do-close" data-dialog-close="">不了，谢谢</button>
+                        </div>
+                        <div class="loading" style="display:none">
+                            <div class="sk-cube-grid">
+                                <div class="sk-cube sk-cube1"></div>
+                                <div class="sk-cube sk-cube2"></div>
+                                <div class="sk-cube sk-cube3"></div>
+                                <div class="sk-cube sk-cube4"></div>
+                                <div class="sk-cube sk-cube5"></div>
+                                <div class="sk-cube sk-cube6"></div>
+                                <div class="sk-cube sk-cube7"></div>
+                                <div class="sk-cube sk-cube8"></div>
+                                <div class="sk-cube sk-cube9"></div>
+                            </div>
+                        </div>
+                        <div class="success" style="display:none"> <span class="iconfont icon-duigou_jiage" style="font-size:50px"></span>
+                            <p class="text-center">提交成功</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="sidemenu">
+        <div class="item transition biz-item">
+            <a href="javascript:;" class="im-biz"> <i class="easeicon ease-swzx"></i>
+                <p>商务咨询</p>
+            </a>
+        </div>
+        <div class="item transition try-item">
+            <a href="javascript:;" class="free-trial"> <span class="trigger"> <i class="easeicon ease-mfsy"></i> <p>免费试用</p> </span> </a>
+        </div>
+        <div class="item transition top-item hidden-xs">
+            <a href="javascript:;" class="scroll-top" style="margin-top:10px"> <i class="easeicon ease-huidaodingbu"></i> </a>
+        </div>
+    </div>
+
+    <div class="chat">
+        <div class="chat-header">
+            <p>环信商务咨询</p>
+            <i></i>
+            <i></i>
+        </div>
+        <div class="wrapper">
+            <div class="chat-wrapper">
+                <div class="chat-container">
+                    <div class="date"></div>
+                    <div class="left">
+                        <img src="https://kefu.easemob.com/ossimages/kefu-prod-avatar.img-cn-hangzhou.aliyuncs.com/avatar/387/e2edbb10-7a49-4c50-a1fc-99ec8fd57682@0-0-200-200a%7C300h_300w%7C.png" alt="">
+                        <div class="chat-content">
+                            <span>尊敬的客户您好：感谢您对环信的支持，我们的人工服务时间是周一至周五9:00-18:00，请问您有什么需要帮助的呢？</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-wrapper">
+                <div class="toolbar"></div>
+                <textarea class="inp" style="resize: none" placeholder="点击输入内容..." cols="30" rows="10"></textarea>
+                <span class="send disabled">发送</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="indicator">
+        <ul class="nav">
+            <li class="active">
+                <a href="#section-scene" title="六大场景"></a>
+            </li>
+            <li class="">
+                <a href="#section-function" title="产品功能"></a>
+            </li>
+            <li class="">
+                <a href="#section-advantage" title="技术优势"></a>
+            </li>
+            <li class="">
+                <a href="#section-feature " title="特色服务"></a>
+            </li>
+            <li class="">
+                <a href="#section-added" title="增值服务"></a>
+            </li>
+            <li class="">
+                <a href="#section-deploy" title="部署模式"></a>
+            </li>
+            <li class="">
+                <a href="#section-case" title="客户案例"></a>
+            </li>
+        </ul>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <div>
+                        <h6>即时通讯云</h6>
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="">产品价格</a>
+                            </li>
+                            <li>
+                                <a href="">集成文档</a>
+                            </li>
+                            <li>
+                                <a href="">快速下载</a>
+                            </li>
+                            <li>
+                                <a href="">直播方案</a>
+                            </li>
+                            <li>
+                                <a href="">人脸特效</a>
+                            </li>
+                            <li>
+                                <a href="">智能反垃圾</a>
+                            </li>
+                            <li>
+                                <a href="">社交大数据</a>
+                            </li>
+                            <li>
+                                <a href="">发现SDK</a>
+                            </li>
+                            <li>
+                                <a href="">短信服务</a>
+                            </li>
+                            <li>
+                                <a href="">使用协议</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>客户互动云</h6>
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="">产品价格</a>
+                            </li>
+                            <li>
+                                <a href="">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="">产品文档</a>
+                            </li>
+                            <li>
+                                <a href="">快速下载</a>
+                            </li>
+                            <li>
+                                <a href="">客户声音</a>
+                            </li>
+                            <li>
+                                <a href="">视频客服</a>
+                            </li>
+                            <li>
+                                <a href="">智慧工单</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>机器人</h6>
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="">产品价格</a>
+                            </li>
+                            <li>
+                                <a href="">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="">产品文档</a>
+                            </li>
+                            <li>
+                                <a href="">快速下载</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                    <div>
+                        <h6>关于我们</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="">公司介绍</a>
+                            </li>
+                            <li>
+                                <a href="">荣誉资质</a>
+                            </li>
+                            <li>
+                                <a href="">市场报告</a>
+                            </li>
+                            <li>
+                                <a href="">媒体报道</a>
+                            </li>
+                            <li>
+                                <a href="">合作伙伴</a>
+                            </li>
+                            <li>
+                                <a href="">投资机构</a>
+                            </li>
+                            <li>
+                                <a href="">加入我们</a>
+                            </li>
+                            <li>
+                                <a href="">品牌标识</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>联系我们</h6>
+                        <p>咨询热线</p>
+                        <hr>
+                        <a href="tel:400-612-1986" rel="nofollow"><big>400-612-1986</big></a>
+                        <p>商务合作</p>
+                        <hr>
+                        <a href="">bd@easemob.com</a>
+                        <p>投诉建议</p>
+                        <hr>
+                        <a href="">issues@easemob.com</a>
+                        <div class="social">
+                            <i class="easeicon ease-wechat qrcode-weixin"></i>
+                            <a href="">
+                                <i class="easeicon ease-weibo"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hidden-xs">
+                        <h6>权威认证</h6>
+                        <div class="certificate">
+                            <a class="item" href="">
+                                <i class="item easeicon ease-CMMI" style="line-height:20px"></i>
+                            </a>
+                            <a class="item" href="">
+                                <i class="item easeicon ease-kexinyun"></i>
+                            </a>
+                            <i class="item easeicon ease-ISO9001"></i>
+                            <i class="item easeicon ease-ISO27001"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2016-2017 环信 Co.,Ltd. 北京易掌云峰科技有限公司版权所有</p>
+            <p>京ICP备14026002号
+                <a href="http://www.easemob.com/sla">SLA协议</a> 京ICP证160482
+            </p>
+        </div>
+    </footer>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/instant.js"></script>
+</body>
+
+</html>
