@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>客户互动云</title>
+    <link href="./node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/cs.css">
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- slide start -->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="./images/cec_no.jpg" alt="...">
+                <div class="carousel-caption">
+
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/gartner.jpg" alt="...">
+                <div class="carousel-caption">
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/gartner_ai.jpg" alt="...">
+                <div class="carousel-caption">
+                </div>
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a> -->
+    </div>
+    <!-- slide end -->
+
+    <!-- inptel start -->
+    <div class="inptel">
+        <div class="container">
+            <div class="input-group"> <input type="text" class="form-control" placeholder="输入您的手机号" maxlength="11" pattern="[0-9]{11}" required=""> <span class="input-group-btn"> <button class="btn try-trigger" type="button">免费试用</button> </span> </div>
+        </div>
+    </div>
+    <!-- inptel end -->
+
+    <!-- main start-->
+    <!-- <section class="section online section-muted">
+        <div class="tab">
+            <div class="container">
+                <h2 class="title">客户服务全面升级<span class="hidden-xs">，</span><br class="visible-xs-inline">打磨极致用户体验</h2>
+                <div id="tab" class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-144px, 0px, 0px); transition: all 0.3s ease 0s; width: 1152px;">
+                            <div class="owl-item" style="width: 144px;">
+                                <div class="item">
+                                    <div>全媒体接入</div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 144px;">
+                                <div class="item">
+                                    <div>云呼叫中心</div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 144px;">
+                                <div class="item">
+                                    <div>视频客服</div>
+                                </div>
+                            </div>
+                            <div class="owl-item active center" style="width: 144px;">
+                                <div class="item current">
+                                    <div>智慧工单</div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 144px;">
+                                <div class="item">
+                                    <div>智能路由</div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 144px;">
+                                <div class="item">
+                                    <div>全能工作台</div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 144px;">
+                                <div class="item">
+                                    <div>多平台客服</div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 144px;">
+                                <div class="item">
+                                    <div>统计质检</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav disabled">
+                        <div class="owl-prev">prev</div>
+                        <div class="owl-next">next</div>
+                    </div>
+                    <div class="owl-dots">
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    <!-- <div class="stage">
+            <div class="container">
+                <div id="stage" class="owl-carousel owl-theme owl-loaded owl-drag">
+                    <div class="owl-stage-outer">
+                        <div class="owl-stage" style="transform: translate3d(-2160px, 0px, 0px); transition: all 0.25s ease 0s; width: 5760px;">
+                            <div class="owl-item" style="width: 720px;">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/online-multimedia.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/online-multimedia@2x.png" class="img-responsive" alt="多媒体接入" width="480"
+                                                src="/themes/official_v3/Public/img/product-cs_v2/online-multimedia.png"> </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <h4 class="head">全媒体接入</h4>
+                                            <h5 class="sub-head">随着消费习惯改变，你的客户可能通过各种渠道联系你，你都覆盖了吗？</h5>
+                                            <ul class="text-left">
+                                                <li>环信客户互动云开启一站互动模式，客户在哪，服务在哪</li>
+                                                <li>无需切换平台，统一处理来自APP、网页、微信、微博、H5、呼叫中心等渠道消息</li>
+                                                <li>长连接保障，消息必达</li>
+                                            </ul>
+                                            <div class="action"><a class="btn btn-lg btn-primary-outline" href="#demo-try" rel="nofollow">模拟体验</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 720px;">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/online-callcenter.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/online-callcenter@2x.png" class="img-responsive" alt="云呼叫中心" width="480"
+                                                src="/themes/official_v3/Public/img/product-cs_v2/online-callcenter.png"> </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <h4 class="head">云呼叫中心</h4>
+                                            <h5 class="sub-head">无缝切换在线会话和语音电话 灵活部署，动态扩容</h5>
+                                            <ul>
+                                                <li>多渠道汇接，统一智能分配，一键接听电话</li>
+                                                <li>多级语音IVR菜单导航，支持自助或语音转人工</li>
+                                                <li>工作台软电话，来电弹屏，可外呼拨号，查看通话状态，坐席状态，记录客户资料，标签标识</li>
+                                                <li>查看联络历史和数据统计，录音调听下载，质检文件抽取，业务和呼叫监控管理</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 720px;">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/online-video.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/online-video@2x.png" class="img-responsive" alt="视频客服" width="480" src="/themes/official_v3/Public/img/product-cs_v2/online-video.png">                                            </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <h4 class="head">视频客服</h4>
+                                            <h5 class="sub-head">领先实时音视频技术，6大场景一触即发</h5>
+                                            <ul>
+                                                <li>网络带宽及质量检测，抗丢包，保证接通传输稳定</li>
+                                                <li>优质音画，智能增益控制，回声消除，噪音抑制，动态自适应视频码率、分辨率、帧率</li>
+                                                <li>多端支持，兼容WebRTC，无需安装插件或第三方客户端</li>
+                                                <li>录制回放，屏幕抓拍，多方会话，桌面共享，视频静音</li>
+                                                <li>保险定损、在线教育、商品导购、医疗问诊、远程业务办理、VIP服务六大典型场景</li>
+                                            </ul>
+                                            <div class="action"><a class="btn btn-lg btn-primary-outline" href="/product/cs/video" rel="nofollow">查看详情</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item active" style="width: 720px;">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/online-ticket.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/online-ticket@2x.png" class="img-responsive" alt="智慧工单" width="480" src="/themes/official_v3/Public/img/product-cs_v2/online-ticket.png">                                            </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <h4 class="head">智慧工单</h4>
+                                            <h5 class="sub-head">智慧工单，跨部门轻松流转</h5>
+                                            <ul>
+                                                <li>销售线索、技术支持和售后服务一“单”打尽</li>
+                                                <li>工单自动触发，自动分配，指定，提醒，转移，精简工作流程、提高管理及处理效率</li>
+                                                <li>表单和客户自定义，满足企业多样化需求，富文本回复模板，如图片、视频和表格等，表现力更强</li>
+                                            </ul>
+                                            <div class="action"><a class="btn btn-lg btn-primary-outline" href="/product/cs/ticket" rel="nofollow">查看详情</a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 720px;">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/online-router.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/online-router@2x.png" class="img-responsive" alt="智能路由" width="480" src="/themes/official_v3/Public/img/product-cs_v2/online-router.png">                                            </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <h4 class="head">智能路由</h4>
+                                            <h5 class="sub-head">对全渠道接入层会话统一智能分配</h5>
+                                            <ul>
+                                                <li>多种分配规则，空闲率分配、随机分配、熟客优先</li>
+                                                <li>自定义关联规则、指定技能组和客服</li>
+                                                <li>咨询量大时，合理排队，溢出会话，服务下沉</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 720px;">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/online-console.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/online-console@2x.png" class="img-responsive" alt="全能工作台" width="480"
+                                                src="/themes/official_v3/Public/img/product-cs_v2/online-console.png"> </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <h4 class="head">全能工作台</h4>
+                                            <h5 class="sub-head">一个全能的工作台，让工作事半功倍</h5>
+                                            <ul>
+                                                <li>全面提升工作效率和使用体验，使服务更流畅快捷</li>
+                                                <li>富媒体消息交流，可自由切换工作状态，设置会话欢迎语、常用语、超时提醒等，查看接待人数、访客来源、浏览轨迹</li>
+                                                <li>发起转接、满意度评价、会话标签总结</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 720px;">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/online-platform.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/online-platform@2x.png" class="img-responsive" alt="多平台客服" width="480"
+                                                src="/themes/official_v3/Public/img/product-cs_v2/online-platform.png"> </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <h4 class="head">多平台客服</h4>
+                                            <h5 class="sub-head">多种客服平台，选择最适合您的</h5>
+                                            <ul>
+                                                <li>网页版工作台，只要有浏览器，即刻开始工作</li>
+                                                <li>手机版工作台，移动办公，不受时空限制，随时随地为用户提供服务</li>
+                                                <li>PC版工作台，适合传统使用习惯</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="owl-item" style="width: 720px;">
+                                <div class="item">
+                                    <div class="row">
+                                        <div class="col-md-6 col-md-push-6"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/online-quality.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/online-quality@2x.png" class="img-responsive" alt="统计质检" width="480"
+                                                src="/themes/official_v3/Public/img/product-cs_v2/online-quality.png"> </div>
+                                        <div class="col-md-6 col-md-pull-6">
+                                            <h4 class="head">统计质检</h4>
+                                            <h5 class="sub-head">全面数据统计管理，让好变得更好</h5>
+                                            <ul>
+                                                <li>几十项丰富指标对工作量、工作质量进行量化分析，为服务改进提供数据支撑</li>
+                                                <li>自由组合报表参数和展现形式，给你最想要的结果</li>
+                                                <li>人工抽查，多重筛选，质量检查，绩效评分帮助改进</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-nav disabled">
+                        <div class="owl-prev">prev</div>
+                        <div class="owl-next">next</div>
+                    </div>
+                    <div class="owl-dots">
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot active"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                        <div class="owl-dot"><span></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="section online section-muted">
+        <div class="service" style="background:#fff">
+            <div class="container">
+                <h2 class="title">未来已来<span class="hidden-xs">，</span><br class="visible-xs-inline">人工客服向智能客服升级</h2>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="row rowbp">
+                            <div class="col-md-2">
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_zidonghuifu"><svg id="icon-cec_zidonghuifu" viewBox="0 0 1025 1024" width="100%" height="100%"><path d="M708.608 699.392l-249.856 144.384c-40.96 23.552-91.136 23.552-132.096 0l-249.856-144.384c-40.96-23.552-66.56-67.584-66.56-114.688v-287.744c0-47.104 25.6-91.136 66.56-114.688l249.856-144.384c40.96-23.552 91.136-23.552 132.096 0l249.856 144.384c40.96 23.552 66.56 67.584 66.56 114.688V584.704c0 47.104-25.6 91.136-66.56 114.688z" fill="#87C8FA"></path><path d="M393.216 872.448c-24.576 0-49.152-6.144-71.68-19.456l-249.856-144.384c-44.032-25.6-71.68-72.704-71.68-123.904v-287.744c0-51.2 27.648-98.304 71.68-123.904l249.856-144.384c44.032-25.6 99.328-25.6 143.36 0l249.856 144.384c44.032 25.6 71.68 72.704 71.68 123.904V584.704c0 51.2-27.648 98.304-71.68 123.904l-249.856 144.384c-21.504 13.312-47.104 19.456-71.68 19.456z m0-840.704c-20.48 0-41.984 5.12-60.416 16.384l-249.856 144.384c-37.888 21.504-60.416 61.44-60.416 105.472v286.72c0 43.008 23.552 83.968 60.416 105.472l249.856 144.384c37.888 21.504 83.968 21.504 121.856 0l249.856-144.384c37.888-21.504 60.416-61.44 60.416-105.472v-287.744c0-43.008-23.552-83.968-60.416-105.472l-249.856-144.384c-19.456-10.24-39.936-15.36-61.44-15.36z" fill="#1996FA"></path><path d="M947.2 711.68l-253.952 288.768c-41.984 24.576-93.184-117.76-135.168-142.336l-253.952-146.432c-41.984-24.576-67.584-68.608-67.584-116.736v-292.864c0-48.128 25.6-93.184 67.584-116.736l253.952-146.432a133.12 133.12 0 0 1 135.168 0l253.952 146.432c41.984 24.576 67.584 68.608 67.584 116.736V594.944c0 48.128-26.624 92.16-67.584 116.736z" fill="#FFFFFF"></path><path d="M683.008 1014.784c-27.648 0-54.272-40.96-79.872-81.92-17.408-27.648-35.84-56.32-50.176-64.512l-253.952-146.432c-45.056-25.6-72.704-74.752-72.704-125.952v-292.864c0-52.224 27.648-100.352 72.704-125.952l253.952-146.432c45.056-25.6 101.376-25.6 145.408 0l253.952 146.432c45.056 25.6 72.704 74.752 72.704 125.952V594.944c0 51.2-27.648 99.328-71.68 124.928l-256 289.792c-4.096 3.072-9.216 5.12-14.336 5.12z m-57.344-984.064c-21.504 0-43.008 5.12-61.44 16.384l-253.952 146.432c-37.888 22.528-61.44 63.488-61.44 107.52V594.944c0 44.032 23.552 84.992 61.44 107.52l253.952 146.432c19.456 11.264 37.888 40.96 58.368 71.68 20.48 32.768 48.128 76.8 64.512 70.656l254.976-289.792c37.888-22.528 61.44-63.488 61.44-107.52v-292.864c0-44.032-23.552-84.992-61.44-107.52l-253.952-146.432c-19.456-10.24-40.96-16.384-62.464-16.384z" fill="#1996FA"></path><path d="M483.328 453.632m-51.2 0a51.2 51.2 0 1 0 102.4 0 51.2 51.2 0 1 0-102.4 0Z" fill="#87C8FA"></path><path d="M483.328 510.976c-31.744 0-57.344-25.6-57.344-57.344 0-31.744 25.6-57.344 57.344-57.344s57.344 25.6 57.344 57.344c0 31.744-25.6 57.344-57.344 57.344z m0-101.376c-24.576 0-45.056 20.48-45.056 45.056s20.48 45.056 45.056 45.056 45.056-20.48 45.056-45.056-20.48-45.056-45.056-45.056z" fill="#1996FA"></path><path d="M637.952 453.632m-51.2 0a51.2 51.2 0 1 0 102.4 0 51.2 51.2 0 1 0-102.4 0Z" fill="#87C8FA"></path><path d="M637.952 510.976c-31.744 0-57.344-25.6-57.344-57.344 0-31.744 25.6-57.344 57.344-57.344s57.344 25.6 57.344 57.344c0 31.744-25.6 57.344-57.344 57.344z m0-101.376c-24.576 0-45.056 20.48-45.056 45.056s20.48 45.056 45.056 45.056 45.056-20.48 45.056-45.056-20.48-45.056-45.056-45.056z" fill="#1996FA"></path><path d="M793.6 453.632m-51.2 0a51.2 51.2 0 1 0 102.4 0 51.2 51.2 0 1 0-102.4 0Z" fill="#87C8FA"></path><path d="M793.6 510.976c-31.744 0-57.344-25.6-57.344-57.344 0-31.744 25.6-57.344 57.344-57.344s57.344 25.6 57.344 57.344c0 31.744-25.6 57.344-57.344 57.344z m0-101.376c-24.576 0-45.056 20.48-45.056 45.056s20.48 45.056 45.056 45.056 45.056-20.48 45.056-45.056-20.48-45.056-45.056-45.056z" fill="#1996FA"></path></svg></use>
+                                </svg>
+                            </div>
+                            <div class="col-md-10">
+                                <h5 class="head">
+                                    自动回复
+                                </h5>
+                                <p>对机器人欢迎语、默认回复、重复回复、超时回复和转人工进行自由配置</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="row rowbp">
+                            <div class="col-md-2">
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_zhishiguanli"><svg id="icon-cec_zhishiguanli" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M512 1022.976c-29.696 0-60.416-8.192-87.04-23.552l-305.152-176.128c-53.248-30.72-87.04-88.064-87.04-150.528v-352.256c0-43.008 15.36-98.304 36.864-139.264 19.456-35.84 57.344-58.368 98.304-58.368h205.824c6.144 0 11.264 5.12 11.264 11.264 0 6.144-5.12 11.264-11.264 11.264h-205.824c-32.768 0-62.464 17.408-77.824 46.08-20.48 36.864-33.792 90.112-33.792 129.024v352.256c0 53.248 28.672 103.424 74.752 130.048l305.152 176.128c46.08 26.624 103.424 26.624 150.528 0l305.152-176.128c46.08-26.624 74.752-76.8 74.752-130.048v-352.256c0-38.912-14.336-91.136-33.792-129.024-15.36-28.672-45.056-46.08-77.824-46.08h-80.896c-6.144 0-11.264-5.12-11.264-11.264 0-6.144 5.12-11.264 11.264-11.264h80.896c40.96 0 78.848 22.528 98.304 58.368 22.528 40.96 36.864 97.28 36.864 139.264v352.256c0 61.44-32.768 118.784-87.04 150.528l-305.152 176.128c-25.6 15.36-56.32 23.552-86.016 23.552z" fill="#1996FA"></path><path d="M719.872 147.456h-274.432c-6.144 0-11.264-5.12-11.264-11.264 0-6.144 5.12-11.264 11.264-11.264h274.432c6.144 0 11.264 5.12 11.264 11.264 1.024 6.144-4.096 11.264-11.264 11.264z" fill="#1996FA"></path><path d="M397.312 254.976h-94.208c-3.072 0-6.144-3.072-6.144-6.144v-231.424c0-3.072 3.072-6.144 6.144-6.144h94.208c3.072 0 6.144 3.072 6.144 6.144v231.424c0 4.096-3.072 6.144-6.144 6.144z" fill="#87C8FA"></path><path d="M390.144 267.264h-79.872c-13.312 0-24.576-11.264-24.576-24.576v-217.088c0-13.312 11.264-24.576 24.576-24.576h79.872c13.312 0 24.576 11.264 24.576 24.576v217.088c0 13.312-11.264 24.576-24.576 24.576z m-79.872-243.712c-1.024 0-2.048 1.024-2.048 2.048v217.088c0 1.024 1.024 2.048 2.048 2.048h79.872c1.024 0 2.048-1.024 2.048-2.048v-217.088c0-1.024-1.024-2.048-2.048-2.048h-79.872z" fill="#1996FA"></path><path d="M731.136 254.976h-94.208c-3.072 0-6.144-3.072-6.144-6.144v-231.424c0-3.072 3.072-6.144 6.144-6.144h94.208c3.072 0 6.144 3.072 6.144 6.144v231.424c-1.024 4.096-3.072 6.144-6.144 6.144z" fill="#87C8FA"></path><path d="M722.944 267.264h-79.872c-13.312 0-24.576-11.264-24.576-24.576v-217.088c0-13.312 11.264-24.576 24.576-24.576h79.872c13.312 0 24.576 11.264 24.576 24.576v217.088c1.024 13.312-10.24 24.576-24.576 24.576z m-79.872-243.712c-1.024 0-2.048 1.024-2.048 2.048v217.088c0 1.024 1.024 2.048 2.048 2.048h79.872c1.024 0 2.048-1.024 2.048-2.048v-217.088c0-1.024-1.024-2.048-2.048-2.048h-79.872z" fill="#1996FA"></path><path d="M815.104 766.976l-239.616 138.24c-38.912 22.528-88.064 22.528-126.976 0l-239.616-138.24c-38.912-22.528-63.488-64.512-63.488-110.592v-206.848c0-45.056 24.576-87.04 63.488-110.592h607.232c38.912 22.528 63.488 64.512 63.488 110.592V656.384c0 46.08-24.576 88.064-64.512 110.592z" fill="#87C8FA"></path><path d="M512 933.888c-23.552 0-48.128-6.144-69.632-18.432l-239.616-138.24c-43.008-24.576-69.632-70.656-69.632-119.808v-206.848c0-49.152 26.624-95.232 69.632-119.808l3.072-2.048h613.376l3.072 2.048c43.008 24.576 69.632 70.656 69.632 119.808v206.848c0 49.152-26.624 95.232-69.632 119.808l-239.616 138.24c-22.528 12.288-47.104 18.432-70.656 18.432z m-300.032-582.656c-33.792 20.48-55.296 58.368-55.296 98.304V656.384c0 40.96 22.528 79.872 58.368 100.352l239.616 138.24c35.84 20.48 79.872 20.48 115.712 0l239.616-138.24c35.84-20.48 58.368-59.392 58.368-100.352v-206.848c0-39.936-21.504-77.824-55.296-98.304h-601.088z" fill="#1996FA"></path><path d="M745.472 486.4l-62.464-61.44L501.76 605.184l-91.136-91.136-62.464 61.44 91.136 91.136-1.024 1.024 62.464 62.464 1.024-1.024 62.464-62.464z" fill="#FFFFFF"></path><path d="M500.736 740.352c-3.072 0-5.12-1.024-7.168-3.072l-62.464-61.44c-1.024-1.024-2.048-3.072-3.072-5.12l-88.064-87.04c-2.048-2.048-3.072-5.12-3.072-8.192 0-3.072 1.024-6.144 3.072-8.192l62.464-61.44c4.096-4.096 11.264-4.096 16.384 0l83.968 82.944 173.056-172.032c4.096-4.096 11.264-4.096 16.384 0l62.464 61.44c2.048 2.048 3.072 5.12 3.072 8.192 0 3.072-1.024 6.144-3.072 8.192l-243.712 241.664c-3.072 3.072-7.168 4.096-10.24 4.096z m-50.176-76.8l50.176 50.176 228.352-227.328-46.08-46.08-173.056 172.032c-4.096 4.096-11.264 4.096-16.384 0l-83.968-82.944-46.08 46.08 83.968 82.944c2.048 2.048 3.072 3.072 3.072 5.12z" fill="#1996FA"></path></svg></use>
+                                </svg>
+                            </div>
+                            <div class="col-md-10">
+                                <h5 class="head">
+                                    自动回复
+                                </h5>
+                                <p>对机器人欢迎语、默认回复、重复回复、超时回复和转人工进行自由配置</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="row rowbp">
+                            <div class="col-md-2">
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_caidandaohang"><svg id="icon-cec_caidandaohang" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M512 1022.976c-28.672 0-58.368-7.168-83.968-22.528l-296.96-171.008c-52.224-29.696-83.968-86.016-83.968-146.432v-343.04c0-60.416 32.768-115.712 83.968-146.432l296.96-171.008c52.224-29.696 116.736-29.696 168.96 0l186.368 102.4c5.12 3.072 7.168 10.24 4.096 15.36-3.072 5.12-10.24 7.168-15.36 4.096l-186.368-103.424c-45.056-26.624-101.376-26.624-146.432 0l-296.96 171.008c-45.056 25.6-73.728 74.752-73.728 126.976v343.04c0 52.224 27.648 100.352 73.728 126.976l296.96 171.008c45.056 25.6 101.376 25.6 146.432 0l296.96-171.008c45.056-25.6 73.728-74.752 73.728-126.976V338.944c0-52.224-27.648-100.352-73.728-126.976-5.12-3.072-7.168-10.24-4.096-15.36 3.072-5.12 10.24-7.168 15.36-4.096 52.224 29.696 83.968 86.016 83.968 146.432v343.04c0 60.416-32.768 115.712-83.968 146.432l-296.96 171.008c-26.624 16.384-56.32 23.552-84.992 23.552z" fill="#1996FA"></path><path d="M770.048 148.48m-48.128 0a48.128 48.128 0 1 0 96.256 0 48.128 48.128 0 1 0-96.256 0Z" fill="#87C8FA"></path><path d="M770.048 206.848c-31.744 0-58.368-25.6-58.368-58.368s25.6-58.368 58.368-58.368c31.744 0 58.368 25.6 58.368 58.368s-26.624 58.368-58.368 58.368z m0-95.232c-20.48 0-36.864 16.384-36.864 36.864s16.384 36.864 36.864 36.864 36.864-16.384 36.864-36.864-16.384-36.864-36.864-36.864z" fill="#1996FA"></path><path d="M662.528 793.6h-302.08c-39.936 0-71.68-32.768-71.68-71.68v-418.816c0-39.936 32.768-71.68 71.68-71.68h260.096l114.688 128v362.496c0 38.912-32.768 71.68-72.704 71.68z" fill="#87C8FA"></path><path d="M662.528 804.864h-302.08c-46.08 0-82.944-37.888-82.944-82.944v-418.816c0-46.08 37.888-82.944 82.944-82.944h265.216l120.832 135.168v367.616c0 44.032-37.888 81.92-83.968 81.92z m-301.056-563.2c-33.792 0-61.44 27.648-61.44 61.44v418.816c0 33.792 27.648 61.44 61.44 61.44h302.08c33.792 0 61.44-27.648 61.44-61.44v-358.4l-108.544-121.856h-254.976z" fill="#1996FA"></path><path d="M620.544 230.4s-55.296 50.176-19.456 92.16 134.144 35.84 134.144 35.84l-114.688-128z" fill="#87C8FA"></path><path d="M722.944 369.664c-28.672 0-99.328-4.096-130.048-39.936-34.816-39.936-2.048-88.064 20.48-107.52 2.048-2.048 5.12-3.072 8.192-3.072 3.072 0 6.144 1.024 8.192 4.096l114.688 128c3.072 3.072 4.096 8.192 2.048 11.264-2.048 4.096-5.12 6.144-9.216 7.168h-14.336z m-102.4-122.88c-12.288 14.336-31.744 44.032-11.264 68.608 20.48 23.552 67.584 30.72 100.352 32.768l-89.088-101.376z" fill="#1996FA"></path><path d="M386.048 407.552h59.392v50.176h-59.392z" fill="#FFFFFF"></path><path d="M450.56 462.848h-70.656v-61.44h70.656v61.44z m-59.392-10.24h48.128v-38.912h-48.128v38.912z" fill="#1996FA"></path><path d="M468.992 407.552h179.2v50.176h-179.2z" fill="#FFFFFF"></path><path d="M654.336 462.848h-190.464v-61.44h190.464v61.44z m-179.2-10.24h167.936v-38.912h-167.936v38.912z" fill="#1996FA"></path><path d="M386.048 495.616h59.392v50.176h-59.392z" fill="#FFFFFF"></path><path d="M450.56 551.936h-70.656v-61.44h70.656v61.44z m-59.392-11.264h48.128v-38.912h-48.128v38.912z" fill="#1996FA"></path><path d="M468.992 495.616h179.2v50.176h-179.2z" fill="#FFFFFF"></path><path d="M654.336 551.936h-190.464v-61.44h190.464v61.44z m-179.2-11.264h167.936v-38.912h-167.936v38.912z" fill="#1996FA"></path><path d="M386.048 584.704h59.392v50.176h-59.392z" fill="#FFFFFF"></path><path d="M450.56 641.024h-70.656v-61.44h70.656v61.44z m-59.392-11.264h48.128v-38.912h-48.128v38.912z" fill="#1996FA"></path><path d="M468.992 584.704h179.2v50.176h-179.2z" fill="#FFFFFF"></path><path d="M654.336 641.024h-190.464v-61.44h190.464v61.44z m-179.2-11.264h167.936v-38.912h-167.936v38.912z" fill="#1996FA"></path><path d="M667.648 792.576h-302.08c-39.936 0-71.68-32.768-71.68-71.68v-418.816c0-39.936 32.768-71.68 71.68-71.68h260.096l114.688 128v362.496c0 38.912-32.768 71.68-72.704 71.68z" fill="#87C8FA"></path><path d="M667.648 803.84h-302.08c-46.08 0-82.944-37.888-82.944-82.944v-418.816c0-46.08 37.888-82.944 82.944-82.944h265.216l120.832 135.168v367.616c0 45.056-37.888 81.92-83.968 81.92z m-301.056-563.2c-33.792 0-61.44 27.648-61.44 61.44v418.816c0 33.792 27.648 61.44 61.44 61.44h302.08c33.792 0 61.44-27.648 61.44-61.44v-358.4l-108.544-121.856h-254.976z" fill="#1996FA"></path><path d="M625.664 229.376s-55.296 50.176-19.456 92.16c35.84 41.984 134.144 35.84 134.144 35.84l-114.688-128z" fill="#87C8FA"></path><path d="M728.064 368.64c-28.672 0-98.304-4.096-130.048-39.936-34.816-39.936-2.048-88.064 20.48-107.52 2.048-2.048 5.12-3.072 8.192-3.072 3.072 0 6.144 1.024 8.192 4.096l114.688 128c3.072 3.072 4.096 8.192 2.048 11.264-2.048 4.096-5.12 6.144-9.216 7.168h-14.336z m-102.4-122.88c-12.288 14.336-31.744 44.032-11.264 68.608 20.48 23.552 67.584 30.72 100.352 32.768l-89.088-101.376z" fill="#1996FA"></path><path d="M391.168 406.528h59.392v50.176h-59.392zM474.112 406.528h179.2v50.176h-179.2zM391.168 495.616h59.392v50.176h-59.392zM474.112 495.616h179.2v50.176h-179.2zM391.168 584.704h59.392v50.176h-59.392zM474.112 584.704h179.2v50.176h-179.2z" fill="#FFFFFF"></path><path d="M667.648 792.576h-302.08c-39.936 0-71.68-32.768-71.68-71.68v-418.816c0-39.936 32.768-71.68 71.68-71.68h260.096l114.688 128v362.496c0 38.912-32.768 71.68-72.704 71.68z" fill="#87C8FA"></path><path d="M667.648 803.84h-302.08c-46.08 0-82.944-37.888-82.944-82.944v-418.816c0-46.08 37.888-82.944 82.944-82.944h265.216l120.832 135.168v367.616c0 45.056-37.888 81.92-83.968 81.92z m-301.056-563.2c-33.792 0-61.44 27.648-61.44 61.44v418.816c0 33.792 27.648 61.44 61.44 61.44h302.08c33.792 0 61.44-27.648 61.44-61.44v-358.4l-108.544-121.856h-254.976z" fill="#1996FA"></path><path d="M625.664 229.376s-55.296 50.176-19.456 92.16c35.84 41.984 134.144 35.84 134.144 35.84l-114.688-128z" fill="#87C8FA"></path><path d="M728.064 368.64c-28.672 0-98.304-4.096-130.048-39.936-34.816-39.936-2.048-88.064 20.48-107.52 2.048-2.048 5.12-3.072 8.192-3.072 3.072 0 6.144 1.024 8.192 4.096l114.688 128c3.072 3.072 4.096 8.192 2.048 11.264-2.048 4.096-5.12 6.144-9.216 7.168h-14.336z m-102.4-122.88c-12.288 14.336-31.744 44.032-11.264 68.608 20.48 23.552 67.584 30.72 100.352 32.768l-89.088-101.376z" fill="#1996FA"></path><path d="M391.168 406.528h59.392v50.176h-59.392zM474.112 406.528h179.2v50.176h-179.2zM391.168 495.616h59.392v50.176h-59.392zM474.112 495.616h179.2v50.176h-179.2zM391.168 584.704h59.392v50.176h-59.392zM474.112 584.704h179.2v50.176h-179.2z" fill="#FFFFFF"></path></svg></use>
+                                </svg>
+                            </div>
+                            <div class="col-md-10">
+                                <h5 class="head">
+                                    自动回复
+                                </h5>
+                                <p>对机器人欢迎语、默认回复、重复回复、超时回复和转人工进行自由配置</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="row rowbp">
+                            <div class="col-md-2">
+                                <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_zhuanrengong"><svg id="icon-cec_zhuanrengong" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M582.656 478.208c-76.8 44.032-171.008 44.032-247.808 0s-123.904-125.952-123.904-214.016c0-88.064 47.104-169.984 123.904-214.016 76.8-44.032 171.008-44.032 247.808 0s123.904 125.952 123.904 214.016c0 87.04-47.104 168.96-123.904 214.016z" fill="#87C8FA"></path><path d="M879.616 1018.88h-840.704v-319.488c0-54.272 29.696-105.472 76.8-133.12l267.264-154.624c47.104-27.648 105.472-27.648 153.6 0l267.264 154.624c47.104 27.648 76.8 77.824 76.8 133.12v319.488z m-818.176-22.528h795.648v-296.96c0-46.08-24.576-90.112-65.536-112.64l-267.264-154.624c-39.936-23.552-90.112-23.552-130.048 0l-267.264 154.624c-39.936 23.552-65.536 66.56-65.536 112.64v296.96z" fill="#1996FA"></path><path d="M582.656 478.208c-76.8 44.032-171.008 44.032-247.808 0s-123.904-125.952-123.904-214.016c0-88.064 47.104-169.984 123.904-214.016 76.8-44.032 171.008-44.032 247.808 0s123.904 125.952 123.904 214.016c0 87.04-47.104 168.96-123.904 214.016z" fill="#87C8FA"></path><path d="M458.752 522.24c-45.056 0-89.088-11.264-129.024-34.816-79.872-46.08-129.024-132.096-129.024-224.256 0-92.16 49.152-178.176 129.024-224.256s179.2-46.08 259.072 0c79.872 46.08 129.024 132.096 129.024 224.256 0 92.16-49.152 178.176-129.024 224.256-39.936 23.552-84.992 34.816-130.048 34.816z m0-495.616c-40.96 0-81.92 10.24-117.76 31.744-72.704 41.984-117.76 120.832-117.76 204.8s45.056 162.816 117.76 204.8 163.84 41.984 236.544 0c72.704-41.984 117.76-120.832 117.76-204.8s-45.056-162.816-117.76-204.8c-36.864-20.48-77.824-31.744-118.784-31.744z" fill="#1996FA"></path><path d="M804.864 630.784m-172.032 0a172.032 172.032 0 1 0 344.064 0 172.032 172.032 0 1 0-344.064 0Z" fill="#87C8FA"></path><path d="M804.864 811.008c-99.328 0-180.224-80.896-180.224-180.224 0-99.328 80.896-180.224 180.224-180.224 99.328 0 180.224 80.896 180.224 180.224 0 99.328-80.896 180.224-180.224 180.224z m0-344.064c-90.112 0-163.84 73.728-163.84 163.84s73.728 163.84 163.84 163.84 163.84-73.728 163.84-163.84-72.704-163.84-163.84-163.84z" fill="#1996FA"></path><path d="M915.456 577.536l-35.84-35.84-102.4 102.4-51.2-51.2-35.84 34.816 52.224 51.2-1.024 1.024 35.84 34.816v-1.024l35.84-34.816z" fill="#FFFFFF"></path><path d="M776.192 720.896c-2.048 0-3.072 0-4.096-2.048l-34.816-34.816c-1.024-1.024-1.024-2.048-2.048-3.072l-49.152-49.152c-1.024-1.024-2.048-3.072-2.048-4.096 0-2.048 1.024-3.072 2.048-5.12l34.816-34.816c2.048-2.048 6.144-2.048 9.216 0l47.104 47.104 98.304-97.28c2.048-2.048 6.144-2.048 9.216 0l34.816 34.816c1.024 1.024 2.048 3.072 2.048 4.096 0 2.048-1.024 3.072-2.048 4.096l-137.216 137.216c-2.048 2.048-4.096 3.072-6.144 3.072z m-27.648-44.032l28.672 27.648 129.024-128-25.6-25.6-98.304 97.28c-2.048 2.048-6.144 2.048-9.216 0l-47.104-47.104-25.6 25.6 47.104 47.104c0 1.024 1.024 2.048 1.024 3.072z" fill="#1996FA"></path></svg></use>
+                                </svg>
+                            </div>
+                            <div class="col-md-10">
+                                <h5 class="head">
+                                    自动回复
+                                </h5>
+                                <p>对机器人欢迎语、默认回复、重复回复、超时回复和转人工进行自由配置</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="divider" />
+                <div class="row robot">
+                    <div class="col-sm-6">
+                        <ul class="list-unstyled">
+                            <li> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_duigou"><svg id="icon-cec_duigou" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M512 1020.928c-280.576 0-508.928-228.352-508.928-508.928s228.352-508.928 508.928-508.928 508.928 228.352 508.928 508.928-228.352 508.928-508.928 508.928z m0-976.896c-258.048 0-467.968 209.92-467.968 467.968s209.92 467.968 467.968 467.968 467.968-209.92 467.968-467.968-209.92-467.968-467.968-467.968z" fill="#C3CDDA"></path><path d="M260.864 509.5424l78.91968-78.92992 194.048 194.048-78.91968 78.91968z" fill="#0085E4"></path><path d="M684.99456 317.91104l78.91968 78.92992-309.17632 309.17632-78.92992-78.91968z" fill="#0085E4"></path></svg></use>
+                                </svg>
+                                <h5 class="head">单轮会话</h5>
+                                <p>以词+句式理解问句语义，区分相同问题不同问法和相似问句不同语义，迅速做到自动回复，准确返回最佳答案</p>
+                            </li>
+                            <li> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_duigou"></use> </svg>
+                                <h5 class="head">多轮会话</h5>
+                                <p>预装多行业领域智能场景，打通企业业务系统，针对复杂业务场景，理解客户意图，自动引导访客进入下一轮会话</p>
+                            </li>
+                            <li> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_duigou"></use> </svg>
+                                <h5 class="head">人机协作</h5>
+                                <p>结合机器人现有知识库，建立智能应答模型，智能助手实时推荐人工客服应答备选，点选即回，同时传递话术促进内部学习</p>
+                            </li>
+                            <li> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_duigou"></use> </svg>
+                                <h5 class="head">问答优化</h5>
+                                <p>自动挖掘和总结高频问句，自主聚类知识库未匹配问题，结合人工审查，一键添加，成倍降低知识库维护成本</p>
+                            </li>
+                            <li> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_duigou"></use> </svg>
+                                <h5 class="head">智能质检</h5>
+                                <p>扩大质检范围，无需抽检，全面覆盖历史会话，根据规则自动判断会话问题，提高质检工作效率，获得更精准结果</p>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6 text-center"> <img src="./images/ai-index.png" class="img-responsive" alt="人工客服向智能客服升级" width="408" src="/themes/official_v3/Public/img/product-cs_v2/ai-index.png"> </div>
+                </div>
+                <div class="action text-center"><a class="btn btn-lg btn-primary-outline" href="/product/ai" rel="nofollow">查看详情</a></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section id="section-bi" class="section bi section-muted text-center image-background" style="background-image:url(/themes/official_v3/Public/img/product-cs_v2/bi-bg.jpg);background-image:-webkit-image-set(url(/themes/official_v3/Public/img/product-cs_v2/bi-bg.jpg) 1x,url(/themes/official_v3/Public/img/product-cs_v2/bi-bg@2x.jpg) 2x)"> -->
+    <section id="section-bi" class="section bi section-muted text-center image-background">
+        <div class="container">
+            <h2 class="title text-center">洞察商业<span class="hidden-xs">，</span><br class="visible-xs-inline">服务坐席向营销坐席升级</h2>
+            <div class="owl-carousel owl-theme owl-loaded owl-drag">
+                <div class="owl-stage-outer">
+                    <div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: all 0s ease 0s; width: 1875px;">
+                        <div class="owl-item active" style="width: 345px; margin-right: 30px;">
+                            <div class="item">
+                                <div class="wrap"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/bi-portrait.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/bi-portrait@2x.png" class="img-responsive" alt="客户画像" width="237" src="/themes/official_v3/Public/img/product-cs_v2/bi-portrait.png">
+                                    <hr>
+                                    <div class="text-wrap">
+                                        <h4 class="head">客户画像</h4>
+                                        <p class="text-left">对接CRM系统，结合标签体系，精准描绘客户画像，补全客户资料，完成客户分层</p>
+                                        <ul class="text-left">
+                                            <li>对客户资料、互动记录进行完善增减，丰满360°画像</li>
+                                            <li>相同访客在不同渠道的留痕整合为一人，合并身份信息</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 345px; margin-right: 30px;">
+                            <div class="item">
+                                <div class="wrap"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/bi-voice.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/bi-voice@2x.png" class="img-responsive" alt="客户声音" width="237" src="/themes/official_v3/Public/img/product-cs_v2/bi-voice.png">
+                                    <hr>
+                                    <div class="text-wrap">
+                                        <h4 class="head">客户声音</h4>
+                                        <p class="text-left">收集、分析、管理多渠道数据源，通过内容和声量情感分析，了解客户心声，支持企业决策</p>
+                                        <ul class="text-left">
+                                            <li>自动分组主题聚类高频关键词，关联关键词信息详情列表，细节有据可查</li>
+                                            <li>分析关键词情感倾向，感知客户情绪，回呼形成闭环</li>
+                                        </ul>
+                                    </div>
+                                    <div class="action"><a class="btn btn-lg btn-primary-outline" href="/product/cs/voice" rel="nofollow">查看详情</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 345px; margin-right: 30px;">
+                            <div class="item">
+                                <div class="wrap"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/bi-marketing.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/bi-marketing@2x.png" class="img-responsive" alt="主动营销" width="237" src="/themes/official_v3/Public/img/product-cs_v2/bi-marketing.png">
+                                    <hr>
+                                    <div class="text-wrap">
+                                        <h4 class="head">主动营销</h4>
+                                        <p class="text-left">选对人，说对话，做对事。激活沉睡客户，自动化流程精准出击，倍增销售转化</p>
+                                        <ul class="text-left">
+                                            <li>按照客户属性，精准筛选，预置推送内容，选择渠道，指定回复，定时自动营销</li>
+                                            <li>依据客户旅程完善规则，营销效果数据全盘掌握</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 345px; margin-right: 30px;">
+                            <div class="item">
+                                <div class="wrap"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/bi-track.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/bi-track@2x.png" class="img-responsive" alt="访问轨迹" width="237" src="/themes/official_v3/Public/img/product-cs_v2/bi-track.png">
+                                    <hr>
+                                    <div class="text-wrap">
+                                        <h4 class="head">访问轨迹</h4>
+                                        <p class="text-left">收集访客网站浏览轨迹，追踪记录访客行为，帮助针对性判断访客兴趣范围和偏好</p>
+                                        <ul class="text-left">
+                                            <li>在实时聊天窗口了解轨迹，与访客更好沟通</li>
+                                            <li>在客户没有发起咨询时，根据轨迹，主动发起会话</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="owl-item" style="width: 345px; margin-right: 30px;">
+                            <div class="item">
+                                <div class="wrap"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/bi-statistics.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/bi-statistics@2x.png" class="img-responsive" alt="全站统计" width="237" src="/themes/official_v3/Public/img/product-cs_v2/bi-statistics.png">
+                                    <hr>
+                                    <div class="text-wrap">
+                                        <h4 class="head">全站统计</h4>
+                                        <p class="text-left">洞察访客来源，整体把握访问情况，无需对网站埋点，抓取访问行为，自由组合指标生成报表</p>
+                                        <ul class="text-left">
+                                            <li>展示流量转化路径和漏斗，统计相关页面浏览、点击、转化</li>
+                                            <li>对搜索引擎关键词、渠道来源等进行统计和比较</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="owl-nav">
+                    <div class="owl-prev disabled"></div>
+                    <div class="owl-next animated pulse infinite"></div>
+                </div>
+                <div class="owl-dots">
+                    <div class="owl-dot active"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                    <div class="owl-dot"><span></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="section-open" class="section open text-center">
+        <div class="container">
+            <h2 class="title">数据安全+灵活部署+开放平台<span class="hidden-xs">，</span><br class="visible-xs-inline">让1+1+1＞3</h2>
+            <div class="row">
+                <div class="col-xs-6 col-sm-4 col-md-2 item"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_duozhongbushufan"><svg id="icon-cec_duozhongbushufan" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M244.736 217.088l-102.912 59.904-103.424-59.904v-118.784l102.912-58.88 102.912 58.88 0.512 118.784z m370.688 0L512.512 276.992l-102.912-59.904v-118.784l102.912-58.88 102.912 58.88v118.784z m370.176 0L882.688 276.992l-103.424-59.904v-118.784l102.912-58.88 103.424 58.88v118.784z m-740.864 353.792l-102.912 59.904-102.912-59.904v-118.784l102.912-59.904 102.912 59.904v118.784z" fill="#44A4FF"></path><path d="M141.824 634.88l-106.496-62.464v-122.88l106.496-62.464 106.496 62.464v122.88l-106.496 62.464z m-99.328-66.048l99.328 57.856 99.328-57.856v-114.688l-99.328-57.856-99.328 57.856V568.832z m470.016-287.232l-106.496-62.464v-122.88l106.496-60.928 106.496 60.928v122.88l-106.496 62.464z m-99.328-66.56l99.328 57.856 99.328-57.856v-114.688l-99.328-56.832-99.328 56.832v114.688z m469.504 66.56l-107.008-62.464v-122.88l106.496-60.928 107.008 60.928v122.88l-106.496 62.464z m-99.84-66.56l99.84 57.856 99.328-57.856v-114.688l-99.84-56.832-99.328 56.832v114.688z m-641.024 66.56l-107.008-62.464v-122.88l106.496-60.928 106.496 60.928v117.248h10.24l-116.224 68.096z m-99.84-66.56l99.84 57.856L240.64 215.552v-114.688l-99.328-56.832-99.328 56.832v114.176z" fill="#44A4FF"></path><path d="M141.312 633.344l-105.472-60.928v-121.856l105.472-60.928 105.472 60.928v121.856l-105.472 60.928z m-100.352-64l100.352 58.368 100.352-58.368v-116.224l-100.352-58.368-100.352 58.368v116.224z m841.216-289.28l-105.472-60.928v-121.856l105.472-59.904 105.472 59.904v121.856l-105.472 60.928zM781.824 215.552l100.352 58.368L982.528 215.552v-115.712l-100.352-57.344-100.352 57.344V215.552z m-269.312 64.512l-105.472-60.928v-121.856l105.472-59.904 105.472 59.904v121.856l-105.472 60.928z m-100.864-64.512l100.352 58.368 100.352-58.368v-115.712L512 42.496l-100.352 57.344V215.552z m-270.336 64.512l-105.472-60.928v-121.856l105.472-59.904 105.472 59.904v121.856l-105.472 60.928zM40.96 215.552l100.352 58.368 100.352-58.368v-115.712l-100.352-57.344-100.352 57.344V215.552z" fill="#44A4FF"></path><path d="M141.312 637.44l-109.056-62.976v-125.952l109.056-62.976 109.056 62.976v125.952l-109.056 62.976z m-96.768-70.144l96.768 56.32 96.768-56.32v-112.128l-96.768-56.32-96.768 56.32v112.128z m837.632-283.136L773.12 220.672v-125.952l109.056-61.952 109.056 61.952V220.672l-109.056 63.488z m-96.768-70.656l96.768 56.32 96.768-56.32v-111.616L882.176 46.592l-96.768 55.296v111.616z m-272.896 70.656l-109.056-62.976v-125.952l109.056-61.952 109.056 61.952V220.672l-109.056 63.488z m-97.28-70.656l96.768 56.32 96.768-56.32v-111.616L512 46.592l-96.768 55.296v111.616z m-273.92 70.656l-109.056-62.976v-125.952l109.056-61.952 109.056 61.952V220.672l-109.056 63.488z m-96.768-70.656l96.768 56.32 96.768-56.32v-111.616l-96.768-55.296-96.768 55.296v111.616z" fill="#44A4FF"></path><path d="M141.312 654.848l-123.904-71.68v-142.848l123.904-71.68 123.904 71.68v142.848l-123.904 71.68z m-81.92-96.256l81.92 48.128 81.92-48.128v-94.72l-81.92-48.128-81.92 48.128V558.592z m822.784-257.536l-123.904-71.68v-143.36l123.904-70.656 123.904 70.656v143.36l-123.904 71.68z m-81.92-96.256l81.92 48.128 81.92-48.128v-94.72l-81.92-47.104-81.92 47.104v94.72z m-658.944 96.256l-123.904-71.68v-143.36l123.904-70.656 123.904 70.656v143.36l-123.904 71.68z m-81.92-96.256l81.92 48.128 81.92-48.128v-94.72l-81.92-47.104-81.92 47.104v94.72z m453.12 96.256l-123.904-71.68v-143.36l123.904-70.656 123.904 70.656v143.36l-123.904 71.68z m-82.432-96.256l81.92 48.128 81.92-48.128v-94.72l-81.92-47.104-81.92 47.104v94.72z" fill="#44A4FF"></path><path d="M141.312 658.944l-127.488-73.728v-146.944l127.488-73.728 127.488 73.728v146.944l-127.488 73.728z m-120.32-78.336l120.32 69.632 120.32-69.632v-138.24l-120.32-69.632-120.32 69.632v138.24z m120.32 29.696l-85.504-50.176V461.312l85.504-50.176 85.504 50.176v98.816l-85.504 50.176z m-78.336-53.76l78.336 45.568 78.336-45.568v-90.624l-78.336-45.568-78.336 45.568v90.624z m819.2-251.392l-127.488-73.728v-147.456l127.488-72.704L1009.664 83.968v147.456l-127.488 73.728z m-119.808-77.824l120.32 69.632 120.32-69.632v-138.752l-120.32-68.608-120.32 68.608v138.752z m-249.856 77.824l-127.488-73.728v-147.456l127.488-72.704 127.488 72.704v147.456l-127.488 73.728z m-120.32-77.824l120.32 69.632 120.32-69.632v-138.752l-120.32-68.608-120.32 68.608v138.752z m-250.88 77.824l-127.488-73.728v-147.456l127.488-72.704 127.488 72.704v147.456l-127.488 73.728z m-120.32-77.824l120.32 69.632 120.32-69.632v-138.752l-120.32-68.608-120.32 68.608v138.752z m861.184 29.696l-85.504-50.176V108.032l85.504-49.152L967.68 108.032v98.816l-85.504 50.176zM803.84 202.752l78.336 45.568 78.336-45.568v-90.624l-78.336-44.544-78.336 44.544v90.624z m-291.84 54.272l-85.504-50.176V108.032l85.504-49.152 85.504 49.152v98.816l-85.504 50.176z m-78.336-54.272l78.336 45.568 78.336-45.568v-90.624l-78.336-44.544-78.336 44.544v90.624z m-292.352 54.272l-85.504-50.176V108.032l85.504-49.152 85.504 49.152v98.816l-85.504 50.176z m-78.336-54.272l78.336 45.568 78.336-45.568v-90.624l-78.336-44.544-78.336 44.544v90.624z" fill="#44A4FF"></path><path d="M141.312 657.408l-126.464-73.216v-145.92l126.464-73.216 126.464 73.216V584.192l-126.464 73.216z m-121.344-75.776l121.344 70.144 121.344-70.656v-139.776l-121.344-70.144-121.344 70.144v140.288z m121.344 27.648l-84.48-49.664v-97.792l84.48-49.664 84.48 49.664v97.792l-84.48 49.664z m-79.872-52.224l79.36 46.592 79.36-46.592v-91.648l-79.36-46.592-79.36 46.592v91.648z m820.736-252.928L756.224 230.912v-146.432l126.464-72.192L1008.64 84.48v145.92l-126.464 73.728z m-120.832-76.288l121.344 70.144L1003.52 227.84V87.552l-121.344-69.12-120.832 69.12v140.288z m-248.832 76.288l-126.464-73.216v-146.432l126.464-72.192 126.464 72.192v145.92l-126.464 73.728z m-121.856-76.288l121.344 70.144 121.344-70.144V87.552l-120.832-69.12-121.344 69.12-0.512 140.288z m-249.344 76.288l-126.464-73.216v-146.432l126.464-72.192 126.464 72.192v145.92l-126.464 73.728z m-121.344-76.288l121.344 70.144 121.344-70.144V87.552l-121.344-69.12-121.344 69.12v140.288z m862.208 28.16l-84.48-49.664v-97.28l84.48-48.64 84.48 48.64v97.28l-84.48 49.664z m-79.36-52.224l79.36 46.592 79.36-46.592v-91.648l-79.36-45.568-79.36 45.568v91.648z m-661.504 52.224l-84.48-49.664v-97.28l84.48-48.64 84.48 48.64v97.28l-84.48 49.664z m-79.872-52.224l79.36 46.592 79.36-46.592v-91.648l-79.36-45.568-79.36 45.568v91.648z m451.072 52.224l-84.48-49.664v-97.28l84.48-48.64 84.48 48.64v97.28l-84.48 49.664z m-79.872-52.224l79.36 46.592 79.36-46.592v-91.648L512 67.072l-79.36 45.568v91.136z" fill="#44A4FF"></path><path d="M23.552 579.072l117.76 68.096 117.76-68.608v-135.168l-117.76-68.096-117.76 68.096V579.072z m117.76 34.304l-88.064-51.712v-101.888l88.064-51.712 88.064 51.712v101.888l-88.064 51.712z m-75.776-58.368l75.776 44.032 75.776-44.032v-87.552l-75.776-44.032-75.776 44.032v87.552zM764.928 225.792l117.76 68.096 117.76-68.096v-135.68l-117.76-67.072-117.76 67.072V225.792z m-370.176 0.512l117.248 68.096 117.76-68.096v-135.68l-117.248-67.072-117.76 67.072v135.68z m-371.2-0.512l117.76 68.096 117.76-68.096v-135.68l-117.76-67.072-117.76 67.072V225.792z m858.624 34.304l-88.064-51.712v-101.376l88.064-50.688 88.064 50.688v101.376l-88.064 51.712z m-75.776-58.368l75.776 44.032 75.776-44.032v-87.552l-75.776-43.52-75.776 43.52v87.552z m-293.888 58.368l-88.064-51.712v-101.376l88.064-50.688 88.064 50.688v101.376l-88.064 51.712z m-76.288-58.368L512 246.272l75.776-44.032v-87.552l-75.776-43.52-75.776 43.52v87.04z m-294.912 58.368l-88.064-51.712v-101.376l88.064-50.688 88.064 50.688v101.376l-88.064 51.712z m-75.776-58.368l75.776 44.032 75.776-44.032v-87.552l-75.776-43.52-75.776 43.52v87.552z" fill="#44A4FF"></path><path d="M615.424 570.88l-102.912 59.904-102.912-59.904v-118.784l102.912-59.904 102.912 59.904v118.784z" fill="#FFFFFF"></path><path d="M512.512 657.92l-126.976-73.728v-146.432l126.976-73.728 126.976 73.728V584.192c-0.512 0-126.976 73.728-126.976 73.728z m-79.36-100.864l78.336 45.568 78.336-45.568v-91.136l-78.336-45.568-78.336 45.568v91.136z" fill="#6687FF"></path><path d="M985.6 570.88l-102.912 59.904-102.912-59.904v-118.784l102.912-59.904 102.912 59.904v118.784z" fill="#FFFFFF"></path><path d="M882.176 657.92L755.2 584.192v-146.432l126.976-73.728L1009.152 437.76V584.192l-126.976 73.728zM803.84 557.056l78.336 45.568 78.336-45.568v-91.136l-78.336-45.568-78.336 45.568v91.136z" fill="#6687FF"></path><path d="M244.736 923.648l-102.912 59.904-102.912-59.904v-118.784l102.912-59.904 102.912 59.904v118.784z" fill="#44A4FF"></path><path d="M141.824 988.16l-106.496-62.464v-122.88l106.496-62.464 106.496 62.464v122.88l-106.496 62.464z m-99.328-66.56l99.328 57.856 99.328-57.856v-114.688l-99.328-57.856-99.328 57.856v114.688z" fill="#44A4FF"></path><path d="M141.312 987.136l-105.472-60.928V804.352l105.472-60.928 105.472 60.928v121.344l-105.472 61.44z m-100.352-64.512l100.352 58.368 100.352-58.368v-116.224l-100.352-58.368-100.352 58.368v116.224z" fill="#44A4FF"></path><path d="M141.312 991.232l-109.056-62.976v-125.952l109.056-62.976 109.056 62.976V927.232l-109.056 64z m-96.768-70.656l96.768 56.32 96.768-56.32v-112.128l-96.768-56.32-96.768 56.32v112.128z" fill="#44A4FF"></path><path d="M141.312 1007.616l-123.904-71.68v-142.848l123.904-71.68 123.904 71.68v142.848l-123.904 71.68z m-81.92-95.744l81.92 48.128 81.92-48.128v-94.72l-81.92-48.128-81.92 48.128V911.872z" fill="#44A4FF"></path><path d="M141.312 1012.224l-127.488-73.728v-146.944l127.488-73.728 127.488 73.728v146.944l-127.488 73.728z m-120.32-78.336l120.32 69.632 120.32-69.632v-138.24l-120.32-69.632-120.32 69.632v138.24z m120.32 30.208l-85.504-50.176v-98.816l85.504-50.176 85.504 50.176v98.816l-85.504 50.176z m-78.336-54.272l78.336 45.568 78.336-45.568v-90.624l-78.336-45.568-78.336 45.568v90.624z" fill="#44A4FF"></path><path d="M141.312 1010.688l-126.464-73.216v-145.92l126.464-73.216 126.464 73.216V937.472l-126.464 73.216z m-121.344-76.288l121.344 70.144 121.344-70.656V794.112l-121.344-70.656-121.344 70.144v140.8z m121.344 28.16l-84.48-49.664v-97.792l84.48-49.664 84.48 49.664v97.792l-84.48 49.664z m-79.872-52.224l79.36 46.592 79.36-46.592v-91.648l-79.36-46.592-79.36 46.592v91.648z" fill="#44A4FF"></path><path d="M23.552 932.352l117.76 68.096 117.76-68.608v-135.68l-117.76-68.608-117.76 68.096V932.352z m117.76 34.304l-88.064-51.712v-101.888l88.064-51.712 88.064 51.712v101.888l-88.064 51.712z m-75.776-58.368l75.776 44.032 75.776-44.032v-87.552l-75.776-44.032-75.776 44.032v87.552z" fill="#44A4FF"></path><path d="M615.424 924.16l-102.912 59.904-102.912-59.904v-118.784l102.912-59.904 102.912 59.904v118.784z" fill="#FFFFFF"></path><path d="M512.512 1011.712l-126.976-73.728v-146.432l126.976-73.728 126.976 73.728v146.432c-0.512 0-126.976 73.728-126.976 73.728z m-79.36-101.376l78.336 45.568 78.336-45.568v-91.136l-78.336-45.568-78.336 45.568v91.136z" fill="#6687FF"></path><path d="M985.6 923.648L882.688 983.552l-102.912-59.904v-118.784l102.912-59.904 102.912 59.904v118.784z" fill="#44A4FF"></path><path d="M882.688 988.16l-106.496-62.464v-122.88l106.496-62.464 106.496 62.464v122.88l-106.496 62.464z m-99.328-66.56l99.328 57.856 99.328-57.856v-114.688l-99.328-57.856-99.328 58.368v114.176z" fill="#44A4FF"></path><path d="M882.176 987.136l-105.472-61.44v-121.856l105.472-60.928 105.472 60.928v121.856l-105.472 61.44z m-100.352-64.512l100.352 58.368 100.352-58.368v-116.224L882.176 748.032l-100.352 58.368v116.224z" fill="#44A4FF"></path><path d="M882.176 991.232l-2.048-1.024L773.12 927.232v-125.952l109.056-62.976 109.056 62.976V927.232l-109.056 64z m-96.768-70.656l96.768 56.32 96.768-56.32v-112.128l-96.768-56.32-96.768 56.32v112.128z" fill="#44A4FF"></path><path d="M882.176 1007.616l-123.904-71.68v-142.848l123.904-71.68 123.904 71.68v142.848l-123.904 71.68z m-81.92-95.744l81.92 48.128 81.92-48.128v-94.72l-81.92-48.128-81.92 48.128V911.872z" fill="#44A4FF"></path><path d="M882.176 1012.224l-127.488-73.728v-146.944l127.488-73.728L1009.664 791.552v146.944l-127.488 73.728z m-119.808-78.336l120.32 69.632 120.32-69.632v-138.24l-120.32-69.632-120.32 69.632v138.24z m119.808 30.208l-85.504-50.176v-98.816l85.504-50.176 85.504 50.176v98.816l-85.504 50.176zM803.84 909.824l78.336 45.568 78.336-45.568v-90.624l-78.336-45.568-78.336 45.568v90.624z" fill="#44A4FF"></path><path d="M882.176 1010.688L756.224 937.472v-145.92l126.464-73.216L1008.64 792.064V937.472l-126.464 73.216z m-120.832-76.288l121.344 70.656L1003.52 934.912v-140.288l-121.344-70.144-121.344 70.656v139.264z m120.832 28.16l-84.48-49.664v-97.792l84.48-49.664 84.48 49.664v97.792l-84.48 49.664z m-79.36-52.224l79.36 46.592 79.36-46.592v-91.648l-79.36-46.592-79.36 46.592v91.648z" fill="#44A4FF"></path><path d="M764.928 932.352l117.76 68.608 117.76-68.096v-135.68l-117.76-68.096-117.76 68.608V932.352z m117.248 34.304l-88.064-51.712v-101.888l88.064-51.712 88.064 51.712v101.888l-88.064 51.712z m-75.776-58.368l75.776 44.032 75.776-44.032v-87.552l-75.776-44.032-75.776 44.032v87.552z" fill="#44A4FF"></path></svg></use>
+                    </svg>
+                    <h5 class="head">多种部署方式</h5>
+                    <p>公有云、私有云、私有部署等部署方式供选，灵活定制，稳定拓展，动态扩容，提供项目专属服务</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2 item"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_shujuanquanbaozh"><svg id="icon-cec_shujuanquanbaozh" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M16.384 332.8h877.568-877.568z" fill="#44A4FF"></path><path d="M893.952 347.136h-891.904V318.464h905.216l3.072 28.672z" fill="#FFFFFA"></path><path d="M16.384 332.8h877.568v-153.6l-439.296-97.28-438.272 90.112z" fill="#44A4FF"></path><path d="M901.12 338.944h-890.88v-172.032l445.44-91.136h1.024l444.416 97.28V338.944z m-878.592-12.288h865.28v-142.336l-433.152-95.232-432.128 89.088v148.48z" fill="#FFFFFA"></path><path d="M16.384 346.112h878.592v280.576h-878.592z" fill="#44A4FF"></path><path d="M901.12 632.832h-890.88v-292.864h890.88v292.864z m-878.592-13.312h865.28v-267.264h-865.28v267.264z" fill="#FFFFFA"></path><path d="M893.952 618.496h-877.568v216.064l111.616 63.488h654.336l111.616-63.488z" fill="#44A4FF"></path><path d="M784.384 905.216h-658.432l-116.736-66.56v-226.304h890.88v226.304l-115.712 66.56z m-654.336-13.312h651.264l107.52-61.44v-205.824h-865.28V830.464l106.496 61.44z" fill="#FFFFFA"></path><path d="M16.384 613.376h878.592v4.096h-878.592z" fill="#44A4FF"></path><path d="M2.048 599.04h906.24v32.768h-906.24z" fill="#FFFFFA"></path><path d="M746.496 647.168v-133.12c0-54.272 43.008-99.328 95.232-99.328 52.224 0 95.232 45.056 95.232 99.328v133.12" fill="#FFFFFF"></path><path d="M956.416 647.168h-40.96v-133.12c0-44.032-33.792-78.848-74.752-78.848s-74.752 35.84-74.752 78.848v133.12h-40.96v-133.12c0-65.536 51.2-119.808 114.688-119.808s114.688 53.248 114.688 119.808v133.12z" fill="#6687FF"></path><path d="M994.304 841.728l-144.384 83.968c-5.12 3.072-11.264 3.072-15.36 0l-144.384-83.968c-5.12-3.072-8.192-8.192-8.192-13.312v-166.912c0-5.12 3.072-10.24 8.192-13.312l144.384-83.968c5.12-3.072 11.264-3.072 15.36 0l144.384 83.968c5.12 3.072 8.192 8.192 8.192 13.312v166.912c-1.024 5.12-4.096 10.24-8.192 13.312z" fill="#FFFFFF"></path><path d="M841.728 948.224c-6.144 0-12.288-2.048-18.432-5.12l-144.384-83.968c-11.264-6.144-18.432-18.432-18.432-30.72v-166.912c0-13.312 7.168-24.576 18.432-30.72l144.384-83.968c11.264-6.144 24.576-6.144 35.84 0l144.384 83.968c11.264 6.144 18.432 18.432 18.432 30.72v166.912c0 13.312-7.168 24.576-18.432 30.72l-144.384 83.968c-5.12 3.072-11.264 5.12-17.408 5.12z m-140.288-122.88l140.288 80.896 140.288-80.896v-161.792l-140.288-80.896-140.288 80.896v161.792z" fill="#6687FF"></path><path d="M864.256 804.864l-11.264-71.68c5.12-4.096 8.192-10.24 8.192-17.408 0-12.288-10.24-22.528-22.528-22.528-12.288 0-22.528 10.24-22.528 22.528 0 7.168 3.072 13.312 8.192 17.408l-11.264 71.68h51.2z" fill="#6687FF"></path></svg></use>
+                    </svg>
+                    <h5 class="head">数据安全保证</h5>
+                    <p>SSL/TLS传输加密技术对客户信息和会话数据全程加密，金融级别数据安全保障，底层租户数据隔离</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2 item"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_disanfangxitongj"><svg id="icon-cec_disanfangxitongj" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M183.296 1016.832h-45.056c-18.432 0-33.792-15.36-33.792-33.792v-943.104c0-18.432 15.36-33.792 33.792-33.792h45.056c18.432 0 33.792 15.36 33.792 33.792v943.104c0 18.432-15.36 33.792-33.792 33.792zM541.696 1016.832h-45.056c-18.432 0-33.792-15.36-33.792-33.792v-943.104c0-18.432 15.36-33.792 33.792-33.792h45.056c18.432 0 33.792 15.36 33.792 33.792v943.104c-1.024 18.432-16.384 33.792-33.792 33.792zM893.952 1016.832h-45.056c-18.432 0-33.792-15.36-33.792-33.792v-943.104c0-18.432 15.36-33.792 33.792-33.792h45.056c18.432 0 33.792 15.36 33.792 33.792v943.104c-1.024 18.432-15.36 33.792-33.792 33.792z" fill="#44A4FF"></path><path d="M245.76 396.288l-87.04 50.176c-4.096 2.048-9.216 2.048-13.312 0l-87.04-50.176c-4.096-2.048-6.144-6.144-6.144-11.264v-100.352c0-5.12 2.048-9.216 6.144-11.264l87.04-50.176c4.096-2.048 9.216-2.048 13.312 0l87.04 50.176c4.096 2.048 6.144 6.144 6.144 11.264v100.352c1.024 4.096-2.048 9.216-6.144 11.264z" fill="#FFFFFF"></path><path d="M152.576 472.064c-6.144 0-12.288-2.048-18.432-5.12l-87.04-50.176c-11.264-6.144-18.432-18.432-18.432-31.744v-100.352c0-13.312 7.168-25.6 18.432-31.744l87.04-50.176c11.264-6.144 25.6-6.144 36.864 0l87.04 50.176c11.264 6.144 18.432 18.432 18.432 31.744v100.352c0 13.312-7.168 25.6-18.432 31.744l-87.04 50.176c-6.144 3.072-12.288 5.12-18.432 5.12z m-76.8-93.184l76.8 44.032 76.8-44.032v-89.088l-76.8-44.032-76.8 44.032v89.088z" fill="#6687FF"></path><path d="M625.664 772.096l-100.352 58.368-100.352-58.368V656.384l100.352-58.368 93.184 54.272c4.096 2.048 7.168 7.168 7.168 12.288v107.52z" fill="#FFFFFF"></path><path d="M525.312 857.088l-123.904-71.68v-143.36l123.904-71.68 105.472 60.416c11.264 7.168 18.432 19.456 18.432 32.768v121.856l-123.904 71.68z m-76.8-98.304l76.8 44.032 76.8-44.032v-89.088l-76.8-44.032-76.8 44.032v89.088z" fill="#6687FF"></path><path d="M964.608 564.224l-86.016 49.152c-4.096 3.072-10.24 3.072-14.336 0l-86.016-49.152c-4.096-3.072-7.168-7.168-7.168-12.288v-99.328c0-5.12 3.072-10.24 7.168-12.288l86.016-49.152c4.096-3.072 10.24-3.072 14.336 0l86.016 49.152c4.096 3.072 7.168 7.168 7.168 12.288v99.328c0 5.12-2.048 10.24-7.168 12.288z" fill="#FFFFFF"></path><path d="M871.424 638.976c-6.144 0-13.312-2.048-19.456-5.12l-86.016-49.152c-12.288-7.168-19.456-19.456-19.456-32.768v-99.328c0-13.312 7.168-26.624 19.456-32.768l86.016-49.152c12.288-7.168 26.624-7.168 37.888 0l86.016 49.152c12.288 7.168 19.456 19.456 19.456 32.768v99.328c0 13.312-7.168 26.624-19.456 32.768l-86.016 49.152c-5.12 4.096-11.264 5.12-18.432 5.12z m-76.8-92.16l76.8 44.032 76.8-44.032v-89.088l-76.8-44.032-76.8 44.032v89.088z" fill="#6687FF"></path></svg></use>
+                    </svg>
+                    <h5 class="head">第三方系统集成</h5>
+                    <p>可与ERP、CRM、知识库、订单等第三方业务系统进行集成，共享数据，延展第三方系统价值</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2 item"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_quanchajiankaifa"><svg id="icon-cec_quanchajiankaifa" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M911.36 787.456l-360.448 207.872c-23.552 14.336-53.248 14.336-77.824 0l-360.448-207.872c-23.552-14.336-38.912-39.936-38.912-67.584v-416.768c0-27.648 14.336-53.248 38.912-67.584l360.448-207.872c23.552-14.336 53.248-14.336 77.824 0L911.36 236.544c23.552 14.336 38.912 39.936 38.912 67.584v416.768c0 26.624-14.336 52.224-38.912 66.56z" fill="#FFFFFF"></path><path d="M512 1020.928c-16.384 0-31.744-4.096-46.08-12.288l-360.448-207.872c-28.672-16.384-46.08-47.104-46.08-79.872v-416.768c0-32.768 17.408-63.488 46.08-79.872l360.448-207.872c28.672-16.384 63.488-16.384 92.16 0l360.448 207.872c28.672 16.384 46.08 47.104 46.08 79.872v416.768c0 32.768-17.408 63.488-46.08 79.872l-360.448 207.872c-14.336 8.192-29.696 12.288-46.08 12.288z m0-989.184c-11.264 0-21.504 3.072-31.744 8.192l-360.448 207.872c-19.456 11.264-31.744 31.744-31.744 54.272v416.768c0 22.528 12.288 43.008 31.744 54.272l360.448 207.872c19.456 11.264 44.032 11.264 63.488 0l360.448-207.872c19.456-11.264 31.744-31.744 31.744-54.272v-416.768c0-22.528-12.288-43.008-31.744-54.272l-360.448-207.872c-10.24-5.12-20.48-8.192-31.744-8.192z" fill="#6687FF"></path><path d="M836.608 740.352l-288.768 166.912c-22.528 13.312-49.152 13.312-71.68 0l-288.768-166.912c-22.528-13.312-35.84-36.864-35.84-62.464v-333.824c0-25.6 13.312-49.152 35.84-62.464l288.768-166.912c22.528-13.312 49.152-13.312 71.68 0l288.768 166.912c22.528 13.312 35.84 36.864 35.84 62.464v333.824c0 25.6-13.312 50.176-35.84 62.464z" fill="#44A4FF"></path><path d="M512 924.672c-14.336 0-27.648-4.096-39.936-10.24l-2.048-1.024 7.168-12.288 2.048 1.024c12.288 7.168 25.6 10.24 38.912 8.192l2.048 14.336c-2.048-1.024-5.12-1.024-8.192 0z m51.2-17.408l-7.168-12.288 40.96-23.552 7.168 12.288-40.96 23.552z m-130.048-16.384l-40.96-23.552 7.168-12.288 40.96 23.552-7.168 12.288z m208.896-29.696l-7.168-12.288 40.96-23.552 7.168 12.288-40.96 23.552z m-287.744-15.36l-40.96-23.552 7.168-12.288 40.96 23.552-7.168 12.288z m366.592-29.696l-7.168-12.288 40.96-23.552 7.168 12.288-40.96 23.552z m-445.44-16.384l-40.96-23.552 7.168-12.288 40.96 23.552-7.168 12.288z m524.288-28.672l-7.168-12.288 40.96-23.552 7.168 12.288-40.96 23.552z m-602.112-16.384l-13.312-8.192c-10.24-6.144-18.432-14.336-25.6-23.552l12.288-8.192c5.12 8.192 12.288 14.336 20.48 19.456l13.312 8.192-7.168 12.288z m674.816-43.008l-13.312-6.144c4.096-8.192 6.144-17.408 6.144-27.648v-16.384h14.336v16.384c0 12.288-2.048 23.552-7.168 33.792z m-728.064-32.768v-47.104h14.336v47.104h-14.336z m735.232-59.392h-14.336v-47.104h14.336v47.104z m-720.896-31.744h-14.336v-47.104h14.336v47.104z m720.896-59.392h-14.336v-47.104h14.336v47.104z m-720.896-31.744h-14.336v-47.104h14.336v47.104z m720.896-59.392h-14.336V390.144h14.336v47.104z m-720.896-31.744h-14.336v-47.104h14.336v47.104z m720.896-59.392h-14.336v-2.048c0-14.336-4.096-27.648-12.288-37.888l11.264-8.192c10.24 13.312 15.36 29.696 15.36 47.104v1.024zM163.84 318.464l-13.312-6.144c7.168-15.36 18.432-28.672 32.768-36.864l2.048-1.024 7.168 12.288-2.048 1.024c-11.264 8.192-20.48 18.432-26.624 30.72z m657.408-36.864l-40.96-23.552 7.168-12.288 40.96 23.552-7.168 12.288z m-590.848-15.36l-7.168-12.288 40.96-23.552 7.168 12.288-40.96 23.552z m512-29.696l-40.96-23.552 7.168-12.288 40.96 23.552-7.168 12.288z m-433.152-15.36l-7.168-12.288 40.96-23.552 7.168 12.288-40.96 23.552z m354.304-29.696l-40.96-23.552 7.168-12.288 40.96 23.552-7.168 12.288z m-276.48-16.384l-7.168-12.288 40.96-23.552 7.168 12.288-40.96 23.552z m197.632-29.696l-40.96-23.552 7.168-12.288-4.096 6.144 4.096-6.144 40.96 23.552-7.168 12.288z m-118.784-15.36l-7.168-12.288 13.312-8.192c10.24-6.144 21.504-9.216 32.768-10.24l1.024 14.336c-9.216 1.024-18.432 4.096-26.624 8.192l-13.312 8.192zM637.952 481.28h-96.256v-96.256c0-11.264-9.216-21.504-21.504-21.504h-17.408c-11.264 0-21.504 9.216-21.504 21.504v96.256h-96.256c-11.264 0-21.504 9.216-21.504 21.504v17.408c0 11.264 9.216 21.504 21.504 21.504h96.256v96.256c0 11.264 9.216 21.504 21.504 21.504h17.408c11.264 0 21.504-9.216 21.504-21.504v-96.256h96.256c11.264 0 21.504-9.216 21.504-21.504V502.784c0-11.264-9.216-21.504-21.504-21.504z" fill="#FFFFFF"></path></svg></use>
+                    </svg>
+                    <h5 class="head">全插件开放接口</h5>
+                    <p>提供API接口、iframe插件、后台插件等多形式全套开放接口，模块可插拔自由组合，个性化支持</p>
+                </div>
+                <div class="col-xs-6 col-sm-4 col-md-2 item"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_duojizuhupingtai"><svg id="icon-cec_duojizuhupingtai" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M920.576 213.504l-104.96 60.928-103.936-60.928v-120.32l103.936-60.928 104.96 60.928v120.32z m0 358.4l-104.96 60.928-103.936-60.928v-120.32l103.936-59.904 104.96 59.904v120.32z m0 359.424l-104.96 59.904-103.936-59.904v-121.344l103.936-59.904 104.96 59.904v121.344z" fill="#44A4FF"></path><path d="M815.616 1015.296l-124.928-71.68v-145.92l124.928-71.68 125.952 71.68v145.92l-125.952 71.68z m-82.944-95.744l82.944 47.616 83.968-47.616v-96.768l-83.968-47.616-82.944 47.616v96.768z m82.944-262.656L690.688 584.192v-144.896l124.928-71.68 125.952 71.68V584.192l-125.952 72.704z m-82.944-96.768l82.944 48.64 83.968-48.64v-96.256l-83.968-47.616-82.944 47.616v96.256z m82.944-261.632L690.688 225.792v-144.384l124.928-72.704 125.952 72.704V225.792l-125.952 72.704z m-82.944-96.768l82.944 48.64 83.968-48.64v-96.256l-83.968-48.64-82.944 48.64v96.256z" fill="#44A4FF"></path><path d="M315.392 571.904l-103.936 60.928-103.936-60.928v-120.32l103.936-59.904 103.936 59.904v120.32z" fill="#FFFFFF"></path><path d="M211.456 660.992l-129.024-74.24v-148.48l129.024-74.24 129.024 74.24v148.48l-129.024 74.24z m-79.872-102.4l79.872 46.08 79.872-46.08v-92.672l-79.872-46.08-79.872 46.08V558.592z" fill="#6687FF"></path><path d="M600.576 356.352l-104.96 59.904-103.936-59.904V236.032l103.936-60.928 104.96 60.928v120.32z m0 432.64l-104.96 59.904-103.936-59.904v-120.32l103.936-60.928 104.96 60.928V788.992z" fill="#6687FF"></path><path d="M495.616 872.96l-124.928-71.68v-144.896l124.928-72.704 125.952 72.704v144.896l-125.952 71.68z m-82.944-96.256l82.944 47.616 83.968-47.616v-96.256l-83.968-48.64-82.944 48.64v96.256z m82.944-336.384l-124.928-71.68v-144.896l124.928-72.704 125.952 72.704v144.896l-125.952 71.68z m-82.944-96.256l82.944 47.616 83.968-47.616v-96.256l-83.968-48.64-82.944 48.64v96.256z" fill="#6687FF"></path></svg></use>
+                    </svg>
+                    <h5 class="head">多级租户平台</h5>
+                    <p>提供后台管理系统和接口，对平台或企业下多个租户进行管理，统一配置和查看子租户情况</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section-customer" class="section customer section-muted">
+        <div class="container">
+            <h2 class="title text-center">20+行业，70000+客户选择</h2>
+            <h5 class="sub-title text-center">零成本开启您的下一代客户互动之旅</h5>
+            <div class="row case">
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-sina.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-sina@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-sina.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-benz.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-benz@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-benz.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-zto.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-zto@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-zto.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-lanyue.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-lanyue@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-lanyue.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-youxin.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-youxin@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-youxin.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-unionpay.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-unionpay@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-unionpay.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-zhongxin.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-zhongxin@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-zhongxin.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-taikang.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-taikang@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-taikang.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-51talk.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-51talk@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-51talk.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-58daojia.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-58daojia@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-58daojia.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-zhongyi.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-zhongyi@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-zhongyi.png">                    </div>
+                <div class="col-xs-6 col-sm-2 item"> <img data-src="/themes/official_v3/Public/img/product-cs_v2/case/customer-xdf.png" data-src-retina="/themes/official_v3/Public/img/product-cs_v2/case/customer-xdf@2x.png" class="img-responsive" width="132" src="/themes/official_v3/Public/img/product-cs_v2/case/customer-xdf.png">                    </div>
+            </div>
+            <div class="row feature">
+                <div class="col-sm-6">
+                    <div class="item"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_yidongduanduteyo"><svg id="icon-cec_yidongduanduteyo" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M891.904 195.584l-295.936-171.008c-52.224-29.696-116.736-29.696-167.936 0l-295.936 171.008c-52.224 29.696-83.968 86.016-83.968 145.408v342.016c0 59.392 31.744 115.712 83.968 145.408l295.936 171.008c25.6 15.36 55.296 22.528 83.968 22.528 28.672 0 58.368-7.168 83.968-22.528l295.936-171.008c52.224-29.696 83.968-86.016 83.968-145.408v-342.016c0-60.416-31.744-115.712-83.968-145.408z m61.44 487.424c0 52.224-27.648 100.352-72.704 125.952l-295.936 171.008c-45.056 25.6-101.376 25.6-146.432 0l-295.936-171.008c-45.056-25.6-72.704-74.752-72.704-125.952v-342.016c0-52.224 27.648-100.352 72.704-125.952l295.936-171.008c22.528-13.312 48.128-19.456 72.704-19.456 25.6 0 50.176 6.144 72.704 19.456l295.936 171.008c45.056 25.6 72.704 74.752 72.704 125.952v342.016z" fill="#1996FA"></path><path d="M683.008 347.136l-140.288-80.896c-10.24-5.12-20.48-8.192-31.744-8.192s-21.504 3.072-31.744 8.192l-140.288 80.896c-19.456 11.264-31.744 31.744-31.744 54.272v161.792c0 22.528 12.288 43.008 31.744 54.272l140.288 80.896c11.264 7.168 22.528 23.552 33.792 40.96 7.168 11.264 21.504 34.816 28.672 36.864l140.288-158.72c19.456-11.264 31.744-31.744 31.744-54.272v-161.792c1.024-22.528-11.264-43.008-30.72-54.272z" fill="#87C8FA"></path><path d="M694.272 327.68l-140.288-80.896c-26.624-15.36-59.392-15.36-84.992 0l-140.288 80.896c-26.624 15.36-43.008 43.008-43.008 73.728v161.792c0 30.72 16.384 58.368 43.008 73.728l140.288 80.896c7.168 4.096 17.408 19.456 25.6 33.792 15.36 23.552 29.696 47.104 48.128 47.104 4.096 0 7.168-1.024 11.264-3.072L696.32 635.904c25.6-15.36 40.96-43.008 40.96-72.704v-161.792c0-30.72-16.384-58.368-43.008-73.728z m31.744 235.52c0 26.624-14.336 51.2-36.864 64.512l-140.288 158.72c-22.528 13.312-51.2-64.512-73.728-77.824l-140.288-80.896c-22.528-13.312-36.864-37.888-36.864-64.512v-161.792c0-26.624 14.336-51.2 36.864-64.512l140.288-80.896c22.528-13.312 51.2-13.312 73.728 0l140.288 80.896c22.528 13.312 36.864 37.888 36.864 64.512v161.792z" fill="#1996FA"></path><path d="M689.152 336.896l-140.288-80.896c-22.528-13.312-51.2-13.312-73.728 0l-140.288 80.896c-22.528 13.312-36.864 37.888-36.864 64.512v161.792c0 26.624 14.336 51.2 36.864 64.512l140.288 80.896c22.528 13.312 51.2 91.136 73.728 77.824l140.288-158.72c22.528-13.312 36.864-37.888 36.864-64.512v-161.792c0-26.624-14.336-51.2-36.864-64.512z m25.6 226.304c0 22.528-12.288 43.008-31.744 54.272l-140.288 158.72c-7.168-2.048-21.504-25.6-28.672-36.864-11.264-17.408-21.504-34.816-33.792-40.96l-140.288-80.896c-19.456-11.264-31.744-31.744-31.744-54.272v-161.792c0-22.528 12.288-43.008 31.744-54.272l140.288-80.896c10.24-5.12 20.48-8.192 31.744-8.192s21.504 3.072 31.744 8.192l140.288 80.896c19.456 11.264 31.744 31.744 31.744 54.272v161.792z" fill="#1996FA"></path></svg></use>
+                        </svg>
+                        <div class="wrap">
+                            <h5 class="head">移动端独特优势</h5>
+                            <p>访客及坐席端全面移动化技术支持，成熟领先IM长连接技术，126版SDK研发迭代，覆盖手机终端10亿，完美适配所有中高低端安卓及iOS机型，保证电量优化不丢消息</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="item"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_gongnengquanmian"><svg id="icon-cec_gongnengquanmian" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M528.384 918.528c-2.048 0-4.096 0-5.12-1.024l-240.64-139.264c-43.008-24.576-69.632-70.656-69.632-119.808V379.904c0-6.144 5.12-10.24 10.24-10.24 6.144 0 10.24 5.12 10.24 10.24v277.504c0 41.984 22.528 80.896 58.368 101.376l240.64 139.264c5.12 3.072 7.168 9.216 4.096 14.336-1.024 4.096-5.12 6.144-8.192 6.144zM655.36 918.528c-4.096 0-7.168-2.048-9.216-5.12-3.072-5.12-1.024-11.264 4.096-14.336l240.64-139.264c35.84-20.48 58.368-59.392 58.368-101.376V379.904c0-6.144 5.12-10.24 10.24-10.24 6.144 0 10.24 5.12 10.24 10.24v277.504c0 49.152-26.624 95.232-69.632 119.808l-240.64 139.264c0 1.024-2.048 2.048-4.096 2.048zM896 279.552c-2.048 0-4.096 0-5.12-1.024l-240.64-139.264c-35.84-20.48-80.896-20.48-116.736 0l-240.64 139.264c-5.12 3.072-11.264 1.024-14.336-4.096-3.072-5.12-1.024-11.264 4.096-14.336l240.64-139.264c43.008-24.576 95.232-24.576 138.24 0l240.64 139.264c5.12 3.072 7.168 9.216 4.096 14.336-3.072 4.096-6.144 5.12-10.24 5.12z" fill="#1996FA"></path><path d="M231.424 516.096m-157.696 0a157.696 157.696 0 1 0 315.392 0 157.696 157.696 0 1 0-315.392 0Z" fill="#87C8FA"></path><path d="M231.424 695.296c-63.488 0-124.928-33.792-156.672-93.184-47.104-86.016-15.36-195.584 70.656-242.688 86.016-47.104 195.584-15.36 242.688 70.656 47.104 86.016 15.36 195.584-70.656 242.688-27.648 15.36-57.344 22.528-86.016 22.528z m-65.536-297.984c-65.536 35.84-90.112 118.784-54.272 185.344 35.84 65.536 118.784 90.112 185.344 54.272 65.536-35.84 90.112-118.784 54.272-185.344-36.864-66.56-119.808-90.112-185.344-54.272z" fill="#1996FA"></path><path d="M792.576 185.344m-157.696 0a157.696 157.696 0 1 0 315.392 0 157.696 157.696 0 1 0-315.392 0Z" fill="#87C8FA"></path><path d="M792.576 364.544c-98.304 0-179.2-79.872-179.2-179.2 0-98.304 79.872-179.2 179.2-179.2s179.2 79.872 179.2 179.2-80.896 179.2-179.2 179.2z m0-315.392c-74.752 0-136.192 61.44-136.192 136.192 0 74.752 61.44 136.192 136.192 136.192 74.752 0 136.192-61.44 136.192-136.192 0-74.752-61.44-136.192-136.192-136.192z" fill="#1996FA"></path><path d="M788.48 837.632m-157.696 0a157.696 157.696 0 1 0 315.392 0 157.696 157.696 0 1 0-315.392 0Z" fill="#87C8FA"></path><path d="M788.48 1016.832c-31.744 0-64.512-8.192-93.184-26.624-83.968-51.2-110.592-161.792-58.368-245.76 24.576-40.96 64.512-69.632 110.592-79.872 46.08-11.264 94.208-3.072 135.168 21.504 83.968 51.2 110.592 161.792 58.368 245.76-33.792 54.272-93.184 84.992-152.576 84.992z m-71.68-63.488c63.488 38.912 148.48 19.456 187.392-45.056 38.912-63.488 19.456-148.48-45.056-187.392-30.72-19.456-67.584-24.576-103.424-16.384-35.84 8.192-65.536 29.696-83.968 61.44-38.912 64.512-18.432 148.48 45.056 187.392z" fill="#1996FA"></path></svg></use>
+                        </svg>
+                        <div class="wrap">
+                            <h5 class="head">功能全面灵活</h5>
+                            <p>依托强大先进的底层架构，客服功能可靠稳定，平台完整度高，具备高吞吐、高并发、高扩展能力，API接入服务毫秒级响应，配置灵活，动态扩容，支持极复杂业务场景</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="item"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_gaokehufugailv"><svg id="icon-cec_gaokehufugailv" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M455.68 503.808l16.384-480.256s335.872-15.36 487.424 325.632l-474.112 200.704-29.696-46.08z" fill="#87C8FA"></path><path d="M480.256 563.2l-35.84-56.32v-3.072l17.408-490.496h10.24c3.072 0 345.088-11.264 497.664 332.8l4.096 10.24-493.568 206.848z m-13.312-62.464l22.528 34.816 455.68-192.512c-133.12-287.744-406.528-308.224-461.824-309.248l-16.384 466.944z" fill="#1996FA"></path><path d="M468.992 545.792m-71.68 0a71.68 71.68 0 1 0 143.36 0 71.68 71.68 0 1 0-143.36 0Z" fill="#87C8FA"></path><path d="M468.992 634.88c-49.152 0-89.088-39.936-89.088-89.088 0-49.152 39.936-89.088 89.088-89.088s89.088 39.936 89.088 89.088c-1.024 49.152-40.96 89.088-89.088 89.088z m0-144.384c-30.72 0-55.296 24.576-55.296 55.296 0 30.72 24.576 55.296 55.296 55.296 30.72 0 55.296-24.576 55.296-55.296 0-29.696-25.6-55.296-55.296-55.296z" fill="#1996FA"></path><path d="M505.856 1010.688c-28.672 0-57.344-7.168-82.944-22.528l-290.816-167.936c-51.2-29.696-82.944-83.968-82.944-143.36v-335.872c0-58.368 31.744-113.664 82.944-143.36l190.464-119.808c5.12-3.072 12.288-2.048 15.36 3.072 3.072 5.12 2.048 12.288-3.072 15.36l-190.464 119.808c-45.056 25.6-71.68 73.728-71.68 123.904v335.872c0 51.2 27.648 98.304 71.68 123.904l290.816 167.936c44.032 25.6 99.328 25.6 143.36 0l290.816-167.936c44.032-25.6 71.68-72.704 71.68-123.904v-182.272c0-6.144 5.12-11.264 11.264-11.264s11.264 5.12 11.264 11.264v182.272c0 58.368-31.744 113.664-82.944 143.36l-290.816 167.936c-26.624 16.384-55.296 23.552-83.968 23.552z" fill="#1996FA"></path><path d="M505.856 844.8c-18.432 0-37.888-5.12-54.272-14.336l-185.344-107.52c-33.792-19.456-54.272-55.296-54.272-95.232v-214.016c0-38.912 20.48-75.776 54.272-95.232l112.64-72.704c5.12-3.072 12.288-2.048 15.36 3.072 3.072 5.12 2.048 12.288-3.072 15.36l-113.664 73.728c-27.648 16.384-44.032 45.056-44.032 75.776v214.016c0 30.72 16.384 60.416 44.032 75.776l185.344 107.52c26.624 15.36 60.416 15.36 88.064 0l185.344-107.52c26.624-15.36 44.032-45.056 44.032-75.776v-116.736c0-6.144 5.12-11.264 11.264-11.264s11.264 5.12 11.264 11.264v116.736c0 38.912-20.48 75.776-54.272 95.232L563.2 830.464c-19.456 9.216-37.888 14.336-57.344 14.336z" fill="#1996FA"></path></svg></use>
+                        </svg>
+                        <div class="wrap">
+                            <h5 class="head">高客户覆盖率</h5>
+                            <p>70000+家客户的最佳选择，移动端客服用户市场覆盖占比高达77.4%，连续多年稳居行业第一，受到金融、教育、O2O、电商等行业领域众多标杆企业认可和欢迎</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="item"> <svg class="icon" aria-hidden="true"> <use xlink:href="#icon-cec_zhuanyerenzhengz"><svg id="icon-cec_zhuanyerenzhengz" viewBox="0 0 1024 1024" width="100%" height="100%"><path d="M756.736 884.736l-193.536 111.616c-31.744 18.432-70.656 18.432-102.4 0l-193.536-111.616c-31.744-18.432-51.2-52.224-51.2-89.088v-223.232c0-36.864 19.456-70.656 51.2-89.088l193.536-111.616c31.744-18.432 70.656-18.432 102.4 0l193.536 111.616c31.744 18.432 51.2 52.224 51.2 89.088v223.232c0 36.864-19.456 70.656-51.2 89.088z" fill="#87C8FA"></path><path d="M512 1021.952c-19.456 0-39.936-5.12-57.344-15.36l-193.536-111.616c-34.816-20.48-57.344-58.368-57.344-99.328v-223.232c0-40.96 21.504-78.848 57.344-99.328l193.536-111.616c34.816-20.48 78.848-20.48 114.688 0l193.536 111.616c34.816 20.48 57.344 58.368 57.344 99.328v223.232c0 40.96-21.504 78.848-57.344 99.328l-193.536 111.616c-17.408 10.24-37.888 15.36-57.344 15.36z m0-652.288c-15.36 0-31.744 4.096-46.08 12.288l-193.536 111.616c-27.648 16.384-46.08 46.08-46.08 78.848v223.232c0 32.768 17.408 62.464 46.08 78.848l193.536 111.616c28.672 16.384 63.488 16.384 91.136 0l193.536-111.616c27.648-16.384 46.08-46.08 46.08-78.848v-223.232c0-32.768-17.408-62.464-46.08-78.848l-193.536-111.616c-13.312-8.192-29.696-12.288-45.056-12.288z" fill="#1996FA"></path><path d="M712.704 580.608l-63.488-62.464-182.272 181.248-92.16-91.136-63.488 62.464 93.184 91.136-1.024 1.024 62.464 62.464 1.024-1.024 62.464-62.464z" fill="#FFFFFF"></path><path d="M464.896 836.608c-3.072 0-5.12-1.024-7.168-3.072l-62.464-62.464c-1.024-1.024-2.048-3.072-3.072-5.12l-88.064-88.064c-2.048-2.048-3.072-5.12-3.072-8.192 0-3.072 1.024-6.144 3.072-8.192l62.464-62.464c4.096-4.096 12.288-4.096 16.384 0l83.968 83.968 174.08-173.056c4.096-4.096 12.288-4.096 16.384 0l62.464 62.464c2.048 2.048 3.072 5.12 3.072 8.192 0 3.072-1.024 6.144-3.072 8.192l-245.76 243.712c-2.048 2.048-5.12 4.096-9.216 4.096z m-50.176-77.824l50.176 50.176 230.4-228.352-46.08-46.08-174.08 173.056c-4.096 4.096-12.288 4.096-16.384 0l-83.968-83.968-46.08 46.08 83.968 83.968c1.024 1.024 2.048 3.072 2.048 5.12z" fill="#1996FA"></path><path d="M730.112 433.152c-2.048 0-4.096-1.024-6.144-2.048-5.12-3.072-6.144-10.24-3.072-15.36l237.568-345.088c3.072-5.12 10.24-6.144 15.36-3.072s6.144 10.24 3.072 15.36l-237.568 345.088c-2.048 3.072-6.144 5.12-9.216 5.12zM293.888 436.224c-3.072 0-7.168-2.048-9.216-5.12l-237.568-348.16c-3.072-5.12-2.048-12.288 3.072-15.36 5.12-3.072 12.288-2.048 15.36 3.072l237.568 348.16c3.072 5.12 2.048 12.288-3.072 15.36-2.048 2.048-4.096 2.048-6.144 2.048zM378.88 367.616c-4.096 0-7.168-2.048-9.216-5.12l-160.768-251.904c-2.048-3.072-2.048-8.192 0-11.264 2.048-3.072 6.144-6.144 9.216-6.144l591.872 2.048c4.096 0 8.192 2.048 9.216 6.144 2.048 4.096 2.048 8.192-1.024 11.264l-167.936 249.856c-3.072 5.12-10.24 6.144-15.36 3.072s-6.144-10.24-3.072-15.36l156.672-232.448-550.912-2.048 150.528 234.496c3.072 5.12 2.048 12.288-3.072 15.36-2.048 1.024-5.12 2.048-6.144 2.048zM909.312 23.552h-788.48c-6.144 0-11.264-5.12-11.264-11.264 0-6.144 5.12-11.264 11.264-11.264h788.48c6.144 0 11.264 5.12 11.264 11.264 0 6.144-5.12 11.264-11.264 11.264z" fill="#1996FA"></path></svg></use>
+                        </svg>
+                        <div class="wrap">
+                            <h5 class="head">专业认证资格</h5>
+                            <p>Gartner 2016 Cool Vendor，阿里云战略合作伙伴，多项PCT专利，国际领先技术，遍布全球的数据中心支持，工信部可信云、安全联盟行业认证</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="action text-center"><a class="btn btn-lg btn-primary-outline" href="/customer/cs" rel="nofollow">查看更多案例</a></div>
+        </div>
+    </section>
+    <!-- <section id="demo-try" class="section demo-try text-center image-background" style="background-image:url(/themes/official_v3/Public/img/product-cs_v2/cec-demo-bg.jpg);background-image:-webkit-image-set(url(/themes/official_v3/Public/img/product-cs_v2/cec-demo-bg.jpg) 1x,url(/themes/official_v3/Public/img/product-cs_v2/cec-demo-bg@2x.jpg) 2x)"> -->
+    <section id="demo-try" class="section demo-try text-center image-background">
+        <div class="container">
+            <h5>请输入您的官网地址，即刻模拟体验智慧客服带来的便利</h5>
+            <form action="/event/kefu_web_demo/" method="post" class="center-block">
+                <div class="input-group input-group-lg"> <span class="input-group-addon">http://</span> <input class="form-control" type="text" name="target" placeholder="输入您的网站地址"> <span class="input-group-btn"> <button class="btn btn-primary" type="submit">模拟体验</button> </span> </div>
+            </form>
+            <a href="https://kefu.easemob.com/mo/register" target="_blank">两周全功能免费试用 &gt;&gt; </a> </div>
+    </section>
+    <!-- main end -->
+
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
