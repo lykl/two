@@ -36,6 +36,7 @@ html {
   padding: 6px 20px;
   color: #ffffff;
   background-color: #6bcea5;
+  z-index: 1;
 }
 .scene {
   padding: 0!important;
@@ -76,6 +77,7 @@ html {
 .scene .stage {
   padding: 60px 0 60px;
   background: #f5f5f5;
+  position: relative;
 }
 .scene .stage h4 {
   line-height: 34px;
@@ -124,7 +126,6 @@ html {
   height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
-  overflow: hidden;
 }
 .section .sub-title {
   margin-top: -60px;
@@ -158,6 +159,13 @@ html {
 }
 .function .chat img {
   margin-bottom: 40px;
+}
+.function .chat .action a {
+  transition: .3s;
+}
+.function .chat .action a:hover {
+  background: #5cb85c;
+  color: #fff;
 }
 .function hr {
   margin-top: 40px;
@@ -226,6 +234,9 @@ html {
 .img-responsive {
   display: inline-block;
 }
+.feature ul li {
+  cursor: pointer;
+}
 .feature ul li .btn {
   color: #576E91;
   border-color: #576E91;
@@ -246,6 +257,7 @@ html {
   vertical-align: -0.3em;
   font-size: 35px;
   margin-right: 3px;
+  vertical-align: middle;
 }
 .added .item p {
   color: #fff;
@@ -272,6 +284,13 @@ html {
 .deploy .action {
   text-align: center;
 }
+.deploy .action a {
+  transition: .3s;
+}
+.deploy .action a:hover {
+  background: #4eb1f4;
+  color: #fff;
+}
 .case {
   background-color: #00A1E6;
 }
@@ -294,6 +313,13 @@ html {
 }
 .case .action {
   text-align: center;
+}
+.case .action a {
+  transition: .3s;
+}
+.case .action a:hover {
+  background: #fff;
+  color: #000;
 }
 .authentication {
   font-size: 12px;
@@ -537,7 +563,7 @@ html {
 }
 .sidemenu {
   position: fixed;
-  z-index: 20;
+  z-index: 2;
 }
 .sidemenu .item {
   color: #fff;
@@ -557,7 +583,7 @@ html {
 .sidemenu .item:hover {
   background-color: #4ba5ec;
 }
-.chat {
+.chat1 {
   display: none;
   position: fixed;
   z-index: 5;
@@ -569,7 +595,7 @@ html {
   background-color: #fff;
   border-radius: 4px;
 }
-.chat .chat-header {
+.chat1 .chat-header {
   background: #00cccd;
   height: 41px;
   line-height: 41px;
@@ -581,10 +607,20 @@ html {
   padding-left: 10px;
   color: #fff;
 }
-.chat .chat-header p {
+.chat1 .chat-header p {
   display: inline-block;
 }
-.chat .wrapper {
+.chat1 .chat-header .iconfont {
+  float: right;
+  cursor: pointer;
+}
+.chat1 .chat-header .icon-min {
+  padding: 0 6px;
+}
+.chat1 .chat-header .icon-min:hover {
+  background-color: #38e6e7;
+}
+.chat1 .wrapper {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -594,7 +630,7 @@ html {
   background-color: #fff;
   border-radius: 4px;
 }
-.chat .chat-wrapper {
+.chat1 .chat-wrapper {
   position: absolute;
   top: 41px;
   bottom: 140px;
@@ -609,12 +645,12 @@ html {
   transition: margin .5s,top 0s;
   -webkit-overflow-scrolling: touch;
 }
-.chat .chat-container {
+.chat1 .chat-container {
   padding: 24px 0 20px;
   overflow: hidden;
   position: relative;
 }
-.chat .date {
+.chat1 .date {
   width: 100%;
   float: left;
   margin: 8px 0;
@@ -622,18 +658,23 @@ html {
   color: #fff;
   font-size: 12px;
 }
-.chat .left {
+.chat1 .date span {
+  background: #c9ced3;
+  border-radius: 4px;
+  padding: 1px 3px;
+}
+.chat1 .left {
   margin-bottom: -22px;
 }
-.chat .left img {
+.chat1 .left img {
   width: 30px;
   height: 30px;
   margin-left: 10px;
   float: left;
   border-radius: 50%;
 }
-.chat .left,
-.chat .right {
+.chat1 .left,
+.chat1 .right {
   float: left;
   display: block;
   text-decoration: none;
@@ -641,7 +682,7 @@ html {
   text-align: left;
   margin: 8px 0;
 }
-.chat .chat-content {
+.chat1 .chat-content {
   clear: both;
   left: 50px;
   top: -30px;
@@ -652,7 +693,7 @@ html {
   border-radius: 6px;
   max-width: 76%;
 }
-.chat .chat-content span {
+.chat1 .chat-content span {
   display: inline-block;
   border-radius: 6px;
   padding: 10px;
@@ -667,14 +708,41 @@ html {
   word-break: break-word;
   white-space: pre-wrap;
 }
-.chat .send-wrapper {
+.chat1 .send-wrapper {
   position: absolute;
   height: 140px;
   width: 100%;
   bottom: 0;
   background-color: #fff;
 }
-.chat .send-wrapper .inp {
+.chat1 .send-wrapper .toolbar {
+  float: left;
+  top: 5px;
+  left: 5px;
+  position: relative;
+  color: #4d4d4d;
+}
+.chat1 .send-wrapper .toolbar .iconfont {
+  cursor: pointer;
+  display: inline-block;
+}
+.chat1 .send-wrapper .toolbar .icon-face {
+  font-size: 30px;
+}
+.chat1 .send-wrapper .toolbar .icon-picture {
+  font-size: 23px;
+}
+.chat1 .send-wrapper .toolbar .icon-attachment {
+  font-size: 23px;
+}
+.chat1 .send-wrapper .toolbar .icon-sendVideo {
+  font-size: 19px;
+}
+.chat1 .send-wrapper .toolbar .icon-note {
+  font-size: 19px;
+  padding: 5px;
+}
+.chat1 .send-wrapper .inp {
   width: 100%;
   height: 70px;
   border: none;
@@ -683,8 +751,9 @@ html {
   box-sizing: border-box;
   font-size: 13px;
   resize: none;
+  outline: none;
 }
-.chat .send-wrapper .send {
+.chat1 .send-wrapper .send {
   background-color: #00cccd!important;
   position: absolute;
   right: 10px;
@@ -697,7 +766,7 @@ html {
   color: #fff;
   cursor: pointer;
 }
-.chat .send-wrapper .send.disabled {
+.chat1 .send-wrapper .send.disabled {
   background-color: #ccc!important;
   cursor: default;
 }
@@ -779,19 +848,44 @@ html {
 }
 .footer .right > div:nth-child(2) .social {
   margin-top: 10px;
+  position: relative;
 }
-.footer .right > div:nth-child(2) .social .easeicon {
+.footer .right > div:nth-child(2) .social .iconfont {
   color: #fff;
   background-color: #f2f2f2;
-  border-radius: 50px;
+  border-radius: 50%;
   font-size: 50px;
   line-height: 50px;
   margin-right: 30px;
   color: #273140;
   display: inline-block;
 }
-.footer .right > div:nth-child(2) .social .easeicon:last-child {
+.footer .right > div:nth-child(2) .social .iconfont:last-child {
   margin-right: 0;
+}
+.footer .right > div:nth-child(2) .social .icon-wechat:hover {
+  color: #00d20c;
+}
+.footer .right > div:nth-child(2) .social a:hover .icon-weibo {
+  color: #f5161f!important;
+}
+.footer .right > div:nth-child(2) .social .erweima {
+  position: absolute;
+  padding: 5px;
+  background: #fff;
+  width: 130px;
+  display: none;
+}
+.footer .right > div:nth-child(2) .social .erweima:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 5px solid #fff;
 }
 .footer .right > div:nth-child(3) {
   width: 30%;
@@ -803,7 +897,7 @@ html {
   text-decoration: none;
   color: #fff;
 }
-.footer .right > div:nth-child(3) .item.easeicon {
+.footer .right > div:nth-child(3) .item.iconfont {
   font-size: 60px;
   line-height: 60px;
 }
@@ -847,6 +941,9 @@ html {
   h5 {
     font-size: 16px;
   }
+  .carousel-indicators {
+    bottom: -6%;
+  }
   .action .btn {
     width: 100px;
     font-size: 12px;
@@ -880,6 +977,15 @@ html {
   }
   .sidemenu .item p {
     margin-top: -5px;
+  }
+  .sidemenu .item .iconfont {
+    font-size: 40px;
+    line-height: 30px;
+  }
+  .sidemenu .item .icon-mianfeishiyong {
+    font-size: 25px;
+    display: block;
+    padding-bottom: 5px;
   }
   .sidemenu .item:last-child {
     border-right: none;
@@ -928,16 +1034,11 @@ html {
     float: right;
     z-index: 20;
   }
-  .header-mobile .menu button {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    pointer-events: auto;
-    background: 0 0;
-    border: none;
-    margin: 0;
-    padding: 0;
+  .header-mobile .menu i {
+    font-size: 34px;
+    color: #fff;
+    position: absolute;
+    top: -6px;
   }
   .header-mobile .nav-collapse {
     position: fixed;
@@ -1008,13 +1109,19 @@ html {
     display: none;
   }
   .try {
-    padding: 10px 0;
+    padding: 10px 0!important;
+  }
+  .try .input-group {
+    width: 100%;
   }
   .scene .tab {
     padding: 40px 0 50px;
   }
   .scene .stage {
     padding: 30px 0 30px;
+  }
+  .scene .stage .col-md-7 img {
+    width: 100%;
   }
   .section {
     padding: 40px 0;
@@ -1026,10 +1133,16 @@ html {
     margin-top: -20px;
     margin-bottom: 40px;
   }
+  .function .chat > img {
+    width: 100%;
+  }
   .advantage .above h3 {
     text-align: center;
     margin-top: 60px;
     margin-bottom: 50px;
+  }
+  .advantage img {
+    width: 100%;
   }
   .feature .row > div:nth-child(2) {
     display: none;
@@ -1054,6 +1167,14 @@ html {
   .added .item p {
     padding: 10px;
     margin-bottom: 20px;
+  }
+  .deploy > img {
+    width: 100%;
+  }
+  .chat1 {
+    width: 100%;
+    right: 0;
+    bottom: 0;
   }
   #try-kefu .dialog__content {
     background-image: none!important;
@@ -1091,6 +1212,9 @@ html {
   .h6,
   h6 {
     font-size: 14px;
+  }
+  .carousel-indicators {
+    bottom: 2%;
   }
   .action .btn {
     width: 110px;
@@ -1337,6 +1461,15 @@ html {
     padding: 10px 5px;
     margin-bottom: 3px;
   }
+  .sidemenu .item .iconfont {
+    font-size: 50px;
+    line-height: 40px;
+  }
+  .sidemenu .item .icon-mianfeishiyong {
+    font-size: 25px;
+    display: block;
+    padding-bottom: 5px;
+  }
   .sidemenu .biz-item {
     background-color: #5c8de6!important;
   }
@@ -1347,7 +1480,11 @@ html {
     background-color: #eaa800!important;
   }
   .sidemenu .top-item {
+    background-color: #fff!important;
     display: none;
+  }
+  .sidemenu .top-item i {
+    color: #3275f1;
   }
   .sidemenu .dev-wrap {
     width: 360px;
