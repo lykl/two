@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/rtc.css">
+    <link rel="stylesheet" href="../icon/cy/rtc-iconfont.css">
+    <script src="../js/rtc.js"></script>
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <!-- 背景图 -->
+    <div class="banner" id="outline"></div>
+    <!--滚动监听楼层跳转-->
+    <div class="indicator">
+        <ul class="nav" id="list">
+            <li>
+                <a href="#section-function"></a>
+            </li>
+            <li>
+                <a href="#section-advantage"></a>
+            </li>
+            <li>
+                <a href="#section-detail"></a>
+            </li>
+            <li>
+                <a href="#section-quality"></a>
+            </li>
+            <li>
+                <a href="#section-intergration"></a>
+            </li>
+            <li>
+                <a href="#section-case"></a>
+            </li>
+        </ul>
+    </div>
+    <!-- 内容部分 -->
+    <div class="tab">
+        <!-- 申请使用输入框 -->
+        <section id="telephone">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-lg-offset-3">
+                        <div class="input-group inp">
+                            <input type="text " class="form-control" id="apply" placeholder="输入你的手机号 ">
+                            <span class="input-group-btn" id="outline">
+                            <button class="btn btn-default" type="button ">申请试用</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 内容：迎接5G时代 -->
+        <section class="function" id="section-function">
+            <div class="container">
+                <h2 class="text-center">四大行业解决方案，助力企业迎接5G时代！</h2>
+                <div class="row">
+                    <div class="col-md-6 col-md-push-6 text-center">
+                        <img src="../img/cy/rtc/solution1.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-md-6 col-md-pull-6">
+                        <div class="title">
+                            <h3>游戏</h3>
+                            <ul class="list-unstyled">
+                                <li>- 场景：游戏互动场景，提供音视频互通功能，轻松打造沉浸式游戏聊天体验</li>
+                                <li>- 功能：支持P2P模式，更低延迟，支持多对多的视频通话，无限沟通畅爽游戏PK</li>
+                                <li>- 性能：底层性能特殊优化处理，低能耗续航游戏稳定性，高清稳定，千万级并发量用户支持，服务可靠</li>
+                                <li>- 集成：集成简单快速，支持各种游戏场景搭配</li>
+                            </ul>
+                            <div class="active">
+                                <a href="#" class="btn">立即体验</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img src="../img/cy/rtc/solution2.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="title">
+                            <h3>智能硬件</h3>
+                            <ul class="list-unstyled">
+                                <li>- 场景：一对一、多人互联，支持手表、硬件屏幕等智能设备，打通物联网实时音视频服务</li>
+                                <li>- 功能：支持1对1语音通话，1对1视频通话，支持P2P模式，更低延迟</li>
+                                <li>- 性能：支持抗延迟抖动，抗丢包，底层性能特殊优化处理，低能耗续航长时间音视频通话传输，视频动态编解码，支持1080p</li>
+                                <li>- 集成：快速集成，支持各类硬件扩展</li>
+                            </ul>
+                            <div class="active">
+                                <a href="#" class="btn">立即体验</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-md-push-6 text-center">
+                        <img src="../img/cy/rtc/solution3.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-md-6 col-md-pull-6">
+                        <div class="title">
+                            <h3>客户服务</h3>
+                            <ul class="list-unstyled">
+                                <li>- 场景：一对一视频客服，在专业客服领域，提供高清音视频，高清录制，远程控制等客户服务场景</li>
+                                <li>- 功能：支持1对1语音通话，1对1视频通话，支持PC共享桌面，可演示PPT动画，移动端共享APP界面，方便远程协助解决问题，支持客户端和服务器录制，高清回放</li>
+                                <li>- 性能：支持抗延迟抖动，抗丢包，保证链接流畅，噪声抑制、回音消除，视频动态编解码，支持1080p</li>
+                                <li>- 部署：独立集群，独立部署升级，弹性扩容，更高SLA保障</li>
+                            </ul>
+                            <div class="active">
+                                <a href="#" class="btn">立即体验</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center">
+                        <img src="../img/cy/rtc/solution4.png" class="img-responsive" alt="">
+                    </div>
+                    <div class="col-md-6">
+                        <div class="title">
+                            <h3>社交</h3>
+                            <ul class="list-unstyled">
+                                <li>- 场景：一对一私聊，高清音画质量，低延迟畅聊，结合即时通讯，打造身临其境交友体验</li>
+                                <li>- 功能：支持P2P模式，更低延迟，自由音视频切换横竖屏切换，让世界只有彼此</li>
+                                <li>- 性能：底层性能特殊优化处理，视频动态编解码，支持最高到1080p，回音消除，自动增益，畅聊清晰</li>
+                                <li>- 集成：更多视频源扩展API，支持第三方美颜，滤镜等</li>
+                            </ul>
+                            <div class="active">
+                                <a href="#" class="btn">立即体验</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 国际领先的实时音视频引擎技术 -->
+        <section class="advantage" id="section-advantage">
+            <div class="container text-center">
+                <h2 class="title">国际领先的实时音视频引擎技术</h2>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 item-left">
+                        <div class="item">
+                            <h5>自适应带宽估计</h5>
+                            <p>网络带宽和质量检测 </p>
+                            <p>高动态自适应视频码率、分辨率、帧率 </p>
+                            <i class="iconfont icon-ysp-zishiyingkuandai"></i>
+                        </div>
+                        <div class="item">
+                            <h5>抗丢包抗抖动</h5>
+                            <p>智能丢包检测，丢包重传 </p>
+                            <p>FEC纠错，PLC丢包掩藏 </p>
+                            <p>自适应抖动缓冲 </p>
+                            <i class="iconfont icon-ysp-kangdiubaokangdo"></i>
+                        </div>
+                        <div class="item">
+                            <h5>语音处理</h5>
+                            <p>语音自动增益AGC </p>
+                            <p>声学回声消除，快速收敛稳定状态 </p>
+                            <p>噪音抑制，避免背景音干扰 </p>
+                            <i class="iconfont icon-ysp-yuyinchuli"></i>
+                        </div>
+                    </div>
+                    <div class="col-md-4 hidden-xs hidden-sm">
+                        <a href="#">
+                            <img src="../img/cy/rtc/advantage.png" alt="">
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 item-right">
+                        <div class="item">
+                            <h5>智能传输</h5>
+                            <p> 支持P2P</p>
+                            <p> 多点部署就近接入</p>
+                            <p> 延时低于400ms</p>
+                            <i class="iconfont icon-ysp-zhinengchuanshu"></i>
+                        </div>
+                        <div class="item">
+                            <h5>功能丰富</h5>
+                            <p> 视频通话录制和重放</p>
+                            <p> 屏幕影像抓拍</p>
+                            <p> 多方视频通话</p>
+                            <p> 桌面共享</p>
+                            <i class="iconfont icon-ysp-gongnengfengfu"></i>
+                        </div>
+                        <div class="item">
+                            <h5>多端支持</h5>
+                            <p> 移动端SDK支持iOS和Android系统</p>
+                            <p> 兼容WebRTC支持Chrome等浏览器</p>
+                            <i class="iconfont icon-ysp-duoduanzhichi"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 多场景应用支持，总有一款适合你！ -->
+        <section class="detail" id="section-detail">
+            <div class="container text-center">
+                <h2 class="title">多场景应用支持，总有一款适合你！</h2>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4 item">
+                        <i class="iconfont icon-ysp-yiduiyi"></i>
+                        <h5>1对1音视频</h5>
+                        <p>支持1对1语音通话，1对1视频通话，支持P2P模式，更低延迟</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 item">
+                        <i class="iconfont icon-ysp-duorenshipin"></i>
+                        <h5>多人视频通话</h5>
+                        <p>支持多对多的视频通话，无限沟通畅聊</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 item">
+                        <i class="iconfont icon-ysp-yiduiduo"></i>
+                        <h5>1对多直播</h5>
+                        <p>支持主播直播，多人连麦互动，身临其境</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 item">
+                        <i class="iconfont icon-ysp-quanpingtai"></i>
+                        <h5>全平台支持</h5>
+                        <p>支持Web页面和移动端互通，集成方便，快速上线</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 item">
+                        <i class="iconfont icon-ysp-gaoqingluzhi"></i>
+                        <h5>高清录制</h5>
+                        <p>支持客户端录制和服务器录制</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 item">
+                        <i class="iconfont icon-ysp-gongxiangpingmu"></i>
+                        <h5>共享屏幕</h5>
+                        <p>支持PC共享桌面，可演示PPT动画，移动端共享APP界面，方便远程协助解决问题</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 高质量、稳定、安全，行业标杆品质保证 -->
+        <section class="quality" id="section-quality">
+            <div class="container">
+                <h2 class="title  text-center">高质量、稳定、安全，行业标杆品质保证</h2>
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="row item">
+                            <div class="col-md-2">
+                                <i class="iconfont icon-ysp-gaozhiliang"></i>
+                            </div>
+                            <div class="col-md-10 text-left">
+                                <h5>高质量</h5>
+                                <p>语音支持抗延迟抖动、抗丢包，噪声抑制、回音消除、自动增益，视频动态编解码，支持1080p</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="row item">
+                            <div class="col-md-2">
+                                <i class="iconfont icon-ysp-anquan"></i>
+                            </div>
+                            <div class="col-md-10 text-left">
+                                <h5>稳定</h5>
+                                <p>高并发量，支撑百万级别用户音视频互联通讯，支持弱网动态码率切换，流畅高清无延迟</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="row item">
+                            <div class="col-md-2">
+                                <i class="iconfont icon-ysp-wending"></i>
+                            </div>
+                            <div class="col-md-10 text-left">
+                                <h5>安全</h5>
+                                <p>底层加密技术，音视频安全触达用户客户端，确保用户数据安全</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="row item">
+                            <div class="col-md-2">
+                                <i class="iconfont icon-ysp-dinenghao"></i>
+                            </div>
+                            <div class="col-md-10 text-left">
+                                <h5>低能耗</h5>
+                                <p>底层性能特殊优化处理，低能耗稳定续航</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 内容：即插即用，一天极简集成！ -->
+        <section class="intergration" id="section-intergration">
+            <div class="container text-center">
+                <h2 class="title">即插即用，一天极简集成！</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 item">
+                        <div class="wrap">
+                            <div class="ico">
+                                <i class="iconfont icon-ysp-jicheng"></i>
+                            </div>
+                            <div class="text-wrap">
+                                <h6>1天集成</h6>
+                                <p>提供开源SDK工具包，极简快速集成，让开发者一次实现所有实时功能</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item1">
+                        <div class="wrap">
+                            <div class="ico">
+                                <i class="iconfont icon-ysp-kuozhan"></i>
+                            </div>
+                            <div class="text-wrap">
+                                <h6>集成扩展</h6>
+                                <p>服务端API扩展，支持各种产品使用场景渗透，更多视频源扩展API，支持第三方美颜，滤镜等</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 item">
+                        <div class="wrap">
+                            <div class="ico">
+                                <i class="iconfont icon-ysp-siyouyunbushu"></i>
+                            </div>
+                            <div class="text-wrap">
+                                <h6>私有云部署</h6>
+                                <p>更快捷的本地自由云部署，快速对接本地服务</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 客户案例 -->
+        <section class="case" id="section-case">
+            <div class="container text-center">
+                <h2 class="title">客户案例</h2>
+                <div class="row">
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="wrap transition">
+                            <img src="../img/cy/rtc/case-tzyx.png" class="img-responsive" alt="">
+                            <div class="text-wrap">
+                                <p class="text-left">小顽童智能手表采用环信音视频解决方案为用户提供沟通支持，其流畅度、抗丢包、低延迟以及电量优化等技术指标均领先行业，是智能硬件领域音视频服务厂商的不二之选。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="wrap transition">
+                            <img src="../img/cy/rtc/case-cx.png" class="img-responsive" alt="">
+                            <div class="text-wrap">
+                                <p class="text-left">超星学习通是国内一款基于神经系统原理打造的知识传播与管理分享平台，环信实时音视频云提供的底层音视频通讯能力为用户提供一站式学习体验保驾护航。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="wrap transition">
+                            <img src="../img/cy/rtc/case-hxkj.png" class="img-responsive" alt="">
+                            <div class="text-wrap">
+                                <p class="text-left">慧昱科教依托环信IM与音视频云集成方案打造了全球首款AR智能教育机器人Honeybot小哈机器人，仅在2017年，小哈机器人的出货量就已超过15万台，产值也突破了3亿。</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-3 item">
+                        <div class="wrap transition">
+                            <img src="../img/cy/rtc/case-wtsj.png" class="img-responsive" alt="">
+                            <div class="text-wrap">
+                                <p class="text-left">小顽童智能手表采用环信音视频解决方案为用户提供沟通支持，其流畅度、抗丢包、低延迟以及电量优化等技术指标均领先行业，是智能硬件领域音视频服务厂商的不二之选。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- 联系电话 -->
+        <section class="contact" id="section-contact">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="col-sm-6 col-md-4">
+                        <div class="wrap">
+                            <p>咨询电话：400-612-1986</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-5">
+                        <div class="wrap">
+                            <p>咨询电话：400-612-1986</p>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 col-md-3">
+                        <div class="wrap">
+                            <a href="#" class="btn">查看文档</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 产品使用申请框 -->
+    <div class="try-hidden">
+        <div class="dialog">
+            <div class="dialog_overlay"></div>
+            <div class="dialog_content">
+                <form action="" method="post">
+                    <h2>申请使用</h2>
+                    <h6>提交后工作人员会尽快与您联系进行功能演示</h6>
+                    <div class="form-group">
+                        <input type="text" id="tel" class="form-control" name="phone" placeholder="手机号">
+                        <input type="text" class="form-control" name="full_name" placeholder="姓名">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="verify" placeholder="验证码">
+                            <span class="input-group-addon">
+                                <img src="../img/cy/rtc/index.png" alt="">
+                            </span>
+                        </div>
+                        <button type="button" class="btn btn-block submit">提交</button>
+                        <button type="submit" class="btn btn-default btn-block do-close">不了，谢谢</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--右 侧边栏 -->
+    <div class="sidemenu text-center">
+        <div class="item item-color1">
+            <a href="javascript:;">
+                <i class="glyphicon glyphicon-user"></i>
+                <p>商务咨询</p>
+            </a>
+        </div>
+        <div class="item item-color2">
+            <a href="javascript:;" id="outline">
+                <i class="glyphicon glyphicon-gift"></i>
+                <p>免费使用</p>
+            </a>
+        </div>
+        <div class="item item-color3 hidden-xs" id="returnTop">
+            <a href="javascript:;">
+                <i class="glyphicon glyphicon-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
