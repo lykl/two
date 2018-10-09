@@ -124,3 +124,28 @@ $(window).scroll(function() {
 
 
 })
+$(window).scroll(function() {
+    if ($(window).scrollTop() > $('.banner').height()) {
+        $('.lctz2').css('display', 'block')
+    } else { $('.lctz2').css('display', 'none') }
+})
+$('.lctz2 li').on('click', function(e) {
+    e = e || event;
+    e.preventDefault();
+    var top = $('.' + $(this).attr('title')).offset().top + 10;
+    $('html').animate({
+        scrollTop: top
+    }, 400);
+})
+
+$(window).scroll(function() {
+    $('.lctz2 li').removeClass("lctz-color");
+    for (var i = 0; i <= 6; i++) {
+        if ($(window).scrollTop() >= $('.' + $('.lctz li').eq(i).attr('title')).offset().top && $(window).scrollTop() < $('.' + $('.lctz li').eq(i).attr('title')).offset().top + $('.' + $('.lctz li').eq(i).attr('title')).height()) {
+            $('.lctz2 li').eq(i).addClass("lctz-color");
+        }
+    }
+
+
+
+})
