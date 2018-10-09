@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../css/rtc.css">
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../icon/cy/rtc-iconfont.css">
-    <script src="../js/rtc.js"></script>
+    <link rel="stylesheet" href="../icon/xh/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/rtc.css">
+
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
@@ -18,6 +21,202 @@
 </head>
 
 <body>
+    <!-- 头部导航栏 -->
+    <div class="header-mobile">
+        <a href="" class="logo"></a>
+        <nav>
+            <a href="" class="im">即时通讯云</a>
+            <a href="" class="cs">客户互动云</a>
+        </nav>
+        <div class="menu">
+            <i class="iconfont icon-category"></i>
+        </div>
+        <div class="nav-collapse" style="display: none;">
+            <div id="dummy" class="dummy">
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-default-outline" href="/product/im">即时通讯云产品</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-default-outline" href="/product/cs">客户互动云产品</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/customer/im">案例</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/customer/cs">案例</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/pricing/im">价格</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/pricing/cs">价格</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/download/im">下载</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="/download/cs">下载</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="http://docs.easemob.com/im" target="_blank">文档</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="http://docs.easemob.com/cs" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+            <div class="entry container-fluid">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a class="btn btn-default-outline btn-block" href="https://console.easemob.com/index_register.html" target="_blank">注册即时通讯云</a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a class="btn btn-default-outline btn-block" href="https://kefu.easemob.com/mo/register" target="_blank">注册客户互动云</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                <a class="navbar-brand" href="" title="IM,即时通讯云,CEC,客户互动云,在线客服,在线客服系统">
+                    <img src="https://www.easemob.com/themes/official_v3/Public/img/logo.png" class="logo hidden-xs hidden-sm">
+                    <i class="logo easeicon ease-logo visible-xs-inline-block visible-sm-inline-block"></i>
+                </a>
+            </div>
+            <div id="main-navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <!--li><a href="/" rel="nofollow">首页</a></li-->
+                    <li>
+                        <a href="/product/im">即时通讯云</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/product/im">功能</a></li>
+                                <li><a href="/customer/im" rel="nofollow">案例</a></li>
+                                <li><a href="/pricing/im">价格</a></li>
+                                <li><a href="http://docs.easemob.com/im/" target="_blank">文档</a></li>
+                                <li><a href="/download/im">下载</a></li>
+                                <li><a href="/product/im/live">直播方案</a></li>
+                                <li><a href="/product/im/antispam">智能反垃圾</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="/product/cs">客户互动云</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/product/cs">功能</a></li>
+                                <li><a href="/customer/cs" rel="nofollow">案例</a></li>
+                                <li><a href="/pricing/cs">价格</a></li>
+                                <li><a href="http://docs.easemob.com/cs/" target="_blank">文档</a></li>
+                                <li><a href="/download/cs">下载</a></li>
+                                <li><a href="/product/cs/vpc">私有云</a></li>
+                                <li><a href="/product/cs/video">视频客服</a></li>
+                                <li><a href="/product/cs/voice">客户声音</a></li>
+                                <li><a href="/product/cs/ticket">智慧工单</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="/product/rtc">音视频云</a> </li>
+                    <li> <a href="/product/ai">机器人</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/product/ai">功能</a></li>
+                                <li><a href="/customer/cs" rel="nofollow">案例</a></li>
+                                <li><a href="http://docs.easemob.com/cs/200admin/40robot" target="_blank">文档</a></li>
+                                <li><a href="/product/ai/call">外呼机器人</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;">案例</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/customer/im" rel="nofollow">即时通讯云</a></li>
+                                <li><a href="/customer/cs" rel="nofollow">客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;">价格</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/pricing/im">即时通讯云</a></li>
+                                <li><a href="/pricing/cs">客户互动云</a></li>
+                                <li><a href="/pricing/private">私有化部署</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="http://docs.easemob.com" target="_blank">文档</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="http://docs.easemob.com/im/" target="_blank">即时通讯云</a></li>
+                                <li><a href="http://docs.easemob.com/cs/" target="_blank">客户互动云</a></li>
+                                <li><a href="http://docs.easemob.com/cs/200admin/40robot" target="_blank">机器人</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;">下载</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/download/im">即时通讯云</a></li>
+                                <li><a href="/download/cs">客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="http://community.easemob.com" rel="nofollow">社区</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="/question" target="_blank">问题</a></li>
+                                <li><a href="http://www.imgeek.org/activity/" target="_blank" rel="nofollow">活动</a></li>
+                                <li><a href="http://www.imgeek.org/video/" target="_blank" rel="nofollow">视频</a></li>
+                                <li><a href="http://www.imgeek.org/code/" target="_blank" rel="nofollow">代码</a></li>
+                                <li><a href="http://www.imgeek.org/article/" target="_blank" rel="nofollow">文章</a></li>
+                                <li><a href="http://www.imgeek.org/help/" target="_blank" rel="nofollow">帮助</a></li>
+                                <li><a href="http://www.imgeek.org/topic/" target="_blank" rel="nofollow">话题</a></li>
+                            </ul>
+                            <ul class="list-unstyled extend">
+                                <li><a href="/weekly" target="_blank" rel="nofollow">环信周刊</a></li>
+                                <li><a href="/news" target="_blank" rel="nofollow">新闻资讯</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-sm btn-default-outline navbar-btn" style="background-color: rgba(255, 255, 255, 0); color: rgb(255, 255, 255);" href="javascript:;" rel="nofollow">登录</button>
+                        <div class="sub-menu login-register blue">
+                            <ul class="list-unstyled">
+                                <li><a href="https://console.easemob.com/index.html" target="_blank" rel="nofollow">登录即时通讯云</a></li>
+                                <li class="active"><a href="https://kefu.easemob.com" target="_blank" rel="nofollow">登录客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-sm btn-danger navbar-btn" href="javascript:;" rel="nofollow">注册</button>
+                        <div class="sub-menu login-register blue">
+                            <ul class="list-unstyled">
+                                <li><a href="https://console.easemob.com/index_register.html" target="_blank" rel="nofollow">注册即时通讯云</a></li>
+                                <li class="active"><a href="https://kefu.easemob.com/mo/register" target="_blank" rel="nofollow">注册客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <!-- 背景图 -->
     <div class="banner" id="outline"></div>
     <!--滚动监听楼层跳转-->
@@ -395,7 +594,7 @@
         </section>
     </div>
     <!-- 产品使用申请框 -->
-    <div class="try-hidden">
+    <!-- <div class="try-hidden">
         <div class="dialog">
             <div class="dialog_overlay"></div>
             <div class="dialog_content">
@@ -417,7 +616,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div> -->
     <!--右 侧边栏 -->
     <div class="sidemenu text-center">
         <div class="item item-color1">
@@ -438,8 +637,180 @@
             </a>
         </div>
     </div>
-    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- 底部 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 left">
+                    <div>
+                        <h6>即时通讯云</h6>
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="">产品价格</a>
+                            </li>
+                            <li>
+                                <a href="">集成文档</a>
+                            </li>
+                            <li>
+                                <a href="">快速下载</a>
+                            </li>
+                            <li>
+                                <a href="">直播方案</a>
+                            </li>
+                            <li>
+                                <a href="">人脸特效</a>
+                            </li>
+                            <li>
+                                <a href="">智能反垃圾</a>
+                            </li>
+                            <li>
+                                <a href="">社交大数据</a>
+                            </li>
+                            <li>
+                                <a href="">发现SDK</a>
+                            </li>
+                            <li>
+                                <a href="">短信服务</a>
+                            </li>
+                            <li>
+                                <a href="">使用协议</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>客户互动云</h6>
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="">产品价格</a>
+                            </li>
+                            <li>
+                                <a href="">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="">产品文档</a>
+                            </li>
+                            <li>
+                                <a href="">快速下载</a>
+                            </li>
+                            <li>
+                                <a href="">客户声音</a>
+                            </li>
+                            <li>
+                                <a href="">视频客服</a>
+                            </li>
+                            <li>
+                                <a href="">智慧工单</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>机器人</h6>
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="">产品价格</a>
+                            </li>
+                            <li>
+                                <a href="">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="">产品文档</a>
+                            </li>
+                            <li>
+                                <a href="">快速下载</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                    <div>
+                        <h6>关于我们</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="">公司介绍</a>
+                            </li>
+                            <li>
+                                <a href="">荣誉资质</a>
+                            </li>
+                            <li>
+                                <a href="">市场报告</a>
+                            </li>
+                            <li>
+                                <a href="">媒体报道</a>
+                            </li>
+                            <li>
+                                <a href="">合作伙伴</a>
+                            </li>
+                            <li>
+                                <a href="">投资机构</a>
+                            </li>
+                            <li>
+                                <a href="">加入我们</a>
+                            </li>
+                            <li>
+                                <a href="">品牌标识</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>联系我们</h6>
+                        <p>咨询热线</p>
+                        <hr>
+                        <a href="" rel="nofollow"><big>400-612-1986</big></a>
+                        <p>商务合作</p>
+                        <hr>
+                        <a href="">bd@easemob.com</a>
+                        <p>投诉建议</p>
+                        <hr>
+                        <a href="">issues@easemob.com</a>
+                        <div class="social">
+                            <i class="iconfont icon-wechat qrcode-weixin"></i>
+                            <a href="">
+                                <i class="iconfont icon-weibo"></i>
+                            </a>
+                            <div class="erweima">
+                                <img width="120" src="../img/xh/instant/qrcode-weixin.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-xs">
+                        <h6>权威认证</h6>
+                        <div class="certificate">
+                            <a class="item" href="">
+                                <i class="item iconfont icon-CMMI" style="line-height:20px"></i>
+                            </a>
+                            <a class="item" href="">
+                                <i class="item iconfont icon-kexinyun"></i>
+                            </a>
+                            <i class="item iconfont icon-ISO9001"></i>
+                            <i class="item iconfont icon-ISO27001"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2016-2017 环信 Co.,Ltd. 北京易掌云峰科技有限公司版权所有</p>
+            <p>京ICP备14026002号
+                <a href="http://www.easemob.com/sla">SLA协议</a> 京ICP证160482
+            </p>
+        </div>
+    </footer>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/rtc.js"></script>
 </body>
 
 </html>

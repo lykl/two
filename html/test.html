@@ -7,19 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="../icon/cy/video-iconfont.css">
-    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
-    <link rel="stylesheet" href="../icon/xh/iconfont.css">
-    <link rel="stylesheet" href="../css/index.css">
-    <link rel="stylesheet" href="../css/video.css">
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="../icon/xh/iconfont.css">
+    <link rel="stylesheet" href="../css/test.css">
 </head>
 
 <body>
-    <!-- 头部导航栏 -->
     <div class="header-mobile">
         <a href="" class="logo"></a>
         <nav>
@@ -88,11 +85,11 @@
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed">
-                                            <span class="sr-only">Toggle navigation</span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                            <span class="icon-bar"></span>
-                                        </button>
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
                 <a class="navbar-brand" href="" title="IM,即时通讯云,CEC,客户互动云,在线客服,在线客服系统">
                     <img src="https://www.easemob.com/themes/official_v3/Public/img/logo.png" class="logo hidden-xs hidden-sm">
                     <i class="logo easeicon ease-logo visible-xs-inline-block visible-sm-inline-block"></i>
@@ -215,250 +212,126 @@
             </div>
         </div>
     </div>
-    <!-- 背景图 -->
-    <div class="banner"></div>
-    <!-- 主题内容 -->
-    <div class="box">
-        <!-- 介绍 -->
-        <section class="intro">
-            <div class="container">
-                <h5 class="text-center">
-                    以Web和APP为载体，应用环信业界领先的实时音视频通讯技术为访客及企业客服人员提供双向的实时视频交互能力。
-                    <br class="hidden-xs hidden-sm"> 支持视频画面展示与回放，语音及文字同步在线畅通交流，画质清晰，低延迟。应用于保险定损、远程教育、商品导购等六大典型应用场景，
-                    <br class="hidden-xs hidden-sm hidden-md"> 消费者足不出户便可享受真人面对面VIP服务，帮助企业在提高客户体验的同时极大降低成本和提升客服效率。
-                </h5>
-                <div class="row line">
-                    <div class="col-sm-6 col-md-3 col text-center">
-                        <div class="item color1">
-                            <i class="iconfont icon-csvideo_wendingjieto"></i>
-                        </div>
-                        <div class="tooltip fade top in" style="top: -48px; left: 64.25px; display: block;">
-                            <div class="tooltip-arrow" style="left: 50%;"></div>
-                            <div class="tooltip-inner">稳定接通</div>
-                        </div>
+
+    <div id="try-kefu" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content image-background">
+            <form role="form" method="post" action="/api/guestbook/addmsg" class="form-horizontal">
+                <h2 class="title">申请试用</h2>
+                <h6 class="sub-title">提交后工作人员会尽快与您联系进行功能演示</h6>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="phone" maxlength="11" pattern="[0-9]{11}" placeholder="手机号" required="">
                     </div>
-                    <div class="col-sm-6 col-md-3 col text-center">
-                        <div class="item  color2">
-                            <i class="iconfont icon-csvideo_tanxingkuoro"></i>
-                        </div>
-                        <div class="tooltip fade top in" style="top: -48px; left: 64.25px; display: block;">
-                            <div class="tooltip-arrow" style="left: 50%;"></div>
-                            <div class="tooltip-inner">弹性扩容</div>
-                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="full_name" placeholder="姓名" required="">
                     </div>
-                    <div class="col-sm-6 col-md-3 col text-center">
-                        <div class="item  color3">
-                            <i class="iconfont icon-csvideo_yinhuahuanyu"></i>
-                        </div>
-                        <div class="tooltip fade top in" style="top: -48px; left: 64.25px; display: block;">
-                            <div class="tooltip-arrow" style="left: 50%;"></div>
-                            <div class="tooltip-inner">音画还原</div>
-                        </div>
-                    </div>
-                    <div class="col-sm-6 col-md-3 col text-center">
-                        <div class="item  color4">
-                            <i class="iconfont icon-csvideo_linghuobushu"></i>
-                        </div>
-                        <div class="tooltip fade top in" style="top: -48px; left: 64.25px; display: block;">
-                            <div class="tooltip-arrow" style="left: 50%;"></div>
-                            <div class="tooltip-inner">灵活部署</div>
+                </div>
+                <div class="form-group verify">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="verify" placeholder="验证码" required="" autocomplete="off">
+                            <span class="input-group-addon">
+                                <img class="verify_img" src=""  style="cursor:pointer;vertical-align: top;" title="点击获取">
+                            </span>
                         </div>
                     </div>
                 </div>
-                <div class="row info text-left">
-                    <div class="col-md-4 col">
-                        <h5>
-                            <i class="iconfont icon-csvideo_jiangdicheng"></i>
-                            <strong>降低成本投入</strong>
-                        </h5>
-                        <p>打破时间和服务网点限制，延伸服务及业务办理时间，拓宽业务处理渠道，减少人力资源投入。</p>
-                    </div>
-                    <div class="col-md-4 col">
-                        <h5>
-                            <i class="iconfont icon-csvideo_tishengfuwu"></i>
-                            <strong>提升服务效率</strong>
-                        </h5>
-                        <p>简化服务流程，缩短业务处理时间，可随时接入视频，由客服坐席远程协助指导完成操作。</p>
-                    </div>
-                    <div class="col-md-4 col">
-                        <h5>
-                            <i class="iconfont icon-csvideo_gaishantiyan"></i>
-                            <strong>改善客户体验</strong>
-                        </h5>
-                        <p>真人远程服务，虚拟面对面沟通，借助多媒体方式全面了解客户需求，清晰直接进行实时交互。</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- 国际领先的实时音视频引擎技术 -->
-        <section class="advantage">
-            <div class="container text-center">
-                <h2 class="title">国际领先的实时音视频引擎技术</h2>
-                <div class="row">
-                    <div class="col-md-4 item-left">
-                        <div class="item">
-                            <h5>自适应带宽估计</h5>
-                            <p>网络带宽和质量检测 </p>
-                            <p>高动态自适应视频码率、分辨率、帧率 </p>
-                            <i class="iconfont icon-csvideo_zishiyingkua" style="background-color:#19B1C6"></i>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary btn-block submit">提交</button>
+                            <button type="button" class="btn btn-default btn-block do-close" data-dialog-close="">不了，谢谢</button>
                         </div>
-                        <div class="item">
-                            <h5>抗丢包抗抖动</h5>
-                            <p>智能丢包检测，丢包重传 </p>
-                            <p>FEC纠错，PLC丢包掩藏 </p>
-                            <p>自适应抖动缓冲 </p>
-                            <i class="iconfont icon-csvideo_kangdiubao" style="background-color:#E95504"></i>
+                        <div class="loading" style="display:none">
+                            <div class="sk-cube-grid">
+                                <div class="sk-cube sk-cube1"></div>
+                                <div class="sk-cube sk-cube2"></div>
+                                <div class="sk-cube sk-cube3"></div>
+                                <div class="sk-cube sk-cube4"></div>
+                                <div class="sk-cube sk-cube5"></div>
+                                <div class="sk-cube sk-cube6"></div>
+                                <div class="sk-cube sk-cube7"></div>
+                                <div class="sk-cube sk-cube8"></div>
+                                <div class="sk-cube sk-cube9"></div>
+                            </div>
                         </div>
-                        <div class="item">
-                            <h5>语音处理</h5>
-                            <p>语音自动增益AGC </p>
-                            <p>声学回声消除，快速收敛稳定状态 </p>
-                            <p>噪音抑制，避免背景音干扰 </p>
-                            <i class="iconfont icon-csvideo_yuyinchuli" style="background-color:#0070C0"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-4  col-md-push-4 item-right">
-                        <div class="item">
-                            <h5>智能传输</h5>
-                            <p> 支持P2P</p>
-                            <p> 多点部署就近接入</p>
-                            <p> 延时低于400ms</p>
-                            <i class="iconfont icon-csvideo_zhinengchuan" style="background-color:#87BA4C"></i>
-                        </div>
-                        <div class="item">
-                            <h5>功能丰富</h5>
-                            <p> 视频通话录制和重放</p>
-                            <p> 屏幕影像抓拍</p>
-                            <p> 多方视频通话</p>
-                            <p> 桌面共享</p>
-                            <i class="iconfont icon-csvideo_gongnengfeng" style="background-color:#F6AA00"></i>
-                        </div>
-                        <div class="item">
-                            <h5>多端支持</h5>
-                            <p> 移动端SDK支持iOS和Android系统</p>
-                            <p> 兼容WebRTC支持Chrome等浏览器</p>
-                            <i class="iconfont icon-csvideo_duoduangzhic" style="background-color:#757575;padding-left:2px;"></i>
-                        </div>
-                    </div>
-                    <div class="col-md-4 col-md-pull-4 hidden-xs">
-                        <a href="#">
-                            <img src="../img/cy/video/phone.png" alt="">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- 环信视频客服六大典型应用场景 -->
-        <section class="scene">
-            <div class="container">
-                <h3 class="text-center">环信视频客服六大典型应用场景</h3>
-                <div class="row">
-                    <div class="col-md-4">
-                        <div class="industry text-center">
-                            <i class="iconfont icon-csvideo_baoxiandings"></i>
-                            <h5>保险定损</h5>
-                            <p>移动端实时接入视频，进行汽车小额事故定损，案件复勘</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="industry text-center">
-                            <i class="iconfont icon-csvideo_zaixianjiaoy"></i>
-                            <h5>在线教育</h5>
-                            <p>教师与学生一对一在线答疑，辅助教学，桌面共享，视频可回放</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="industry text-center">
-                            <i class="iconfont icon-csvideo_yiliaozixun"></i>
-                            <h5>医疗专家咨询</h5>
-                            <p>按需发起视频，图片文字同步，中途抓拍截屏，白板画图</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="industry text-center">
-                            <i class="iconfont icon-csvideo_shangpindaog"></i>
-                            <h5>商品导购</h5>
-                            <p>可向客户展示商品实物，追踪商品访问轨迹，全方位介绍商品</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="industry text-center">
-                            <i class="iconfont icon-csvideo_yuanchengyew"></i>
-                            <h5>远程业务办理</h5>
-                            <p>代替部分银行、证券面对面办理流程，业务线上化，留痕记录</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="industry text-center">
-                            <i class="iconfont icon-csvideo_vipkefu"></i>
-                            <h5>VIP客户服务</h5>
-                            <p>针对高价值VIP客户，提供专属视频服务通道，享受尊贵体验</p>
+                        <div class="success" style="display:none"> <span class="iconfont icon-duigou_jiage" style="font-size:50px"></span>
+                            <p class="text-center">提交成功</p>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- 环信视频客服六大特性 -->
-        <section class="feature">
-            <div class="container">
-                <h3 class="text-center">环信视频客服六大特性</h3>
-                <div class="row">
-                    <div class="col-md-4 text-center">
-                        <div class="industry">
-                            <i class="iconfont icon-csvideo_yijianchufa" style="color:#19B1C6"></i>
-                            <h5>零等待，一键触发视频</h5>
-                            <p>访客端在人工坐席服务模式下，可实时一键发起视频请求，视频坐席接受请求后反馈访客进行双向视频确认，接通会话。</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="industry">
-                            <i class="iconfont icon-csvideo_duopingtaizh" style="color:#87BA4C"></i>
-                            <h5>极简集成，多平台支持</h5>
-                            <p>移动设备可进行视频（APP端和H5端），SDK极简集成，功能丰富易用。支持WebRTC，网页端chrome浏览器可接入实时视频。</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="industry">
-                            <i class="iconfont icon-csvideo_shuangxiangf" style="color:#E95504"></i>
-                            <h5>优质实时双向富媒体互动</h5>
-                            <p>支持实时双向音视频，同时可进行文字、图片、文件传输等富媒体沟通。画面实时低延迟，画质清晰，根据带宽自动调整清晰度和帧率。</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="industry">
-                            <i class="iconfont icon-csvideo_luzhicundang" style="color:#F6AA00"></i>
-                            <h5>录制存档，回溯查询So Easy</h5>
-                            <p>视频录制和固定路径存档，支持回放，保证信息留痕，方便回溯和查询。</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="industry">
-                            <i class="iconfont icon-csvideo_huamianzhuaq" style="color:#0070C0"></i>
-                            <h5>实时画面抓取、截图拍照</h5>
-                            <p>客服坐席端可实时进行画面抓取，截图拍照。对访客视频画面进行留存。</p>
-                        </div>
-                    </div>
-                    <div class="col-md-4 text-center">
-                        <div class="industry">
-                            <i class="iconfont icon-csvideo_huamianjingz" style="color:#757575"></i>
-                            <h5>支持静音功能及画面静止</h5>
-                            <p>支持访客及客服坐席端静音功能，访客不方便视频时，可关闭摄像头，画面将静止在最后一帧。</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- 联系 -->
-        <section class="contact">
-            <div class="container">
-                <div class="item text-center">
-                    <i class="iconfont icon-renlianshibie_tell"></i>
-                    <h4>商务咨询电话：400-612-1986</h4>
-                </div>
-            </div>
-        </section>
+            </form>
+        </div>
     </div>
-    <!-- 底部 -->
+
+    <div class="sidemenu">
+        <div class="item transition tel visible-xs-block">
+            <a href="" rel="nofollow">
+                <i class="iconfont icon-dianhuazixun"></i>
+                <p>400电话</p>
+            </a>
+        </div>
+        <div class="item transition biz-item">
+            <a href="javascript:;" class="im-biz"> <i class="iconfont icon-swzx"></i>
+                <p>商务咨询</p>
+            </a>
+        </div>
+        <div class="item transition dev-item dev-trigger">
+            <a href="javascript:;" class="dev"> <i class="iconfont icon-jszx"></i>
+                <p>技术咨询</p>
+            </a>
+            <div class="dev-wrap" style="display: none; left: -750px; opacity: 0;">
+                <h6 class="title">提示：技术咨询已转移到管理后台，请先登录</h6>
+                <p class="sub-title">即时通讯云用户请在应用详情页提交工单，同时提供论坛互助支持服务。客户互动云用户请进入管理员模式在线咨询。</p>
+                <div>
+                    <a class="im btn btn-success btn-block" href="https://console.easemob.com/index.html" target="_blank">登录即时通讯云</a>
+                    <a class="kf btn btn-primary btn-block" href="https://kefu.easemob.com/" target="_blank">登录客户互动云</a> <a class="kf btn btn-info btn-block" href="http://www.imgeek.org/" target="_blank">IMGeek社区</a>
+                </div>
+            </div>
+        </div>
+        <div class="item transition try-item">
+            <a href="javascript:;" class="free-trial"> <span class="trigger"> <i class="iconfont icon-mianfeishiyong"></i> <p>免费试用</p> </span> </a>
+        </div>
+        <div class="item transition top-item hidden-xs">
+            <a href="javascript:;" class="scroll-top" style="margin-top:10px"> <i class="iconfont icon-huidaodingbu"></i> </a>
+        </div>
+    </div>
+
+    <div class="chat1">
+        <div class="chat-header">
+            <p>环信商务咨询</p>
+            <i class="iconfont icon-min"></i>
+            <i class="iconfont icon-audio2"></i>
+        </div>
+        <div class="wrapper">
+            <div class="chat-wrapper">
+                <div class="chat-container">
+                    <div class="date"></div>
+                    <div class="left">
+                        <img src="https://kefu.easemob.com/ossimages/kefu-prod-avatar.img-cn-hangzhou.aliyuncs.com/avatar/387/e2edbb10-7a49-4c50-a1fc-99ec8fd57682@0-0-200-200a%7C300h_300w%7C.png" alt="">
+                        <div class="chat-content">
+                            <span>尊敬的客户您好：感谢您对环信的支持，我们的人工服务时间是周一至周五9:00-18:00，请问您有什么需要帮助的呢？</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-wrapper">
+                <div class="toolbar">
+                    <i class="iconfont icon-face"></i>
+                    <i class="iconfont icon-picture"></i>
+                    <i class="iconfont icon-attachment"></i>
+                    <i class="iconfont icon-sendVideo"></i>
+                    <i class="iconfont icon-note"></i>
+                </div>
+                <textarea class="inp" style="resize: none" placeholder="点击输入内容..." cols="30" rows="10"></textarea>
+                <span class="send disabled">发送</span>
+            </div>
+        </div>
+    </div>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -628,10 +501,10 @@
             </p>
         </div>
     </footer>
-    <!-- <link rel="stylesheet" href="../css/video.css"> -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="../js/index.js"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="../js/test.js"></script>
 </body>
 
 </html>
