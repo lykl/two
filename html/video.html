@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../icon/xh/iconfont.css">
     <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/rtc.css">
     <link rel="stylesheet" href="../css/video.css">
     <!--[if lt IE 9]>
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -458,6 +459,82 @@
             </div>
         </section>
     </div>
+    <!-- 产品使用申请框 -->
+    <div class="try-hidden">
+        <div class="dialog">
+            <div class="dialog_overlay"></div>
+            <div class="dialog_content">
+                <form action="" method="post">
+                    <h2>申请使用</h2>
+                    <h6>提交后工作人员会尽快与您联系进行功能演示</h6>
+                    <div class="form-group">
+                        <input type="text" id="tel" class="form-control" name="phone" placeholder="手机号">
+                        <input type="text" class="form-control" name="full_name" placeholder="姓名">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="verify" placeholder="验证码">
+                            <span class="input-group-addon">
+                                <img src="../img/cy/rtc/index.png" alt="">
+                            </span>
+                        </div>
+                        <button type="button" class="btn btn-block submit">提交</button>
+                        <button type="submit" class="btn btn-default btn-block do-close">不了，谢谢</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--右 侧边栏 -->
+    <div class="sidemenu text-center">
+        <div class="item item-color1 biz-item">
+            <a href="javascript:;">
+                <i class="glyphicon glyphicon-user"></i>
+                <p>商务咨询</p>
+            </a>
+        </div>
+        <div class="item item-color2">
+            <a href="javascript:;" id="outline">
+                <i class="glyphicon glyphicon-gift"></i>
+                <p>免费使用</p>
+            </a>
+        </div>
+        <div class="item item-color3 hidden-xs" id="returnTop">
+            <a href="javascript:;">
+                <i class="glyphicon glyphicon-chevron-up"></i>
+            </a>
+        </div>
+    </div>
+    <!-- 对话框 -->
+    <div class="chat1">
+        <div class="chat-header">
+            <p>环信商务咨询</p>
+            <i class="iconfont icon-min"></i>
+            <i class="iconfont icon-audio2"></i>
+        </div>
+        <div class="wrapper">
+            <div class="chat-wrapper">
+                <div class="chat-container">
+                    <div class="date"></div>
+                    <div class="left">
+                        <img src="https://kefu.easemob.com/ossimages/kefu-prod-avatar.img-cn-hangzhou.aliyuncs.com/avatar/387/e2edbb10-7a49-4c50-a1fc-99ec8fd57682@0-0-200-200a%7C300h_300w%7C.png" alt="">
+                        <div class="chat-content">
+                            <span>尊敬的客户您好：感谢您对环信的支持，我们的人工服务时间是周一至周五9:00-18:00，请问您有什么需要帮助的呢？</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-wrapper">
+                <div class="toolbar">
+                    <i class="iconfont icon-face"></i>
+                    <i class="iconfont icon-picture"></i>
+                    <i class="iconfont icon-attachment"></i>
+                    <i class="iconfont icon-sendVideo"></i>
+                    <i class="iconfont icon-note"></i>
+                </div>
+                <textarea class="inp" style="resize: none" placeholder="点击输入内容..." cols="30" rows="10"></textarea>
+                <span class="send disabled">发送</span>
+            </div>
+        </div>
+    </div>
     <!-- 底部 -->
     <footer class="footer">
         <div class="container">
@@ -630,8 +707,10 @@
     </footer>
     <!-- <link rel="stylesheet" href="../css/video.css"> -->
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../js/index.js"></script>
+    <script src="../js/rtc.js"></script>
 </body>
 
 </html>

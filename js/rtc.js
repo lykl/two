@@ -46,8 +46,10 @@ $(function() {
         $(".try-hidden").css('display', 'none');
     });
     //正则表达式判断
-    var reg = /^[1]{1}[0-9]{10}$/;
-    $('.submit').click(function() {
-
-    });
+    // var reg = /^[1]{1}[0-9]{10}$/;
+    // $('#tel').keyup(function() {
+    //     if (!reg.test($(this).val())) {
+    //         $('#checke').val('&times;');
+    //     }
+    // })
 });
