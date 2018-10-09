@@ -4,10 +4,7 @@ html,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
-p {
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -27,8 +24,8 @@ p {
   color: #fff;
   border-color: #fff;
 }
-html {
-  overflow-x: hidden;
+p {
+  color: #7a7a7a;
 }
 @media (max-width: 768px) {
   .h2,
@@ -42,6 +39,9 @@ html {
   .h5,
   h5 {
     font-size: 16px;
+  }
+  .action {
+    margin-top: 20px;
   }
   .action .btn {
     width: 100px;
@@ -124,16 +124,11 @@ html {
     float: right;
     z-index: 20;
   }
-  .header-mobile .menu button {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    pointer-events: auto;
-    background: 0 0;
-    border: none;
-    margin: 0;
-    padding: 0;
+  .header-mobile .menu i {
+    font-size: 34px;
+    color: #fff;
+    position: absolute;
+    top: -6px;
   }
   .header-mobile .nav-collapse {
     position: fixed;
@@ -203,6 +198,15 @@ html {
   .header {
     display: none;
   }
+  .investor img {
+    width: 100%;
+  }
+  .section {
+    padding: 40px 0;
+  }
+  .carousel-indicators {
+    bottom: -6%;
+  }
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .hidden-sm {
@@ -224,6 +228,9 @@ html {
   }
   h6 {
     font-size: 14px;
+  }
+  .action {
+    margin-top: 25px;
   }
   .action .btn {
     width: 110px;
@@ -354,6 +361,9 @@ html {
   .customer .sub-title {
     padding: 0 20px;
   }
+  .carousel-indicators {
+    bottom: 2%;
+  }
   .section {
     padding: 60px 0;
   }
@@ -366,6 +376,15 @@ html {
     height: 80px;
     padding: 10px 5px;
     margin-bottom: 3px;
+  }
+  .sidemenu .item .iconfont {
+    font-size: 50px;
+    line-height: 40px;
+  }
+  .sidemenu .item .icon-mianfeishiyong {
+    font-size: 25px;
+    display: block;
+    padding-bottom: 5px;
   }
   .sidemenu .biz-item {
     background-color: #5c8de6!important;
@@ -422,6 +441,21 @@ html {
     padding: 56px 40px;
   }
 }
+@media (max-width: 991px) {
+  .evaluate {
+    background: #f0f0f0;
+    text-align: center;
+  }
+  .customer .body img {
+    width: 60%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .customer .body .action {
+    text-align: center;
+    margin: 0 0 30px 0;
+  }
+}
 @media (min-width: 992px) {
   .header .navbar-nav > li > a {
     padding: 15px 16px;
@@ -449,6 +483,9 @@ html {
   h6 {
     font-size: 16px;
   }
+  .action {
+    margin-top: 30px;
+  }
   .action .btn {
     width: 120px;
     padding: 9px 0;
@@ -466,6 +503,9 @@ html {
   .evaluate .item {
     height: 430px;
     margin-top: 70px;
+  }
+  .evaluate .item h5 {
+    margin-top: 30px;
   }
   .evaluate .item img {
     height: 250px;
@@ -524,8 +564,17 @@ html {
   background: #f9f9f9;
   border-bottom: 1px solid #e5e5e5;
 }
+.news .row > div:first-child {
+  overflow: hidden;
+}
+.news .m {
+  width: 1072px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+}
 .news p {
-  float: left;
   line-height: 40px;
   color: #7a7a7a;
   margin-bottom: 0;
@@ -572,6 +621,28 @@ html {
   display: inline-block;
   width: 140px;
 }
+.customer .head .owl-stage {
+  position: relative;
+}
+.customer .head .owl-stage .owl-item {
+  opacity: .5;
+}
+.customer .head .owl-stage .owl-item.active {
+  opacity: 1;
+  cursor: pointer;
+}
+.customer .head .owl-stage .current:before {
+  content: '';
+  width: 0;
+  height: 0;
+  border: 24px solid transparent;
+  border-bottom: 24px solid #fff;
+  position: absolute;
+  top: 68px;
+  left: 60%;
+  margin-left: -24%;
+  z-index: 1;
+}
 .customer .title {
   margin-bottom: 10px;
   line-height: 50px;
@@ -581,6 +652,9 @@ html {
   margin-bottom: 70px;
   line-height: 1.5;
   padding: 0 100px;
+}
+.customer .body .owl-stage {
+  position: relative;
 }
 .customer .body h4 {
   line-height: 34px;
@@ -680,19 +754,44 @@ html {
 }
 .footer .right > div:nth-child(2) .social {
   margin-top: 10px;
+  position: relative;
 }
-.footer .right > div:nth-child(2) .social .easeicon {
+.footer .right > div:nth-child(2) .social .iconfont {
   color: #fff;
   background-color: #f2f2f2;
-  border-radius: 50px;
+  border-radius: 50%;
   font-size: 50px;
   line-height: 50px;
   margin-right: 30px;
   color: #273140;
   display: inline-block;
 }
-.footer .right > div:nth-child(2) .social .easeicon:last-child {
+.footer .right > div:nth-child(2) .social .icon:last-child {
   margin-right: 0;
+}
+.footer .right > div:nth-child(2) .social .icon-wechat:hover {
+  color: #00d20c;
+}
+.footer .right > div:nth-child(2) .social a:hover .icon-weibo {
+  color: #f5161f!important;
+}
+.footer .right > div:nth-child(2) .social .erweima {
+  position: absolute;
+  padding: 5px;
+  background: #fff;
+  width: 130px;
+  display: none;
+}
+.footer .right > div:nth-child(2) .social .erweima:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 5px solid #fff;
 }
 .footer .right > div:nth-child(3) {
   width: 30%;
@@ -704,7 +803,7 @@ html {
   text-decoration: none;
   color: #fff;
 }
-.footer .right > div:nth-child(3) .item.easeicon {
+.footer .right > div:nth-child(3) .item.iconfont {
   font-size: 60px;
   line-height: 60px;
 }
@@ -740,11 +839,10 @@ html {
 }
 .sidemenu {
   position: fixed;
-  z-index: 20;
+  z-index: 2;
 }
 .sidemenu .item {
-  color: #fff;
-  background-color: #4fc0ff;
+  background-color: #fff;
   text-align: center;
   position: relative;
 }
@@ -757,8 +855,8 @@ html {
   font-size: 12px;
   color: #fff;
 }
-.sidemenu .item:hover {
-  background-color: #4ba5ec;
+.sidemenu .icon-huidaodingbu {
+  color: #3275f1;
 }
 .dialog {
   z-index: 100;
@@ -824,9 +922,9 @@ html {
   line-height: 1.5;
 }
 .dialog__content {
-  background: url(https://www.easemob.com/themes/official_v3/Public/img/try-bg.jpg);
+  background: url(../img/xh/try-bg.jpg);
 }
-.chat {
+.chat1 {
   display: none;
   position: fixed;
   right: 179px;
@@ -836,8 +934,10 @@ html {
   overflow: hidden;
   background-color: #fff;
   border-radius: 4px;
+  z-index: 10;
 }
-.chat .chat-header {
+.chat1 .chat-header {
+  cursor: move;
   background: #00cccd;
   height: 41px;
   line-height: 41px;
@@ -849,10 +949,18 @@ html {
   padding-left: 10px;
   color: #fff;
 }
-.chat .chat-header p {
+.chat1 .chat-header p {
   display: inline-block;
+  color: #fff;
 }
-.chat .wrapper {
+.chat1 .chat-header .icon-min {
+  padding: 0 6px;
+}
+.chat1 .chat-header .iconfont {
+  float: right;
+  cursor: pointer;
+}
+.chat1 .wrapper {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -862,7 +970,7 @@ html {
   background-color: #fff;
   border-radius: 4px;
 }
-.chat .chat-wrapper {
+.chat1 .chat-wrapper {
   position: absolute;
   top: 41px;
   bottom: 140px;
@@ -877,12 +985,12 @@ html {
   transition: margin .5s,top 0s;
   -webkit-overflow-scrolling: touch;
 }
-.chat .chat-container {
+.chat1 .chat-container {
   padding: 24px 0 20px;
   overflow: hidden;
   position: relative;
 }
-.chat .date {
+.chat1 .date {
   width: 100%;
   float: left;
   margin: 8px 0;
@@ -890,18 +998,18 @@ html {
   color: #fff;
   font-size: 12px;
 }
-.chat .left {
+.chat1 .left {
   margin-bottom: -22px;
 }
-.chat .left img {
+.chat1 .left img {
   width: 30px;
   height: 30px;
   margin-left: 10px;
   float: left;
   border-radius: 50%;
 }
-.chat .left,
-.chat .right {
+.chat1 .left,
+.chat1 .right {
   float: left;
   display: block;
   text-decoration: none;
@@ -909,7 +1017,7 @@ html {
   text-align: left;
   margin: 8px 0;
 }
-.chat .chat-content {
+.chat1 .chat-content {
   clear: both;
   left: 50px;
   top: -30px;
@@ -920,7 +1028,7 @@ html {
   border-radius: 6px;
   max-width: 76%;
 }
-.chat .chat-content span {
+.chat1 .chat-content span {
   display: inline-block;
   border-radius: 6px;
   padding: 10px;
@@ -935,14 +1043,14 @@ html {
   word-break: break-word;
   white-space: pre-wrap;
 }
-.chat .send-wrapper {
+.chat1 .send-wrapper {
   position: absolute;
   height: 140px;
   width: 100%;
   bottom: 0;
   background-color: #fff;
 }
-.chat .send-wrapper .inp {
+.chat1 .send-wrapper .inp {
   width: 100%;
   height: 70px;
   border: none;
@@ -951,8 +1059,9 @@ html {
   box-sizing: border-box;
   font-size: 13px;
   resize: none;
+  outline: none;
 }
-.chat .send-wrapper .send {
+.chat1 .send-wrapper .send {
   background-color: #00cccd!important;
   position: absolute;
   right: 10px;
@@ -965,9 +1074,29 @@ html {
   color: #fff;
   cursor: pointer;
 }
-.chat .send-wrapper .send.disabled {
+.chat1 .send-wrapper .send.disabled {
   background-color: #ccc!important;
   cursor: default;
+}
+.chat1 .send-wrapper .toolbar .icon-face {
+  font-size: 30px;
+}
+.chat1 .send-wrapper .toolbar .icon-picture {
+  font-size: 23px;
+}
+.chat1 .send-wrapper .toolbar .icon-attachment {
+  font-size: 23px;
+}
+.chat1 .send-wrapper .toolbar .icon-sendVideo {
+  font-size: 19px;
+}
+.chat1 .send-wrapper .toolbar .icon-note {
+  font-size: 19px;
+  padding: 5px;
+}
+.chat1 .send-wrapper .toolbar .iconfont {
+  cursor: pointer;
+  display: inline-block;
 }
 .authentication {
   font-size: 12px;

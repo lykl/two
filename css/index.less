@@ -1,5 +1,5 @@
 @charset "UTF-8";
-body,html,h1,h2,h3,h4,h5,h6,p{
+body,html,h1,h2,h3,h6{
     margin: 0;
     padding: 0;
 }
@@ -27,8 +27,8 @@ body,html,h1,h2,h3,h4,h5,h6,p{
     border-color: #fff;
 }
 
-html{
-    overflow-x: hidden;
+p {
+    color: #7a7a7a;
 }
 
 @media(max-width:768px){
@@ -42,6 +42,7 @@ html{
         font-size: 16px;
     }
     .action{
+        margin-top: 20px;
         .btn{
             width: 100px;
             font-size: 12px;
@@ -126,16 +127,11 @@ html{
             transition: .1s;
             float: right;
             z-index: 20;
-            button{
-                position: relative;
-                width: 100%;
-                height: 100%;
-                cursor: pointer;
-                pointer-events: auto;
-                background: 0 0;
-                border: none;
-                margin: 0;
-                padding: 0;
+            i{
+                font-size: 34px;
+                color: #fff;
+                position: absolute;
+                top: -6px;
             }
         }
         .nav-collapse{
@@ -209,6 +205,17 @@ html{
     .header{
         display: none;
     }
+    .investor{
+        img{
+            width: 100%;
+        }
+    }
+    .section {
+        padding: 40px 0;
+    }
+    .carousel-indicators {
+        bottom: -6%;
+    }
 }
 
 @media (max-width: 991px) and (min-width: 768px){
@@ -233,10 +240,13 @@ html{
     h6{
         font-size: 14px;
     }
-    .action .btn {
-        width: 110px;
-        font-size: 14px;
-        padding: 8px 0;
+    .action {
+        margin-top: 25px;
+        .btn {
+            width: 110px;
+            font-size: 14px;
+            padding: 8px 0;
+        }
     }
     .navbar-nav>li>a {
         color: #fff;
@@ -370,6 +380,9 @@ html{
             padding: 0 20px;
         }
     }
+    .carousel-indicators {
+        bottom: 2%;
+    }
     .section {
         padding: 60px 0;
     }
@@ -381,6 +394,15 @@ html{
             height: 80px;
             padding: 10px 5px;
             margin-bottom: 3px;
+            .iconfont{
+                font-size: 50px;
+                line-height: 40px;
+            }
+            .icon-mianfeishiyong {
+                font-size: 25px;
+                display: block;
+                padding-bottom: 5px;
+            }
         }
         .biz-item {
             background-color: #5c8de6!important;
@@ -442,6 +464,24 @@ html{
     }
 }
 
+@media (max-width: 991px){
+    .evaluate {
+        background: #f0f0f0;
+        text-align: center;
+    }
+    .customer .body {
+        img {
+            width: 60%;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .action{
+            text-align: center;
+            margin: 0 0 30px 0;     
+       }
+    }
+}
+
 @media (min-width: 992px){
     .header .navbar-nav>li>a {
         padding: 15px 16px;
@@ -470,9 +510,12 @@ html{
     h6{
         font-size: 16px;
     }
-    .action .btn {
-        width: 120px;
-        padding: 9px 0;
+    .action{
+        margin-top: 30px;
+         .btn {
+            width: 120px;
+            padding: 9px 0;
+        }
     }
     .customer{
         .sub-title{
@@ -488,6 +531,9 @@ html{
         .item {
             height: 430px;
             margin-top: 70px;
+            h5{
+                margin-top: 30px;
+            }
             img {
                 height: 250px;
             }
@@ -554,8 +600,17 @@ html{
 .news{
     background: #f9f9f9;
     border-bottom: 1px solid #e5e5e5;
+    .row>div:first-child{
+        overflow: hidden;
+    }
+    .m{
+        width: 1072px;
+        display: flex;
+        justify-content: space-around;
+        position: relative;
+        overflow: hidden;
+    }
     p{
-        float: left;
         line-height: 40px;
         color: #7a7a7a;
         margin-bottom: 0;
@@ -608,6 +663,28 @@ html{
                 width: 140px;
             }
         }
+        .owl-stage{
+            position: relative;
+            .owl-item{
+                opacity: .5;
+            }
+            .owl-item.active{
+                opacity: 1;
+                cursor: pointer;
+            }
+            .current:before{
+                content: '';
+                width: 0;
+                height: 0;
+                border: 24px solid transparent;
+                border-bottom: 24px solid #fff;
+                position: absolute;
+                top: 68px;
+                left: 60%;
+                margin-left: -24%;
+                z-index: 1;
+            }
+        }
     }
     .title {
         margin-bottom: 10px;
@@ -620,6 +697,9 @@ html{
         padding: 0 100px;
     }
     .body {
+        .owl-stage{
+            position: relative;
+        }
         h4 {
             line-height: 34px;
         }
@@ -720,18 +800,43 @@ html{
         }
         .social {
             margin-top: 10px;
-            .easeicon {
+            position: relative;
+            .iconfont {
                 color: #fff;
                 background-color: #f2f2f2;
-                border-radius: 50px;
+                border-radius: 50%;
                 font-size: 50px;
                 line-height: 50px;
                 margin-right: 30px;
                 color: #273140;
                 display: inline-block;
-            }
-            .easeicon:last-child {
+            }          
+            .icon:last-child {
                 margin-right: 0;
+            }
+            .icon-wechat:hover{
+                color: #00d20c;
+            }
+            a:hover .icon-weibo{
+                color: #f5161f!important;
+            }
+            .erweima{
+                position: absolute;
+                padding: 5px;
+                background: #fff;
+                width: 130px;
+                display: none;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: -10px;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 0;
+                    border: 5px solid transparent;
+                    border-top: 5px solid #fff;
+                }
             }
         }
     }
@@ -744,7 +849,7 @@ html{
             text-decoration: none;
             color: #fff;
         }
-        .item.easeicon {
+        .item.iconfont {
             font-size: 60px;
             line-height: 60px;
         }
@@ -787,10 +892,9 @@ html{
 }
 .sidemenu {
     position: fixed;
-    z-index: 20;
+    z-index: 2;
     .item {
-        color: #fff;
-        background-color: #4fc0ff;
+        background-color: #fff;
         text-align: center;
         position: relative;
         a {
@@ -802,9 +906,9 @@ html{
             font-size: 12px;
             color: #fff;
         }
-        &:hover{
-            background-color: #4ba5ec;
-        }
+    }
+    .icon-huidaodingbu{
+        color: #3275f1;
     }
 }
 .dialog {
@@ -882,9 +986,9 @@ html{
     }
 }
 .dialog__content{
-    background: url(https://www.easemob.com/themes/official_v3/Public/img/try-bg.jpg);
+    background: url(../img/xh/try-bg.jpg);
 }
-.chat{
+.chat1{
     display: none;
     position: fixed;
     right: 179px;
@@ -894,7 +998,9 @@ html{
     overflow: hidden;
     background-color: #fff;
     border-radius: 4px;
+    z-index: 10;
     .chat-header{
+        cursor: move;
         background: #00cccd;
         height: 41px;
         line-height: 41px;
@@ -907,6 +1013,14 @@ html{
         color: #fff;
         p{
             display: inline-block;
+            color: #fff;
+        }
+        .icon-min {
+            padding: 0 6px;
+        }
+        .iconfont {
+            float: right;
+            cursor: pointer;
         }
     }
     .wrapper{
@@ -1006,6 +1120,7 @@ html{
             box-sizing: border-box;
             font-size: 13px;
             resize: none;
+            outline: none;
         }
         .send{
             background-color: #00cccd!important;
@@ -1023,6 +1138,28 @@ html{
         .send.disabled{
             background-color: #ccc!important;
             cursor: default;
+        }
+        .toolbar{
+            .icon-face {
+                font-size: 30px;
+            }
+            .icon-picture {
+                font-size: 23px;
+            }
+            .icon-attachment {
+                font-size: 23px;
+            }
+            .icon-sendVideo {
+                font-size: 19px;
+            }
+            .icon-note {
+                font-size: 19px;
+                padding: 5px;
+            }
+            .iconfont {
+                cursor: pointer;
+                display: inline-block;
+            }
         }
     }
 }

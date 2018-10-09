@@ -39,6 +39,7 @@ body,html{
         padding: 6px 20px;
         color: rgb(255, 255, 255);
         background-color: rgb(107, 206, 165);
+        z-index: 1;
     }
 }
 
@@ -82,6 +83,7 @@ body,html{
     .stage {
         padding: 60px 0 60px;
         background: #f5f5f5;
+        position: relative;
         h4 {
             line-height: 34px;
         }
@@ -134,7 +136,6 @@ body,html{
         height: 1em;
         vertical-align: -0.15em;
         fill: currentColor;
-        overflow: hidden;
     }
     .sub-title {
         margin-top: -60px;
@@ -171,8 +172,19 @@ body,html{
 
 .function{
     text-align: center;
-    .chat img {
-        margin-bottom: 40px;
+    .chat{ 
+        img {
+            margin-bottom: 40px;
+        }
+        .action{
+            a{
+                transition: .3s;
+                &:hover{
+                    background: #5cb85c;
+                    color: #fff;
+                }
+            }
+        }
     }
     hr {
         margin-top: 40px;
@@ -254,6 +266,7 @@ body,html{
 .feature{
     ul{
         li{
+            cursor: pointer;
             .btn {
                 color: #576E91;
                 border-color: #576E91;
@@ -277,6 +290,7 @@ body,html{
                 vertical-align: -0.3em;
                 font-size: 35px;
                 margin-right: 3px;
+                vertical-align: middle;
             }
         }
         p{
@@ -307,6 +321,13 @@ body,html{
     }
     .action {
         text-align: center;
+        a{
+            transition: .3s;
+            &:hover{
+                background: #4eb1f4;
+                color: #fff;
+            }
+        }
     }
 }
 
@@ -331,6 +352,13 @@ body,html{
     }
     .action{
         text-align: center;
+        a{
+            transition: .3s;
+            &:hover{
+                background: #fff;
+                color: #000;
+            }
+        }
     }
 }
 
@@ -592,7 +620,7 @@ body,html{
 
 .sidemenu {
     position: fixed;
-    z-index: 20;
+    z-index: 2;
     .item {
         color: #fff;
         background-color: #4fc0ff;
@@ -613,7 +641,7 @@ body,html{
     }
 }
 
-.chat{
+.chat1{
     display: none;
     position: fixed;
     z-index: 5;
@@ -637,6 +665,16 @@ body,html{
         color: #fff;
         p{
             display: inline-block;
+        }
+        .iconfont{
+            float: right;
+            cursor: pointer;
+        }
+        .icon-min{
+            padding: 0 6px;
+            &:hover{
+                background-color: #38e6e7;
+            }
         }
     }
     .wrapper{
@@ -676,6 +714,11 @@ body,html{
         text-align: center;
         color: #fff;
         font-size: 12px;
+        span{
+            background: #c9ced3;
+            border-radius: 4px;
+            padding: 1px 3px;
+        }
     }
     .left{
         margin-bottom: -22px;
@@ -727,6 +770,34 @@ body,html{
         width: 100%;
         bottom: 0;
         background-color: #fff;
+        .toolbar{
+            float: left;
+            top: 5px;
+            left: 5px;
+            position: relative;
+            color: #4d4d4d;
+            .iconfont{
+                // font-size: 30px;
+                cursor: pointer;
+                display: inline-block;
+            }
+            .icon-face{
+                font-size: 30px;
+            }
+            .icon-picture{
+                font-size: 23px;
+            }
+            .icon-attachment{
+                font-size: 23px;
+            }
+            .icon-sendVideo{
+                font-size: 19px;
+            }
+            .icon-note{
+                font-size: 19px;
+                padding: 5px;
+            }
+        }
         .inp{
             width: 100%;
             height: 70px;
@@ -736,6 +807,7 @@ body,html{
             box-sizing: border-box;
             font-size: 13px;
             resize: none;
+            outline: none;
         }
         .send{
             background-color: #00cccd!important;
@@ -838,18 +910,43 @@ body,html{
         }
         .social {
             margin-top: 10px;
-            .easeicon {
+            position: relative;
+            .iconfont {
                 color: #fff;
                 background-color: #f2f2f2;
-                border-radius: 50px;
+                border-radius: 50%;
                 font-size: 50px;
                 line-height: 50px;
                 margin-right: 30px;
                 color: #273140;
                 display: inline-block;
             }
-            .easeicon:last-child {
+            .iconfont:last-child {
                 margin-right: 0;
+            }
+            .icon-wechat:hover{
+                color: #00d20c;
+            }
+            a:hover .icon-weibo{
+                color: #f5161f!important;
+            }
+            .erweima{
+                position: absolute;
+                padding: 5px;
+                background: #fff;
+                width: 130px;
+                display: none;
+                &:before{
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: -10px;
+                    transform: translateX(-50%);
+                    width: 0;
+                    height: 0;
+                    border: 5px solid transparent;
+                    border-top: 5px solid #fff;
+                }
             }
         }
     }
@@ -862,7 +959,7 @@ body,html{
             text-decoration: none;
             color: #fff;
         }
-        .item.easeicon {
+        .item.iconfont {
             font-size: 60px;
             line-height: 60px;
         }
@@ -909,6 +1006,9 @@ body,html{
     .h5, h5 {
         font-size: 16px;
     }
+    .carousel-indicators{
+        bottom: -6%;
+    }
     .action{
         .btn{
             width: 100px;
@@ -945,6 +1045,15 @@ body,html{
             border-right: 1px solid #00b3ff;
             p {
                 margin-top: -5px;
+            }
+            .iconfont{
+                font-size: 40px;
+                line-height: 30px;
+            }
+            .icon-mianfeishiyong{
+                font-size: 25px;
+                display: block;
+                padding-bottom: 5px;
             }
         }
         .item:last-child {
@@ -994,16 +1103,11 @@ body,html{
             transition: .1s;
             float: right;
             z-index: 20;
-            button{
-                position: relative;
-                width: 100%;
-                height: 100%;
-                cursor: pointer;
-                pointer-events: auto;
-                background: 0 0;
-                border: none;
-                margin: 0;
-                padding: 0;
+            i{
+                font-size: 34px;
+                color: #fff;
+                position: absolute;
+                top: -6px;
             }
         }
         .nav-collapse{
@@ -1079,7 +1183,10 @@ body,html{
     }
 
     .try{
-        padding: 10px 0;
+        padding: 10px 0!important;
+        .input-group{
+            width: 100%;
+        }
     }
     .scene{
         .tab{
@@ -1087,6 +1194,11 @@ body,html{
         }
         .stage {
             padding: 30px 0 30px;
+            .col-md-7{
+                img{
+                    width: 100%;
+                }
+            }
         }
     }
     .section{
@@ -1099,11 +1211,23 @@ body,html{
             margin-bottom: 40px;
         }
     }
-    .advantage .above {
-        h3 {
-            text-align: center;
-            margin-top: 60px;
-            margin-bottom: 50px;
+    .function{
+        .chat{
+            >img{
+                width: 100%;
+            }
+        }
+    }
+    .advantage {
+        .above {
+            h3 {
+                text-align: center;
+                margin-top: 60px;
+                margin-bottom: 50px;
+            }
+        }
+        img{
+            width: 100%;
         }
     }
     .feature {
@@ -1135,6 +1259,16 @@ body,html{
                 margin-bottom: 20px;
             }
         }
+    }
+    .deploy{
+        >img{
+            width: 100%;
+        }
+    }
+    .chat1{
+        width: 100%;
+        right: 0;
+        bottom: 0;
     }
     #try-kefu{
         .dialog__content{
@@ -1175,6 +1309,9 @@ body,html{
     }
     .h6,h6{
         font-size: 14px;
+    }
+    .carousel-indicators{
+        bottom: 2%;
     }
     .action .btn {
         width: 110px;
@@ -1442,6 +1579,15 @@ body,html{
             height: 80px;
             padding: 10px 5px;
             margin-bottom: 3px;
+            .iconfont{
+                font-size: 50px;
+                line-height: 40px;
+            }
+            .icon-mianfeishiyong{
+                font-size: 25px;
+                display: block;
+                padding-bottom: 5px;
+            }
         }
         .biz-item {
             background-color: #5c8de6!important;
@@ -1453,8 +1599,11 @@ body,html{
             background-color: #eaa800!important;
         }
         .top-item {
-            // background-color: #fff!important;
+            background-color: #fff!important;
             display: none;
+            i{
+                color: #3275f1;
+            }
         }
         .dev-wrap{
             width: 360px;
