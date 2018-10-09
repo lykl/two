@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+//初始样式
 h1,h2,h3,h4,h5,h6{
     font-family: inherit;
     font-weight: 500;
@@ -9,8 +10,15 @@ h1,h2,h3{
     margin-top: 20px;
     margin-bottom: 10px;
 }
+h4 {
+    font-size: 18px;
+}
 h5{
     font-size: 16px;
+}
+p{
+    color: #7a7a7a;
+    margin: 0 0 10px;
 }
 body{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -19,8 +27,18 @@ body{
     color: #333;
     background-color: #fff;
 }
-// main
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.glyphicon-ok{
+    color:rgb(78, 177, 244);
+}
+.image-background {
+    background: transparent none no-repeat scroll center center/cover;
+}
 
+// 价格
 .banner{
     height: 160px;
     background-image:url(../images/banner.jpg);
@@ -129,7 +147,7 @@ body{
     .ultimate{
         border: 1px solid rgb(48, 108, 182);
         .head{
-            background: rgb(48, 108, 182);
+            background-image:url(../images/ultimate.png);
         }
         .text{
             color:rgb(48, 108, 182, 0.8);
@@ -147,6 +165,7 @@ body{
     }    
 }
 
+//表格
 .detail{
     .title{
         width: 240px;
@@ -200,7 +219,6 @@ body{
             }
             
         }
-        
         tr{
             &:last-child td {
                 border-bottom: 0;
@@ -208,6 +226,7 @@ body{
             td{
                 vertical-align: middle;
                 height:60px;
+                
                 &:first-child {
                     border-left: 0;
                 }
@@ -215,11 +234,107 @@ body{
                     border-top: 0;
                 }
             }
+        }
+        .left {
+            text-align: left;
         }       
     }
     .highlight {
         color: rgb(78, 177, 244);
         font-weight: bold;
         vertical-align: middle;
+    }
+    .note {
+        margin-top: 45px;
+        margin-bottom: 80px;
+        .item{
+            margin-bottom:15px;
+            &>p{
+                color: #5CB85C;
+                font-weight: bold;
+            }
+        }
+        .indent {
+            margin-left: 15px;
+        } 
+    }
+}
+// 媒体查询
+@media (min-width:768px){
+    .h4, h4 {
+        font-size: 20px;
+    }
+    .container {
+        width: 750px;
+    }
+    .banner{
+        height:340px;
+        .text-box{
+            .title {
+                font-size: 22px;
+            }
+            .sub-title {
+                font-size: 18px;
+            }
+        }
+    }
+    .intro-card {
+        margin-top: -87px;
+        margin-bottom: 80px;
+        text-align: center;
+        .item{
+            .head {
+                padding: 30px 30px;
+            }
+        }
+    }
+}
+
+@media (min-width:992px){
+    .h4, h4 {
+        font-size: 22px;
+    }
+    .container {
+        width: 970px;
+    }
+   .banner {
+        height: 400px;
+        .text-box{
+            .title {
+                font-size: 30px;
+            }
+            .sub-title {
+                font-size: 26px;
+            }
+        }
+    }
+    .intro-card {
+        margin-top: -107px;
+        .item{
+            margin:0 10px;
+            .head{
+                padding: 40px 30px;
+            }
+        }
+    }
+}
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    }
+    .banner {
+        height: 420px;
+        .text-box{
+            .title {
+                font-size: 32px;
+                font-weight: bold;
+            }
+            .sub-title {
+                font-size: 22px;
+            }
+        }
+    }
+    .intro-card .container {
+        width: 1040px;
     }
 }
