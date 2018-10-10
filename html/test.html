@@ -11,11 +11,12 @@
 <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
 <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <link rel="stylesheet" href="../css/instant.css">
+    <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+    <link rel="stylesheet" href="../icon/xh/iconfont.css">
+    <link rel="stylesheet" href="../css/test.css">
 </head>
 
 <body>
-
     <div class="header-mobile">
         <a href="" class="logo"></a>
         <nav>
@@ -23,8 +24,7 @@
             <a href="" class="cs">客户互动云</a>
         </nav>
         <div class="menu">
-            <svg></svg>
-            <button></button>
+            <i class="iconfont icon-category"></i>
         </div>
         <div class="nav-collapse" style="display: none;">
             <div id="dummy" class="dummy">
@@ -212,63 +212,299 @@
             </div>
         </div>
     </div>
-    <div class="banner">
-        <div class="container-fluid">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img src="../img/xh/instant/im.jpg" alt="...">
-                        <div class="carousel-caption">
-
-                        </div>
+    <div id="try-kefu" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content image-background">
+            <form role="form" method="post" action="/api/guestbook/addmsg" class="form-horizontal">
+                <h2 class="title">申请试用</h2>
+                <h6 class="sub-title">提交后工作人员会尽快与您联系进行功能演示</h6>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="phone" maxlength="11" pattern="[0-9]{11}" placeholder="手机号" required="">
                     </div>
-                    <div class="item">
-                        <img src="../img/xh/instant/case.jpg" alt="...">
-                        <div class="carousel-caption">
-
-                        </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="full_name" placeholder="姓名" required="">
                     </div>
-                    <div class="item">
-                        <img src="../img/xh/instant/zyzx.jpg" alt="...">
-                        <div class="carousel-caption">
-
+                </div>
+                <div class="form-group verify">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="verify" placeholder="验证码" required="" autocomplete="off">
+                            <span class="input-group-addon">
+                                <img class="verify_img" src=""  style="cursor:pointer;vertical-align: top;" title="点击获取">
+                            </span>
                         </div>
                     </div>
                 </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary btn-block submit">提交</button>
+                            <button type="button" class="btn btn-default btn-block do-close" data-dialog-close="">不了，谢谢</button>
+                        </div>
+                        <div class="loading" style="display:none">
+                            <div class="sk-cube-grid">
+                                <div class="sk-cube sk-cube1"></div>
+                                <div class="sk-cube sk-cube2"></div>
+                                <div class="sk-cube sk-cube3"></div>
+                                <div class="sk-cube sk-cube4"></div>
+                                <div class="sk-cube sk-cube5"></div>
+                                <div class="sk-cube sk-cube6"></div>
+                                <div class="sk-cube sk-cube7"></div>
+                                <div class="sk-cube sk-cube8"></div>
+                                <div class="sk-cube sk-cube9"></div>
+                            </div>
+                        </div>
+                        <div class="success" style="display:none"> <span class="iconfont icon-duigou_jiage" style="font-size:50px"></span>
+                            <p class="text-center">提交成功</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
 
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+    <div class="sidemenu">
+        <div class="item transition tel visible-xs-block">
+            <a href="" rel="nofollow">
+                <i class="iconfont icon-dianhuazixun"></i>
+                <p>400电话</p>
+            </a>
+        </div>
+        <div class="item transition biz-item">
+            <a href="javascript:;" class="im-biz"> <i class="iconfont icon-swzx"></i>
+                <p>商务咨询</p>
+            </a>
+        </div>
+        <div class="item transition dev-item dev-trigger">
+            <a href="javascript:;" class="dev"> <i class="iconfont icon-jszx"></i>
+                <p>技术咨询</p>
+            </a>
+            <div class="dev-wrap" style="display: none; left: -750px; opacity: 0;">
+                <h6 class="title">提示：技术咨询已转移到管理后台，请先登录</h6>
+                <p class="sub-title">即时通讯云用户请在应用详情页提交工单，同时提供论坛互助支持服务。客户互动云用户请进入管理员模式在线咨询。</p>
+                <div>
+                    <a class="im btn btn-success btn-block" href="https://console.easemob.com/index.html" target="_blank">登录即时通讯云</a>
+                    <a class="kf btn btn-primary btn-block" href="https://kefu.easemob.com/" target="_blank">登录客户互动云</a> <a class="kf btn btn-info btn-block" href="http://www.imgeek.org/" target="_blank">IMGeek社区</a>
+                </div>
+            </div>
+        </div>
+        <div class="item transition try-item">
+            <a href="javascript:;" class="free-trial"> <span class="trigger"> <i class="iconfont icon-mianfeishiyong"></i> <p>免费试用</p> </span> </a>
+        </div>
+        <div class="item transition top-item hidden-xs">
+            <a href="javascript:;" class="scroll-top" style="margin-top:10px"> <i class="iconfont icon-huidaodingbu"></i> </a>
+        </div>
+    </div>
+
+    <div class="chat1">
+        <div class="chat-header">
+            <p>环信商务咨询</p>
+            <i class="iconfont icon-min"></i>
+            <i class="iconfont icon-audio2"></i>
+        </div>
+        <div class="wrapper">
+            <div class="chat-wrapper">
+                <div class="chat-container">
+                    <div class="date"></div>
+                    <div class="left">
+                        <img src="https://kefu.easemob.com/ossimages/kefu-prod-avatar.img-cn-hangzhou.aliyuncs.com/avatar/387/e2edbb10-7a49-4c50-a1fc-99ec8fd57682@0-0-200-200a%7C300h_300w%7C.png" alt="">
+                        <div class="chat-content">
+                            <span>尊敬的客户您好：感谢您对环信的支持，我们的人工服务时间是周一至周五9:00-18:00，请问您有什么需要帮助的呢？</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-wrapper">
+                <div class="toolbar">
+                    <i class="iconfont icon-face"></i>
+                    <i class="iconfont icon-picture"></i>
+                    <i class="iconfont icon-attachment"></i>
+                    <i class="iconfont icon-sendVideo"></i>
+                    <i class="iconfont icon-note"></i>
+                </div>
+                <textarea class="inp" style="resize: none" placeholder="点击输入内容..." cols="30" rows="10"></textarea>
+                <span class="send disabled">发送</span>
             </div>
         </div>
     </div>
 
-    <div class="section try">
+    <footer class="footer">
         <div class="container">
-            <div class="input-group">
-                <input type="text" class="form-control" placeholder="请输入您的手机号">
-                <span class="input-group-btn">
-                        <button class="btn try-trigger" type="button">免费试用</button>
-                    </span>
+            <div class="row">
+                <div class="col-md-6 left">
+                    <div>
+                        <h6>即时通讯云</h6>
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="">产品价格</a>
+                            </li>
+                            <li>
+                                <a href="">集成文档</a>
+                            </li>
+                            <li>
+                                <a href="">快速下载</a>
+                            </li>
+                            <li>
+                                <a href="">直播方案</a>
+                            </li>
+                            <li>
+                                <a href="">人脸特效</a>
+                            </li>
+                            <li>
+                                <a href="">智能反垃圾</a>
+                            </li>
+                            <li>
+                                <a href="">社交大数据</a>
+                            </li>
+                            <li>
+                                <a href="">发现SDK</a>
+                            </li>
+                            <li>
+                                <a href="">短信服务</a>
+                            </li>
+                            <li>
+                                <a href="">使用协议</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>客户互动云</h6>
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="">产品价格</a>
+                            </li>
+                            <li>
+                                <a href="">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="">产品文档</a>
+                            </li>
+                            <li>
+                                <a href="">快速下载</a>
+                            </li>
+                            <li>
+                                <a href="">客户声音</a>
+                            </li>
+                            <li>
+                                <a href="">视频客服</a>
+                            </li>
+                            <li>
+                                <a href="">智慧工单</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>机器人</h6>
+                        <ul class="list-unstyled list-inline">
+                            <li>
+                                <a href="">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href="">产品价格</a>
+                            </li>
+                            <li>
+                                <a href="">客户案例</a>
+                            </li>
+                            <li>
+                                <a href="">产品文档</a>
+                            </li>
+                            <li>
+                                <a href="">快速下载</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 right">
+                    <div>
+                        <h6>关于我们</h6>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="">公司介绍</a>
+                            </li>
+                            <li>
+                                <a href="">荣誉资质</a>
+                            </li>
+                            <li>
+                                <a href="">市场报告</a>
+                            </li>
+                            <li>
+                                <a href="">媒体报道</a>
+                            </li>
+                            <li>
+                                <a href="">合作伙伴</a>
+                            </li>
+                            <li>
+                                <a href="">投资机构</a>
+                            </li>
+                            <li>
+                                <a href="">加入我们</a>
+                            </li>
+                            <li>
+                                <a href="">品牌标识</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>联系我们</h6>
+                        <p>咨询热线</p>
+                        <hr>
+                        <a href="" rel="nofollow"><big>400-612-1986</big></a>
+                        <p>商务合作</p>
+                        <hr>
+                        <a href="">bd@easemob.com</a>
+                        <p>投诉建议</p>
+                        <hr>
+                        <a href="">issues@easemob.com</a>
+                        <div class="social">
+                            <i class="iconfont icon-wechat qrcode-weixin"></i>
+                            <a href="">
+                                <i class="iconfont icon-weibo"></i>
+                            </a>
+                            <div class="erweima">
+                                <img width="120" src="../img/xh/instant/qrcode-weixin.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-xs">
+                        <h6>权威认证</h6>
+                        <div class="certificate">
+                            <a class="item" href="">
+                                <i class="item iconfont icon-CMMI" style="line-height:20px"></i>
+                            </a>
+                            <a class="item" href="">
+                                <i class="item iconfont icon-kexinyun"></i>
+                            </a>
+                            <i class="item iconfont icon-ISO9001"></i>
+                            <i class="item iconfont icon-ISO27001"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="copyright">
+            <p>Copyright © 2016-2017 环信 Co.,Ltd. 北京易掌云峰科技有限公司版权所有</p>
+            <p>京ICP备14026002号
+                <a href="http://www.easemob.com/sla">SLA协议</a> 京ICP证160482
+            </p>
+        </div>
+    </footer>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="../js/test.js"></script>
 </body>
 
 </html>

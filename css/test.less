@@ -1,36 +1,4 @@
 @charset "UTF-8";
-body,html,h1,h2,h3,h6{
-    margin: 0;
-    padding: 0;
-}
-
-
-.clear:after{
-    content: ".";
-    clear: both;
-    display: block;
-    height: 0;
-    line-height: 0;
-    visibility: hidden;
-    overflow: hidden;
-}
-#main-navbar{
-    .list-unstyled{
-        li{
-            text-align: center;
-        }
-    }
-}
-
-.btn-default-outline {
-    color: #fff;
-    border-color: #fff;
-}
-
-p {
-    color: #7a7a7a;
-}
-
 @media(max-width:768px){
     .h2, h2 {
         font-size: 22px;
@@ -203,22 +171,14 @@ p {
                 bottom: 0;
                 margin-bottom: 20px;
                 width: 100%;
+                a{
+                    border: 1px solid #fff;
+                }
             }
         }
     }
     .header{
         display: none;
-    }
-    .investor{
-        img{
-            width: 100%;
-        }
-    }
-    .section {
-        padding: 40px 0;
-    }
-    .carousel-indicators {
-        bottom: -6%;
     }
     .footer{
         .right>div:nth-child(2){
@@ -232,13 +192,7 @@ p {
     }
 }
 
-@media (max-width: 991px) and (min-width: 768px){
-    .hidden-sm {
-        display: none!important;
-    }
-}
-
-@media (min-width: 768px){
+@media(min-width:768px){
     .header-mobile{
         display: none;
     }
@@ -266,9 +220,6 @@ p {
         color: #fff;
         padding: 15px 8px;
         background: 0 0;
-    }
-    .connect {
-        padding: 60px 0;
     }
     .header { 
         position: fixed;
@@ -389,17 +340,6 @@ p {
         border: 1px solid #fff;
         color: #fff;
     }
-    .customer{
-        .sub-title{
-            padding: 0 20px;
-        }
-    }
-    .carousel-indicators {
-        bottom: 2%;
-    }
-    .section {
-        padding: 60px 0;
-    }
     .sidemenu {
         top: 30%;
         right: 0;
@@ -428,7 +368,7 @@ p {
             background-color: #eaa800!important;
         }
         .top-item {
-            background-color: #fff!important;
+            // background-color: #fff!important;
             display: none;
         }
         .dev-wrap{
@@ -478,40 +418,11 @@ p {
     }
 }
 
-@media (max-width: 991px){
-    .evaluate {
-        background: #f0f0f0;
-        text-align: center;
-    }
-    .customer .body {
-        img {
-            width: 60%;
-            text-align: center;
-            margin-bottom: 10px;
-        }
-        .action{
-            text-align: center;
-            margin: 0 0 30px 0;     
-       }
-    }
-}
 
 @media (min-width: 992px){
     .header .navbar-nav>li>a {
         padding: 15px 16px;
     } 
- 
-    body .connect {
-        padding: 100px 0;
-        h2 {
-            margin: 0 0 100px 0;
-            line-height: 1;
-        }
-        margin-top: 170px;
-        .connect-right-text {
-            text-align: left;
-        }
-    }
     h2{
         font-size: 30px;
     }
@@ -531,31 +442,6 @@ p {
             padding: 9px 0;
         }
     }
-    .customer{
-        .sub-title{
-            padding: 0 60px;
-        }
-        .body h4 {
-            padding-top: 75px;
-        }
-    }
-    .evaluate {
-        background: rgba(240,240,240,.7) url(https://www.easemob.com/themes/official_v3/Public/img/home/evaluate-bg.png) 0 210px repeat-x;
-        text-align: center;
-        .item {
-            height: 430px;
-            margin-top: 70px;
-            h5{
-                margin-top: 30px;
-            }
-            img {
-                height: 250px;
-            }
-        }
-    }
-    .section {
-        padding: 80px 0;
-    }
     .footer{
         .left>div{
             width: 500px;
@@ -566,12 +452,6 @@ p {
 @media (min-width: 1200px){
     .navbar-nav>li>a {
         padding: 15px 20px!important;
-    }
-    .connect {
-        padding: 100px 0!important;
-        .connect-text{
-            margin-top: 215px;
-        }
     }
     h2{
         font-size: 32px;
@@ -589,178 +469,11 @@ p {
         width: 130px;
         padding: 10px 0;
     }
-    .customer{
-        .sub-title{
-            padding: 0 100px;
-        }
-    }
-    .section {
-        padding: 100px 0;
-    }
 }
 
 .navbar-btn.btn-sm {
     margin-top: 10px;
     margin-bottom: 10px;
-}
-
-.banner{
-    cursor: pointer;
-    .container-fluid{
-        padding: 0;
-    }
-}
-
-.news{
-    background: #f9f9f9;
-    border-bottom: 1px solid #e5e5e5;
-    .row>div:first-child{
-        overflow: hidden;
-    }
-    .m{
-        width: 1072px;
-        display: flex;
-        justify-content: space-around;
-        position: relative;
-        overflow: hidden;
-    }
-    p{
-        line-height: 40px;
-        color: #7a7a7a;
-        margin-bottom: 0;
-    }
-    a{
-        text-decoration: none;
-        color: #7a7a7a;
-    }
-}
-
-.connect {
-    background-color: #FFF;
-    padding: 60px 0;
-    .title {
-        line-height: 1;
-        margin: 0;
-    }
-    h5 {
-        color: #7a7a7a;
-        line-height: 1.3;
-    }
-    .connect-text {
-        text-align: right;
-        font-size: 18px;
-        padding: 0 15px;
-    }
-}
-
-.btn-im {
-    color: #fff;
-    background-color: #5cb85c;
-    border-color: #5cb85c;
-}
-
-.btn-cs {
-    color: #fff;
-    background-color: #4eb1f4;
-    border-color: #4eb1f4;
-}
-.customer{
-    .head{
-        position: relative;
-        background-color: #F9F9F9;
-        padding: 50px 0 50px;
-        text-align: center;
-        border-bottom: 1px solid #eee;
-        .item{
-            img{
-                display: inline-block;
-                width: 140px;
-            }
-        }
-        .owl-stage{
-            position: relative;
-            .owl-item{
-                opacity: .5;
-            }
-            .owl-item.active{
-                opacity: 1;
-                cursor: pointer;
-            }
-            .current:before{
-                content: '';
-                width: 0;
-                height: 0;
-                border: 24px solid transparent;
-                border-bottom: 24px solid #fff;
-                position: absolute;
-                top: 68px;
-                left: 60%;
-                margin-left: -24%;
-                z-index: 1;
-            }
-        }
-    }
-    .title {
-        margin-bottom: 10px;
-        line-height: 50px;
-    }
-    .sub-title {
-        margin-top: 0;
-        margin-bottom: 70px;
-        line-height: 1.5;
-        padding: 0 100px;
-    }
-    .body {
-        .owl-stage{
-            position: relative;
-        }
-        h4 {
-            line-height: 34px;
-        }
-        p {
-            margin-bottom: 25px;
-            line-height: 1.6;
-            color: #7a7a7a;
-        }
-    }
-}
-.owl-carousel{
-    .owl-item{
-        position: relative;
-        min-height: 1px;
-        float: left;
-        width: 190px;
-    }
-    .owl-stage{
-        overflow: hidden;
-    }
-    .owl-stage-outer {
-        position: relative;
-        overflow: hidden;
-    }
-}
-.btn-primary {
-    background-color: #4eb1f4;
-    border-color: #4eb1f4;
-}
-.img-responsive {
-    display: inline-block;
-    max-width: 100%;
-    height: auto;
-}
-.investor{
-    background-color: #F2F3F6;
-    text-align: center;
-    padding: 90px 0 190px 0;
-    background-image: url(https://www.easemob.com/themes/official_v3/Public/img/home/investor-background.jpg);
-    img{
-        margin-bottom: 110px;
-    }
-    .title {
-        margin-bottom: 70px;
-        line-height: 50px;
-        color: #FFF;
-    }
 }
 .footer{
     background: #273140;
@@ -896,7 +609,6 @@ p {
         }
     }    
 }
-
 
 .sidemenu {
     position: fixed;
@@ -1348,29 +1060,6 @@ p {
                 color: #666;
                 white-space: nowrap;
                 overflow: hidden;
-            }
-        }
-    }
-}
-
-@media(max-width:991px){
-    .connect {
-        h2 {
-            margin: 0 0 60px 0;
-            line-height: 1.3;
-        }
-        .connect-text {
-            margin: 0 0 40px 0;
-            padding: 0 10px;
-            text-align: center;
-        }
-    }
-    .customer{
-        .body{
-            padding: 30px 0 30px;
-            .text-right{
-                text-align: center;
-                margin-bottom: 10px;
             }
         }
     }

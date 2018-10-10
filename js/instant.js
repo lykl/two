@@ -71,29 +71,27 @@ $('.login-register a').eq(3).on('mouseover', function() {
 
 //页面滚动事件
 var flag = true;
+
 $(window).scroll(function() {
-    var tp = $(window).scrollTop();
+    // var tp = $(window).scrollTop();
     if (flag) {
+        flag = false;
         setTimeout(function() {
-            if ($(window).scrollTop() > tp) {
-                $('.header').stop().animate({
-                    'top': '-100%'
-                }, 500);
-            } else {
-                $('.header').stop().animate({
-                    'top': 0
-                }, 500);
-            }
+            // if ($(window).scrollTop() < tp) {
+            //     $('.hd').stop().slideUp(500);
+            // } else {
+            //     $('.hd').stop().slideDown(500);
+            // }
             //导航栏
             if ($('.header').offset().top > 0) {
                 $('.header').stop().animate({ 'backgroundColor': '#4eb1f4' }, 1000);
             } else if ($('.header').offset().top == 0) {
-                $('.header').stop(true, true).animate({ 'backgroundColor': 'transparent' }, 1000);
+                $('.header').stop().animate({ 'backgroundColor': 'transparent' }, 1000);
             }
             if ($('.header-mobile').offset().top > 0) {
                 $('.header-mobile').stop().animate({ 'backgroundColor': '#4eb1f4' }, 1000);
             } else if ($('.header-mobile').offset().top == 0) {
-                $('.header-mobile').stop(true, true).animate({ 'backgroundColor': 'transparent' }, 1000);
+                $('.header-mobile').stop().animate({ 'backgroundColor': 'transparent' }, 1000);
             }
             if ($('.sidemenu').offset().top > 1109) {
                 $('.top-item').fadeIn();
@@ -124,7 +122,6 @@ $(window).scroll(function() {
             }
             flag = true;
         }, 200);
-        flag = false;
     }
 });
 
@@ -182,7 +179,8 @@ $(window).resize(function() {
         });
     } else {
         $('.tab .owl-stage').css({
-            'width': $('.scene .owl-stage .owl-item').eq(0).width() * $('.scene .owl-stage .owl-item').length
+            'width': $('.scene .owl-stage .owl-item').eq(0).width() * $('.scene .owl-stage .owl-item').length,
+            'left': 0
         });
     }
 
@@ -197,7 +195,7 @@ btns.hover(function() {
     i = $(this).index();
     $(this).addClass('active').siblings().removeClass('active');
     if (window.innerWidth < 992) {
-        btns.parent().animate({
+        btns.parent().stop().animate({
             'left': btns.parent().parent().width() / 2 - b / 2 - b * i
         });
     }
@@ -215,21 +213,21 @@ function start() {
         i = 0;
         btns.eq(0).addClass('active').siblings().removeClass('active');
         if (window.innerWidth < 992) {
-            btns.parent().animate({
+            btns.parent().stop().animate({
                 'left': btns.parent().parent().width() / 2 - b / 2
             });
         }
-        banner.animate({
+        banner.stop().animate({
             'left': 0
         });
     } else {
         if (window.innerWidth < 992) {
-            btns.parent().animate({
+            btns.parent().stop().animate({
                 'left': btns.parent().parent().width() / 2 - b / 2 - b * i
             });
         }
         btns.eq(i).addClass('active').siblings().removeClass('active');
-        banner.animate({
+        banner.stop().animate({
             'left': -width * i
         });
     }
@@ -244,13 +242,15 @@ banner.hover(function() {
 //特色服务
 $('.feature .col-sm-4:first-of-type .list-unstyled li').on('mouseover', function() {
     var j = $(this).index();
-    $(this).addClass('active').siblings().removeClass('active');
+    $('.feature .list-unstyled li').removeClass('active');
+    $(this).addClass('active');
     $('.feature .col-sm-4:nth-child(2) img').css('zIndex', 0);
     $('.feature .col-sm-4:nth-child(2) img').eq(j).css('zIndex', 1);
 });
 $('.feature .col-sm-4:last-of-type  .list-unstyled li').on('mouseover', function() {
     var j = $(this).index();
-    $(this).addClass('active').siblings().removeClass('active');
+    $('.feature .list-unstyled li').removeClass('active');
+    $(this).addClass('active');
     $('.feature .col-sm-4:nth-child(2) img').css('zIndex', 0);
     $('.feature .col-sm-4:nth-child(2) img').eq(j + 3).css('zIndex', 1);
 });
@@ -316,7 +316,6 @@ $('.chat1 .icon-min').on('click', function() {
 
 $('.chat-header').on('mousedown', function(e) {
     e = e || event;
-    console.log(e.target, $('.chat1 .icon-min')[0]);
     if (e.target == $('.chat1 .icon-min')[0]) {
         $('.chat1 .icon-min').trigger('click');
     }

@@ -28,7 +28,6 @@ $('.login-register a').hover(function() {
         'color': '#fff',
         'background': '#52b0ef'
     });
-    // $('.login-register').removeClass('white').addClass('blue');
 }, function() {
     $('.login-register a').css({
         'color': '#52b0ef',
@@ -44,23 +43,18 @@ $('.login-register a').hover(function() {
     });
 });
 
-$('.login-register a').eq(0).hover(function() {
-    $('.login-register').removeClass('white').addClass('blue');
-}, function() {
-    $('.login-register').removeClass('blue').addClass('white');
+$('.login-register a').eq(0).on('mouseover', function() {
+    $('.login-register').eq(0).removeClass('white').addClass('blue');
 });
-// $('.login-register a').eq(1).on('mouseover', function() {
-//     $('.login-register').eq(0).removeClass('blue').addClass('white');
-// });
-$('.login-register a').eq(2).hover(function() {
-    $('.login-register').removeClass('white').addClass('blue');
-}, function() {
-    $('.login-register').removeClass('blue').addClass('white');
+$('.login-register a').eq(1).on('mouseover', function() {
+    $('.login-register').eq(0).removeClass('blue').addClass('white');
 });
-// $('.login-register a').eq(3).on('mouseover', function() {
-//     $('.login-register').eq(1).removeClass('blue').addClass('white');
-// });
-
+$('.login-register a').eq(2).on('mouseover', function() {
+    $('.login-register').eq(1).removeClass('white').addClass('blue');
+});
+$('.login-register a').eq(3).on('mouseover', function() {
+    $('.login-register').eq(1).removeClass('blue').addClass('white');
+});
 
 //导航栏登录按钮特效
 $('.header .btn-default-outline').hover(function() {
@@ -99,147 +93,6 @@ $(window).scroll(function() {
         }, 600);
         flag = false;
     }
-});
-
-//轮播相关响应式变化
-var btns = $('.head .owl-item'),
-    banner = $('.body .owl-stage'),
-    len = banner.children('.owl-item').length,
-    width = banner.children('.owl-item').eq(0).width(),
-    interval,
-    i = 0,
-    b = btns.eq(0).width();
-
-$('.body .owl-item').css('width', $('.body .owl-stage-outer').width());
-
-if (window.innerWidth > 1200) {
-    $('.head .owl-item').css('width', '190px');
-} else if (window.innerWidth > 991) {
-    $('.head .owl-item').css('width', '156.667px');
-} else if (window.innerWidth >= 768) {
-    $('.head .owl-item').css('width', '140px');
-} else {
-    $('.head .owl-item').css('width', window.innerWidth / 3);
-}
-
-if (window.innerWidth < 992) {
-    $('.head .owl-stage').css({
-        'width': $('.head .owl-item').eq(0).width() * $('.head .owl-item').length + 1,
-        'left': btns.parent().width() / 2 - b / 2
-    });
-} else {
-    $('.head .owl-stage').css({
-        'width': $('.head .owl-item').eq(0).width() * $('.head .owl-item').length + 1,
-        'left': 0
-    });
-}
-
-width = banner.children('.owl-item').eq(0).width();
-b = btns.eq(0).width();
-banner.css('width', width * len);
-
-$(window).resize(function() {
-    $('.body .owl-item').css('width', $('.body .owl-stage-outer').width());
-    if (window.innerWidth > 1200) {
-        $('.head .owl-stage .owl-item').css('width', '190px');
-    } else if (window.innerWidth > 991) {
-        $('.head .owl-stage .owl-item').css('width', '156.667px');
-    } else if (window.innerWidth > 768) {
-        $('.head .owl-stage .owl-item').css('width', '140px');
-    } else {
-        $('.head .owl-stage .owl-item').css('width', window.innerWidth / 3);
-    }
-    if (window.innerWidth < 992) {
-        $('.head .owl-stage').css({
-            'width': $('.head .owl-item').eq(0).width() * $('.head .owl-item').length + 1,
-            'left': btns.parent().parent().width() / 2 - b / 2
-        });
-    } else {
-        $('.head .owl-stage').css({
-            'width': $('.head .owl-item').eq(0).width() * $('.head .owl-item').length + 1,
-            'left': 0
-        });
-    }
-
-    width = banner.children('.owl-item').eq(0).width();
-    b = btns.eq(0).width();
-    banner.css('width', width * len);
-});
-interval = setInterval(start, 2000);
-
-btns.hover(function() {
-    i = $(this).index();
-    $(this).addClass('active').siblings().removeClass('active');
-    $(this).children().addClass('current');
-    $(this).siblings().children().removeClass('current');
-    if (window.innerWidth < 992) {
-        btns.parent().stop().animate({
-            'left': btns.parent().parent().width() / 2 - b / 2 - b * i
-        });
-    }
-    banner.stop().animate({
-        'left': -width * i
-    });
-    clearInterval(interval);
-}, function() {
-    interval = setInterval(start, 2000);
-});
-
-function start() {
-    i++;
-    if (i == len) {
-        i = 0;
-        btns.eq(0).addClass('active').siblings().removeClass('active');
-        btns.eq(0).children().addClass('current');
-        btns.eq(0).siblings().children().removeClass('current');
-        if (window.innerWidth < 992) {
-            btns.parent().stop().animate({
-                'left': btns.parent().parent().width() / 2 - b / 2
-            });
-        }
-        banner.stop().animate({
-            'left': 0
-        });
-    } else {
-        if (window.innerWidth < 992) {
-            btns.parent().stop().animate({
-                'left': btns.parent().parent().width() / 2 - b / 2 - b * i
-            });
-        }
-        btns.eq(i).addClass('active').siblings().removeClass('active');
-        btns.eq(i).children().addClass('current');
-        btns.eq(i).siblings().children().removeClass('current');
-        banner.stop().animate({
-            'left': -width * i
-        });
-    }
-}
-
-banner.hover(function() {
-    clearInterval(interval);
-}, function() {
-    interval = setInterval(start, 2000);
-});
-
-//右侧可收起的信誉认证
-$('.aut-fold').on('click', function() {
-    $('.authentication').stop().animate({
-        'width': '38px',
-        'height': '37px'
-    }, function() {
-        $('.aut-main').hide();
-    });
-    $('.aut-unfold').css('display', 'block');
-    return false;
-});
-
-$('.aut-unfold').on('click', function() {
-    $(this).hide();
-    $('.aut-main').css('display', 'block');
-    $('.authentication').stop().animate({
-        'width': '222px',
-        'height': '250px'
-    });
 });
 
 //商务资讯弹出框

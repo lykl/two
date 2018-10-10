@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../icon/xh/iconfont.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo-group">
+            <div class="logo">
+                <img width="34" src="../img/xh/hx-logo.png" alt="">
+                <span>环信 管理后台</span>
+            </div>
+        </div>
+        <div class="header-dropdown">
+            <a href="">
+                <i class="flag flag-cn"></i>
+                <span>中文</span>
+                <i class="iconfont icon-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu">
+                <li>
+                    <a class="active" href="">
+                        <i class="flag flag-cn"></i>
+                        <span> 中文 </span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="flag flag-us"></i>
+                        <span>English(US)</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <div class="main">
+        <div class="content">
+            <div class="wd">
+                <form action="">
+                    <fieldset>
+                        <div class="section">
+                            <p>用户名</p>
+                            <div class="input">
+                                <input class="username" type="text">
+                                <i class="iconfont icon-geren"></i>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <p>密码</p>
+                            <div class="input">
+                                <input class="password" type="password">
+                                <i class="iconfont icon-lock"></i>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <p>验证码</p>
+                            <div class="input label-verify">
+                                <a class="test" href=""></a>
+                                <input class="input-verify" type="text" placeholder="请输入表达式计算结果">
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="input clear">
+                                <div class="checkbox">
+                                    <i class="check"></i>
+                                    <span>记住我</span>
+                                </div>
+                                <a class="forget" href="">忘记密码?</a>
+                            </div>
+                        </div>
+                        <div class="section"></div>
+                    </fieldset>
+                    <footer class="footer">
+                        <span class="register">没有账号? </span>
+                        <a class="register" href="">注册</a>
+                        <button>登录</button>
+                    </footer>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>
