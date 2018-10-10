@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap 101 Template</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+        
+        .header {
+            background: black;
+            width: 100%;
+            font-size: 16px;
+            color: #fff;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+        }
+        
+        .main_bg {
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: rgb(241, 238, 238);
+        }
+        
+        .main {
+            width: 90%;
+            background: #fff;
+            margin: 0 auto;
+            margin: 30px auto 0;
+            border: 1px solid rgb(221, 218, 218);
+        }
+        
+        .main_header {
+            height: 50px;
+            width: 100%;
+            border-bottom: 1px solid rgb(221, 218, 218);
+        }
+        
+        .main_main {
+            padding: 25px 14px 5px;
+            height: 300px;
+            border-bottom: 1px solid rgb(221, 218, 218);
+        }
+        
+        .main_main div {
+            height: 25%;
+            width: 100%;
+            position: relative;
+        }
+        
+        .main_main div input {
+            padding: 2px 0 2px 5px;
+            border: 1px solid rgb(221, 218, 218);
+        }
+        
+        .main_main div span {
+            position: absolute;
+            top: 2px;
+            font-size: 19px;
+            right: 15px;
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+            color: rgb(221, 218, 218)
+        }
+        
+        .main_main div span i {
+            position: absolute;
+            top: 5px;
+            right: 0;
+        }
+        
+        .main_main div p {
+            color: #c7254e;
+            margin: 5px 0 0 5px;
+        }
+        
+        .main_main div input {
+            width: 100%;
+            height: 35px;
+        }
+        
+        .main_bot {
+            padding: 30px 14px 5px;
+            border-bottom: 1px solid rgb(221, 218, 218);
+            height: 80px;
+        }
+        
+        .main_bot div {
+            float: left;
+            width: 19px;
+            height: 19px;
+            cursor: pointer;
+            text-align: center;
+            border: 1px solid rgb(221, 218, 218);
+        }
+        
+        .main_bot div i {
+            font-size: 15px;
+            color: #3276B1;
+        }
+        
+        .main_bot span {
+            font-size: 15px;
+            display: block;
+            float: left;
+            line-height: 19px;
+            margin-left: 5px!important;
+        }
+        
+        .main_bot p {
+            float: left;
+            color: #3276b1;
+            cursor: pointer;
+        }
+        
+        .main_bot p:hover {
+            color: #005cac;
+        }
+        
+        .main_footer {
+            padding: 30px 14px 5px;
+            height: 75px;
+            overflow: hidden;
+        }
+        
+        .main_footer span {
+            float: left;
+            color: #3276b1;
+            cursor: pointer;
+        }
+        
+        .main_footer span:hover {
+            color: #005cac;
+        }
+        
+        .main_footer button {
+            float: right;
+            width: 76px;
+            height: 30px;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 5px;
+            background: #333;
+            opacity: 0.6;
+            cursor: pointer;
+            border: 0;
+        }
+        
+        @media screen and (min-width:1200px) {
+            .main {
+                width: 33%!important;
+            }
+        }
+    </style>
+</head>
+<div class="header">
+    环 信 管 理 后 台
+</div>
+<div class="main_bg">
+    <div class="main">
+        <div class="main_header">
+        </div>
+        <div class="main_main">
+            <div>
+                <input type="text" placeholder="请输入账号" class="uname">
+                <span>
+                       | <i class="glyphicon glyphicon-envelope"></i>
+                </span>
+                <p class="unamep">必填6~20位</p>
+            </div>
+            <div>
+                <input type="text" placeholder="请输入密码" class="upassward">
+                <span>
+                            |<i class="glyphicon glyphicon-lock"></i>
+                    </span>
+                <p class="upasswardp">有效长度为6~20位</p>
+            </div>
+            <div>
+                <input type="text" placeholder="请输入性别" class="usex">
+                <span>
+                                |<i class="glyphicon glyphicon-lock"></i>
+                        </span>
+                <p class="usexp">必填</p>
+            </div>
+            <div>
+                <input type="text" placeholder="请输入电话" class="uphone">
+                <span>
+                                    |<i class="glyphicon glyphicon-earphone"></i>
+                            </span>
+                <p class="uphonep">必填</p>
+            </div>
+
+        </div>
+        <div class="main_bot">
+            <div>
+                <i class="glyphicon glyphicon-ok"></i>
+            </div>
+            <span>我同意遵守</span>
+            <p>【环信即时通讯云服务使用协议】</p>
+        </div>
+        <div class="main_footer">
+            <span>登录</span>
+            <button class="zhuce">注册</button>
+        </div>
+    </div>
+</div>
+
+<body>
+
+</body>
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<script>
+    main_main
+    var reg1 = /^\w{6,20}$/;
+    $('.uname').on('keyup', function() {
+        if (reg1.test($('.uname').val())) {
+            $('.unamep').css('color', 'green')
+        } else {
+            $('.unamep').css('color', '#c7254e')
+        }
+    })
+
+    $('.upassward').on('keyup', function() {
+        if (reg1.test($('.upassward').val())) {
+            $('.upasswardp').css('color', 'green')
+        } else {
+            $('.upasswardp').css('color', '#c7254e')
+        }
+    })
+
+    var reg3 = /^[0-1]{1}$/
+    $('.usex').on('keyup', function() {
+        if (reg3.test($('.usex').val())) {
+            $('.usexp').css('color', 'green')
+        } else {
+            $('.usexp').css('color', '#c7254e')
+        }
+    })
+
+    var reg4 = /^(13[0-9]|14[5|7]|15[0|1|2|3|5|6|7|8|9]|18[0|1|2|3|5|6|7|8|9])\d{8}$/
+    $('.uphone').on('keyup', function() {
+            if (reg4.test($('.uphone').val())) {
+                $('.uphonep').css('color', 'green')
+            } else {
+                $('.uphonep').css('color', '#c7254e')
+            }
+        })
+        //main_bot
+    $('.main_bot div').on('click', function() {
+        $('.main_bot div i').toggle();
+    })
+    $('.main_bot div').on('mouseover', function() {
+        $('.main_bot div i').attr('class', 'glyphicon glyphicon-remove');
+    })
+    $('.main_bot div').on('mouseout', function() {
+        $('.main_bot div i').attr('class', 'glyphicon glyphicon-ok');
+    })
+
+    //ajax
+    $(function() {
+        $(".zhuce").on('click', function() {
+            var data1 = {
+                "myname": $(".uname").val(),
+                "mypassward": $(".upassward").val(),
+                "mysex": $(".usex").val(),
+                "myphone": $(".uphone").val()
+            };
+            console.log(data1);
+            $.ajax({
+                type: "post",
+                url: "../php/htjh.php",
+                data: data1,
+                dataType: "json",
+                success: function(data) {
+                    console.log(data);
+                    if (data.msg == "用户名已存在") {
+                        $(".uname").val('');
+                        $(".upassward").val('');
+                        $(".usex").val('');
+                        $(".uphone").val('');
+                    };
+                    alert(data.msg);
+                },
+                error: function(err) {
+                    console.log(err);
+                }
+            });
+
+
+
+        })
+    })
+</script>
+
+</html>
