@@ -51,12 +51,12 @@
         
         .main_main {
             padding: 25px 14px 5px;
-            height: 300px;
+            height: 360px;
             border-bottom: 1px solid rgb(221, 218, 218);
         }
         
         .main_main div {
-            height: 25%;
+            height: 20%;
             width: 100%;
             position: relative;
         }
@@ -186,18 +186,25 @@
                 <p class="unamep ">必填6~20位</p>
             </div>
             <div>
-                <input type="text" placeholder="请输入密码" class="upassword">
+                <input type="password" placeholder="请输入密码" class="upassword">
                 <span>
                             |<i class="glyphicon glyphicon-lock"></i>
                     </span>
                 <p class="upasswordp ">有效长度为6~20位</p>
             </div>
             <div>
+                <input type="password" placeholder="确认密码" class="upassword2">
+                <span>
+                            |<i class="glyphicon glyphicon-lock"></i>
+                    </span>
+                <p class="upasswordp2 ">确认密码</p>
+            </div>
+            <div>
                 <input type="text" placeholder="请输入性别" class="usex">
                 <span>
                                 |<i class="glyphicon glyphicon-lock"></i>
                         </span>
-                <p class="usexp ">必填 （男：1 女：0）</p>
+                <p class="usexp ">必填 (男，女)</p>
             </div>
             <div>
                 <input type="text" placeholder="请输入电话" class="uphone">
@@ -245,10 +252,18 @@
             $('.upasswordp').css('color', '#c7254e')
         }
     })
+    $('.upassword2').on('keyup', function() {
+        if ($('.upassword').val() == $('.upassword2').val()) {
+            $('.upasswordp2').css('color', 'green')
+        } else {
+            $('.upasswordp2').css('color', '#c7254e')
+        }
+    })
 
-    var reg3 = /^[0-1]{1}$/
+
+
     $('.usex').on('keyup', function() {
-        if (reg3.test($('.usex').val())) {
+        if ($('.usex').val() == "男" || $('.usex').val() == "女") {
             $('.usexp').css('color', 'green')
         } else {
             $('.usexp').css('color', '#c7254e')
@@ -319,7 +334,7 @@
                         $(".uphone").val('');
                     };
                     alert(data.msg);
-                    window.location.href = 'close.html';
+                    window.location.href = 'closing.html';
                 },
                 error: function(err) {
                     console.log(err);
