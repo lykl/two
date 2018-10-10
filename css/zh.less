@@ -1,4 +1,26 @@
 @charset "UTF-8";
+
+#dev-spt-box {
+    .title {
+        margin: 20px 0 10px;
+        line-height: 1.5;
+        color: #666;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .sub-title {
+        margin-top: 0;
+        margin-bottom: 50px;
+        line-height: 1.5;
+        color: #666;
+    }
+    .dialog__content{
+        background-image: none!important;
+        background: #fff!important;
+        padding: 2em 1.5em;
+    }
+}
+
 @media(max-width:768px){
     .h2, h2 {
         font-size: 22px;
@@ -62,10 +84,10 @@
 
     .header-mobile{
         position: fixed;
-        background-color: #0092e5!important;
+        background-color: #0092e5;
         top: 0;
         right:0;
-        z-index: 999!important;
+        z-index: 19;
         padding: 0 10px;
         width: 100%;
         height: 50px;
@@ -189,6 +211,21 @@
                 }
             }
         }
+    }
+    #try-kefu{
+        .dialog__content{
+            background-image: none!important;
+            background-color: #fff;
+        }
+    }
+    .dialog__content{
+        width: 100%!important;
+        padding: 2em 1.2em!important;
+    }
+    .chat1 {
+        width: 100%!important;
+        right: 0!important;
+        bottom: 0!important;
     }
 }
 
@@ -669,6 +706,17 @@
     position: relative;
     z-index: 5;
     display: none;
+    .close {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .2;
+    }
 }
 .dialog {
     form {
