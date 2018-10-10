@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+//banner
+.banner{
+    background-image:url(../img/zly/banner_ai.jpg);background-image:-webkit-image-set(url(../img/zly/banner_ai.jpg) 1x,url(../img/zly/banner_ai.jpg) 2x);
+    height:160px;
+}
+
+//input
+.inptel{
+    width: 100%;
+    padding: 10px 0;
+    .input-group{
+        width:100%;
+        margin: 0 auto;
+        input{
+            border-radius: 0;
+            border: 1px solid rgba(133, 103, 230, 0.8);
+        }
+        button{
+            border-radius: 0;
+            color:#fff;
+            border: 1px solid rgba(133, 103, 230, 0.8);
+            padding: 6px 20px;
+            background-color: rgba(133, 103, 230, 0.8);
+        }
+    }
+}
+
+.core{
+    .item{
+        min-height: auto;
+        margin-bottom: 30px;
+        h5{
+            margin: 20px 0 18px;
+        }
+        p {
+            line-height: 25px;
+            min-height: 150px;
+        }
+    }
+    .icon {
+        width: 80px;
+        height: 80px;
+        font-size: 80px;
+        background-color: #DFE6FE;
+        border-radius: 10px;
+    }
+}
+.advantage{
+    .item{
+        h5 {
+            margin: 20px 0 18px;
+        }
+        p {
+            line-height: 25px;
+            min-height: 150px;
+        }
+    }
+}
+// bi
+.bi{
+    background-image: -webkit-image-set(url("../img/zly/scene-bg.jpg") 1x, url("../img/zly/scene-bg.jpg") 2x);
+    .owl-stage{
+        overflow: hidden;
+        .item{
+            min-height: 200px;
+            padding: 0;
+            .image-background {
+                height: 135px;
+                line-height: 135px;
+                color: #fff;
+                font-size: 18px;
+                position: relative;
+                text-align: center;
+            }
+            .text-wrap {
+                padding: 20px;
+                min-height: 236px;
+            }
+            .btn {
+                color: #8467E6;
+                border-color: #8467E6;
+                margin-bottom: 30px;
+                width: 150px;
+                .icon{
+                    width: 14px;
+                    height: 14px;
+                    vertical-align: -2px;
+                }
+                &:hover{
+                    color: #fff;
+                    border-color: #fff;
+                    background: #8467E6;
+                }
+            }
+        }
+    }
+    img {
+        position: absolute;
+        bottom: 0;
+        width: 60px !important;
+        left: 50%;
+        margin-left: -30px;
+    }
+}
+.contact{
+    .wrap {
+        margin: 20px auto;
+    }
+    p {
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0;
+    }
+    .btn {
+        margin-top: 0;
+    }
+    .btn-default-outline {
+        color: #fff;
+        border-color: #fff;
+    }
+}
+// 媒体查询
+@media (min-width:768px){
+    .banner{
+        height: 300px;
+    }
+    .core{
+        .item{
+            min-height: 250px;
+        }
+    }
+    .contact {
+        .wrap {
+            margin: 0 auto;
+        }
+        .btn {
+            margin-top: 40px;
+        }
+    } 
+}
+
+@media (min-width:992px){
+    .banner{
+        height: 400px;
+    }
+    .contact{
+        .btn {
+            margin-top: 0;
+        }
+    }
+
+}
+
+
+    
+@media (min-width:1200px){
+    .banner{
+        height: 500px;
+    }
+
+}
