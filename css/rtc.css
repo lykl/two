@@ -1,0 +1,905 @@
+@charset "utf-8";
+
+/*背景图*/
+
+.banner {
+    background: transparent none no-repeat scroll center center / cover;
+    background-image: url('../img/cy/rtc/banner.jpg');
+    height: 160px;
+    cursor: pointer;
+}
+
+
+/*内容部分*/
+
+
+/* .tab { */
+
+
+/*申请使用输入框*/
+
+
+/*内容：迎接5G时代*/
+
+
+/*国际领先的实时音视频引擎技术*/
+
+
+/*多场景应用支持，总有一款适合你！*/
+
+
+/*高质量、稳定、安全，行业标杆品质保证*/
+
+
+/*内容：即插即用，一天极简集成！*/
+
+
+/*内容：客户案例*/
+
+
+/*内容：联系电话*/
+
+
+/* } */
+
+.tab section {
+    padding: 40px 0;
+}
+
+.tab #telephone {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tab #telephone .inp input {
+    border-color: #8A1AF7;
+    border-radius: 0;
+}
+
+.tab #telephone .inp span .btn {
+    border: 1px solid #8A1AF7;
+    background-color: #8A1AF7;
+    color: #fff;
+    border-radius: 0;
+}
+
+.tab .function {
+    background-color: #f7f7f7;
+}
+
+.tab .function h2 {
+    margin: 0;
+    line-height: 1.5;
+    color: #313B53;
+    padding-bottom: 40px;
+    font-size: 22px;
+}
+
+.tab .function .row img {
+    margin-bottom: 50px;
+    display: inline-block;
+}
+
+.tab .function .row .title {
+    margin: -50px auto 50px;
+}
+
+.tab .function .row .title h3 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.tab .function .row .title ul {
+    margin-left: 9px;
+}
+
+.tab .function .row .title ul li {
+    color: #666;
+    line-height: 25px;
+    margin-bottom: 10px;
+    text-indent: -9px;
+}
+
+.tab .function .row .title .active {
+    margin-top: 30px;
+}
+
+.tab .function .row .title .active a {
+    color: #9C36FA;
+    border-color: #9C36FA;
+}
+
+.tab .function .row .title .active a:hover {
+    color: #fff;
+    background-color: #CE72FC;
+    border-color: #CE72FC;
+}
+
+.tab .advantage .title {
+    margin-bottom: 40px;
+    margin-top: 0;
+    line-height: 1.5;
+    color: #313B53;
+    font-size: 22px;
+}
+
+.tab .advantage .item-left .item,
+.tab .advantage .item-right .item {
+    padding-left: 70px;
+    text-align: left;
+    padding-top: 4px;
+    position: relative;
+}
+
+.tab .advantage .item-left .item h5,
+.tab .advantage .item-right .item h5 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.tab .advantage .item-left .item p,
+.tab .advantage .item-right .item p {
+    line-height: 1;
+    color: #576e91;
+    margin-bottom: 5px;
+}
+
+.tab .advantage .item-left .item i,
+.tab .advantage .item-right .item i {
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    width: 47px;
+    height: 47px;
+    background-color: #9C36FA;
+    border-radius: 8px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 45px;
+    color: #fff;
+}
+
+.tab .detail {
+    background-color: #f7f7f7;
+}
+
+.tab .detail .container .title {
+    margin-bottom: 40px;
+    margin-top: 0;
+    line-height: 1.5;
+    color: #313B53;
+    font-size: 22px;
+}
+
+.tab .detail .container .item i {
+    font-size: 105px;
+    color: #9C36FA;
+}
+
+.tab .detail .container .item h5 {
+    font-size: 14px;
+    font-weight: 600;
+    color: #313B53;
+    margin-bottom: 10px;
+}
+
+.tab .detail .container .item p {
+    margin: 0 auto;
+    color: #576E91;
+    margin-bottom: 60px;
+    min-height: 45px;
+}
+
+.tab .quality {
+    background: transparent none no-repeat scroll center center / cover;
+    background-image: url("../img/cy/rtc/bg.jpg");
+}
+
+.tab .quality .container {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.tab .quality .container .title {
+    margin-bottom: 40px;
+    margin-top: 0;
+    line-height: 1.5;
+    color: #fff;
+    font-size: 22px;
+}
+
+.tab .quality .container .item {
+    padding-bottom: 25px;
+}
+
+.tab .quality .container .item>div:first-child {
+    padding: 5px 5px 0 5px;
+}
+
+.tab .quality .container .item>div:first-child i {
+    text-align: left;
+    font-size: 50px;
+    background-color: #fff;
+    color: #9C36FA;
+    border-radius: 50px;
+}
+
+.tab .quality .container .item>div:last-child {
+    padding-left: 5px;
+    padding-right: 5px;
+    color: #fff;
+}
+
+.tab .quality .container .item>div:last-child p {
+    min-height: 140px;
+    width: 80%;
+}
+
+.tab .intergration {
+    background-color: #f7f7f7;
+}
+
+.tab .intergration .container .title {
+    margin-bottom: 70px;
+    margin-top: 0;
+    line-height: 1.5;
+    color: #313B53;
+    font-size: 22px;
+}
+
+.tab .intergration .container .wrap {
+    background-color: #fff;
+    margin: 0 auto 80px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px 0 rgba(175, 169, 169, 0.5);
+    border-bottom: 8px solid #AE3EFB;
+    position: relative;
+    padding-top: 35px;
+}
+
+.tab .intergration .container .wrap .ico {
+    position: absolute;
+    top: -45px;
+    left: 0;
+    right: 0;
+}
+
+.tab .intergration .container .wrap .ico i {
+    font-size: 70px;
+    background-color: #b85eff;
+    border-radius: 60px;
+    color: #fff;
+    margin-top: -35px;
+}
+
+.tab .intergration .container .wrap .text-wrap {
+    padding: 40px 25px 0;
+}
+
+.tab .intergration .container .wrap .text-wrap h6 {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #313B53;
+    font-size: 14px;
+}
+
+.tab .intergration .container .wrap .text-wrap p {
+    line-height: 24px;
+    margin-bottom: 20px;
+    color: #614f4f;
+    letter-spacing: -0.6px;
+    min-height: 80px;
+    font-size: 13px;
+}
+
+.tab .case .container .title {
+    margin-bottom: 40px;
+    margin-top: 0;
+    line-height: 1.5;
+    color: #313B53;
+    font-size: 22px;
+}
+
+.tab .case .container .wrap {
+    background-color: #fff;
+    width: 224px;
+    margin: 0 auto 30px;
+    box-shadow: 0 2px 4px 0 rgba(175, 169, 169, 0.5);
+}
+
+.tab .case .container .wrap img {
+    margin: 30px auto 0;
+    display: inline-block;
+}
+
+.tab .case .container .wrap .text-wrap {
+    min-height: 185px;
+    padding: 15px 25px;
+}
+
+.tab .case .container .wrap .text-wrap p {
+    line-height: 24px;
+    color: #313B53;
+    letter-spacing: -0.6px;
+    font-size: 13px;
+}
+
+.tab .contact {
+    background: transparent none no-repeat scroll center center / cover;
+    background-image: url('../img/cy/rtc/footer.jpg');
+}
+
+.tab .contact .container .wrap {
+    margin: 20px auto;
+}
+
+.tab .contact .container .wrap p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.tab .contact .container .wrap a {
+    color: #fff;
+    border-color: #fff;
+}
+
+.tab .contact .container .wrap .btn:hover {
+    background-color: #fff;
+}
+
+.tab .contact .container .wrap a:hover {
+    color: #000;
+}
+
+@media screen and (max-width: 768px) {
+    /*移动端：滚动监听部分*/
+    .indicator {
+        position: fixed;
+        left: 20px;
+        z-index: 2;
+        top: 40%;
+        opacity: 0;
+        left: unset;
+        right: 5px;
+    }
+    .indicator .nav>li {
+        margin-bottom: 10px;
+    }
+    .indicator .nav>li>a {
+        width: 4px;
+        height: 8px;
+        border-radius: 0;
+        padding: 0;
+        display: block;
+        border: 1px solid #9C36FA;
+        transition: all .2s ease .1s;
+        opacity: 0.6;
+    }
+    .indicator .nav>.active>a {
+        background-color: #CE72FC;
+    }
+    /*移动端右侧边部分联系*/
+    .sidemenu {
+        display: flex;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+        z-index: 20;
+    }
+    .sidemenu .item {
+        flex-basis: 0;
+        flex-grow: 1;
+        height: 56px;
+        padding: 5px;
+        border-right: 1px solid #00b3ff;
+        color: #fff;
+        background-color: #4fc0ff;
+        text-align: center;
+        position: relative;
+    }
+    .sidemenu .item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-decoration: none;
+    }
+    .sidemenu .item a i {
+        font-size: 24px;
+    }
+    .sidemenu .item a p {
+        font-size: 12px;
+    }
+    /*弹出窗口*/
+    .try-hidden {
+        display: none;
+    }
+    .dialog {
+        z-index: 3000;
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .dialog .dialog_overlay {
+        position: absolute;
+        z-index: 1;
+        background: rgba(55, 58, 71, 0.9);
+        transition: opacity .3s;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .dialog .dialog_content {
+        width: 100%;
+        padding: 2em 1.2em;
+        max-width: 380px;
+        min-width: 290px;
+        background: #fff;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+    }
+    .dialog .dialog_content form h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #666;
+        margin: 0;
+    }
+    .dialog .dialog_content form h6 {
+        margin-top: 12px;
+        font-size: 12px;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    .dialog .dialog_content form>div>input {
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+    .dialog .dialog_content form>div>div {
+        margin-bottom: 20px;
+    }
+    .dialog .dialog_content form>div>div span {
+        padding: 0;
+    }
+    .dialog .dialog_content form>div .submit {
+        color: #fff;
+        background-color: #4eb1f4;
+        border-color: #4eb1f4;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /*背景图*/
+    .banner {
+        background-image: url('../img/cy/rtc/banner@2x\ \(2\).jpg');
+        height: 300px;
+    }
+    /*PC端：滚动监听部分*/
+    .indicator {
+        position: fixed;
+        left: 20px;
+        z-index: 2;
+        top: 40%;
+        opacity: 0;
+    }
+    .indicator .nav>li {
+        margin-bottom: 10px;
+    }
+    .indicator .nav>li>a {
+        padding: 0;
+        width: 12px;
+        height: 12px;
+        background-color: transparent;
+        display: block;
+        border-radius: 12px;
+        border: 2px solid #9C36FA;
+        transition: all .2s ease .1s;
+        opacity: 0.6;
+    }
+    .indicator .nav>.active>a {
+        background-color: #CE72FC;
+    }
+    /*内容部分*/
+    .tab {
+        /*申请使用输入框*/
+        /*内容：迎接5G时代*/
+        /*国际领先的实时音视频引擎技术*/
+        /*多场景应用支持，总有一款适合你！*/
+        /*高质量、稳定、安全，行业标杆品质保证*/
+        /*内容：即插即用，一天极简集成！*/
+        /*内容：客户案例*/
+        /*内容：联系电话*/
+    }
+    .tab section {
+        padding: 60px 0;
+    }
+    .tab #telephone {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+    .tab .function h2 {
+        padding-bottom: 80px;
+        font-size: 28px;
+    }
+    .tab .function .row .title {
+        margin: 0 auto;
+    }
+    .tab .function .row .title h3 {
+        font-size: 30px;
+    }
+    .tab .function .row .title .active {
+        margin-top: 25px;
+    }
+    .tab .function .row .title .active a {
+        width: 110px;
+        padding: 8px 0;
+        font-size: 14px;
+    }
+    .tab .advantage .title {
+        margin-bottom: 80px;
+        font-size: 28px;
+    }
+    .tab .advantage .item-left h5,
+    .tab .advantage .item-right h5 {
+        font-size: 18px;
+    }
+    .tab .detail .container {
+        width: 750px;
+    }
+    .tab .detail .container .title {
+        margin-bottom: 80px;
+        font-size: 28px;
+    }
+    .tab .quality {
+        background-image: url("../img/cy/rtc/bg@2x.jpg");
+    }
+    .tab .quality .container {
+        width: 750px;
+    }
+    .tab .quality .container .title {
+        margin-bottom: 80px;
+        font-size: 28px;
+    }
+    .tab .quality .container .item>div:last-child h5 {
+        font-size: 18px;
+    }
+    .tab .quality .container .item>div:last-child p {
+        min-height: 0;
+    }
+    .tab .intergration .container {
+        width: 750px;
+    }
+    .tab .intergration .container .title {
+        margin-bottom: 80px;
+        font-size: 28px;
+    }
+    .tab .intergration .container .item {
+        width: 30%;
+    }
+    .tab .intergration .container .item1 {
+        width: 40%;
+    }
+    .tab .intergration .container .wrap .text-wrap {
+        padding: 20px 25px 0;
+    }
+    .tab .case .container {
+        width: 750px;
+    }
+    .tab .case .container .title {
+        margin-bottom: 80px;
+        font-size: 28px;
+    }
+    .tab .contact {
+        background-image: url('../img/cy/rtc/footer@2x.jpg');
+    }
+    .tab .contact .container {
+        width: 750px;
+    }
+    /*PC端：右侧咨询联系部分*/
+    .sidemenu {
+        position: fixed;
+        z-index: 20;
+        top: 30%;
+        right: 0;
+    }
+    .sidemenu .item {
+        width: 65px;
+        height: 80px;
+        padding: 10px 5px;
+        margin-bottom: 3px;
+    }
+    .sidemenu .item a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #fff;
+        text-decoration: none;
+    }
+    .sidemenu .item a i {
+        font-size: 26px;
+        top: 10px;
+    }
+    .sidemenu .item a p {
+        font-size: 12px;
+        padding-top: 10px;
+    }
+    .sidemenu .item-color1 {
+        background-color: #5c8de6;
+    }
+    .sidemenu .item-color2 {
+        background-color: #eaa800;
+    }
+    .sidemenu .item-color3 {
+        opacity: 0;
+        background-color: #fff;
+    }
+    .sidemenu .item-color3 a {
+        color: #337ab7;
+    }
+    .sidemenu .item-color3 a i {
+        top: 15px;
+        font-size: 30px;
+    }
+    /*申请试用弹窗*/
+    .try-hidden {
+        display: none;
+    }
+    .dialog {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 30;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .dialog .dialog_overlay {
+        position: absolute;
+        z-index: 1;
+        background: rgba(55, 58, 71, 0.9);
+        transition: opacity .3s;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .dialog .dialog_content {
+        background-image: url('../img/cy/rtc/try-bg.jpg');
+        max-width: 700px;
+        width: 700px;
+        height: 448px;
+        padding: 0;
+        border-radius: 5px;
+        pointer-events: auto;
+        min-width: 290px;
+        text-align: center;
+        position: relative;
+        z-index: 5;
+    }
+    .dialog .dialog_content form {
+        width: 256px;
+        padding: 56px 40px;
+    }
+    .dialog .dialog_content form h2 {
+        font-size: 1.5em;
+        font-weight: 600;
+        color: #666;
+        margin: 0;
+    }
+    .dialog .dialog_content form h6 {
+        margin-top: 12px;
+        font-size: 12px;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 30px;
+    }
+    .dialog .dialog_content form>div>input {
+        margin-bottom: 20px;
+        box-shadow: none;
+    }
+    .dialog .dialog_content form>div>div {
+        margin-bottom: 20px;
+    }
+    .dialog .dialog_content form>div>div span {
+        padding: 0;
+    }
+    .dialog .dialog_content form>div .submit {
+        color: #fff;
+        background-color: #4eb1f4;
+        border-color: #4eb1f4;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .tab {
+        /*国际领先的实时音视频引擎技术*/
+    }
+    .tab .advantage .item p::before {
+        content: "· ";
+        font-weight: bolder;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /*背景图*/
+    .banner {
+        height: 400px;
+    }
+    /*内容部分*/
+    .tab {
+        /*内容：迎接5G时代*/
+        /*国际领先的实时音视频引擎技术*/
+        /*多场景应用支持，总有一款适合你！*/
+        /*高质量、稳定、安全，行业标杆品质保证*/
+        /*内容：即插即用，一天极简集成！*/
+        /*内容：客户案例！*/
+        /*内容：联系电话*/
+    }
+    .tab section {
+        padding: 80px 0;
+    }
+    .tab .function h2 {
+        padding-bottom: 100px;
+        font-size: 30px;
+    }
+    .tab .function .row .title {
+        margin-top: 55px;
+        width: 410px;
+    }
+    .tab .function .row .title h3 {
+        font-size: 34px;
+    }
+    .tab .function .row .title .active {
+        margin-top: 30px;
+    }
+    .tab .function .row .title .active a {
+        width: 120px;
+        padding: 9px 0;
+    }
+    .tab .advantage .title {
+        font-size: 30px;
+    }
+    .tab .advantage .item-left .item,
+    .tab .advantage .item-right .item {
+        padding-left: 0;
+        margin-top: 75px;
+    }
+    .tab .advantage .item-left .item h5,
+    .tab .advantage .item-right .item h5 {
+        font-size: 20px;
+    }
+    .tab .advantage .item-left .item {
+        text-align: right;
+        margin-right: 20px;
+    }
+    .tab .advantage .item-left .item p::after {
+        content: "·";
+        font-weight: bolder;
+    }
+    .tab .advantage .item-left .item i {
+        left: 104%;
+    }
+    .tab .advantage .item-right .item {
+        text-align: left;
+        margin-left: 20px;
+    }
+    .tab .advantage .item-right .item p::before {
+        content: "·";
+        font-weight: bolder;
+    }
+    .tab .advantage .item-right .item i {
+        left: -60px;
+    }
+    .tab .advantage .item-right>.item:nth-child(2) {
+        margin-top: 58px;
+    }
+    .tab .advantage .item-right>.item:last-child {
+        margin-top: 55px;
+    }
+    .tab .advantage img {
+        margin-top: 30px;
+    }
+    .tab .detail .container {
+        width: 1000px;
+    }
+    .tab .detail .container .title {
+        font-size: 30px;
+    }
+    .tab .detail .container p {
+        width: 260px;
+    }
+    .tab .quality .container {
+        width: 1000px;
+    }
+    .tab .quality .container .title {
+        font-size: 30px;
+    }
+    .tab .quality .container .item>div:last-child h5 {
+        font-size: 20px;
+    }
+    .tab .intergration .container {
+        width: 1000px;
+    }
+    .tab .intergration .container .title {
+        font-size: 30px;
+    }
+    .tab .intergration .container .wrap .text-wrap {
+        padding: 30px 25px 0;
+    }
+    .tab .intergration .container .wrap .text-wrap h6 {
+        font-size: 16px;
+    }
+    .tab .case .container {
+        width: 1000px;
+    }
+    .tab .case .container .title {
+        font-size: 30px;
+    }
+    .tab .contact .container {
+        width: 1000px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /*背景图*/
+    .banner {
+        height: 500px;
+    }
+    /*内容部分*/
+    .tab {
+        /*内容：迎接5G时代*/
+        /*国际领先的实时音视频引擎技术*/
+        /*多场景应用支持，总有一款适合你！*/
+        /*内容：高质量、稳定、安全，行业标杆品质保证*/
+        /*内容：即插即用，一天极简集成！*/
+        /*内容：客户案例*/
+        /*内容：联系电话*/
+    }
+    .tab section {
+        padding: 100px 0;
+    }
+    .tab .function h2 {
+        padding-bottom: 100px;
+        font-size: 32px;
+    }
+    .tab .function .row .title {
+        margin-top: 63px;
+    }
+    .tab .function .row .title h3 {
+        font-size: 36px;
+    }
+    .tab .function .row .title .active {
+        margin-top: 40px;
+    }
+    .tab .function .row .title .active a {
+        width: 130px;
+        padding: 10px 0;
+    }
+    .tab .advantage .title {
+        font-size: 32px;
+    }
+    .tab .detail .title {
+        font-size: 32px;
+    }
+    .tab .quality .container .title {
+        font-size: 32px;
+    }
+    .tab .intergration .container .title {
+        margin-bottom: 110px;
+        font-size: 32px;
+    }
+    .tab .case .container .title {
+        font-size: 32px;
+    }
+}

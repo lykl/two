@@ -15,8 +15,15 @@ h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+h4 {
+  font-size: 18px;
+}
 h5 {
   font-size: 16px;
+}
+p {
+  color: #7a7a7a;
+  margin: 0 0 10px;
 }
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -24,6 +31,16 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.glyphicon-ok {
+  color: #4eb1f4;
+}
+.image-background {
+  background: transparent none no-repeat scroll center center / cover;
 }
 .banner {
   height: 160px;
@@ -134,7 +151,7 @@ body {
   border: 1px solid #306cb6;
 }
 .intro-card .ultimate .head {
-  background: #306cb6;
+  background-image: url(../images/ultimate.png);
 }
 .intro-card .ultimate .text {
   color: #306cb6;
@@ -214,8 +231,96 @@ body {
 .detail table tr td:first-child td {
   border-top: 0;
 }
+.detail table .left {
+  text-align: left;
+}
 .detail .highlight {
   color: #4eb1f4;
   font-weight: bold;
   vertical-align: middle;
+}
+.detail .note {
+  margin-top: 45px;
+  margin-bottom: 80px;
+}
+.detail .note .item {
+  margin-bottom: 15px;
+}
+.detail .note .item > p {
+  color: #5CB85C;
+  font-weight: bold;
+}
+.detail .note .indent {
+  margin-left: 15px;
+}
+@media (min-width: 768px) {
+  .h4,
+  h4 {
+    font-size: 20px;
+  }
+  .container {
+    width: 750px;
+  }
+  .banner {
+    height: 340px;
+  }
+  .banner .text-box .title {
+    font-size: 22px;
+  }
+  .banner .text-box .sub-title {
+    font-size: 18px;
+  }
+  .intro-card {
+    margin-top: -87px;
+    margin-bottom: 80px;
+    text-align: center;
+  }
+  .intro-card .item .head {
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 992px) {
+  .h4,
+  h4 {
+    font-size: 22px;
+  }
+  .container {
+    width: 970px;
+  }
+  .banner {
+    height: 400px;
+  }
+  .banner .text-box .title {
+    font-size: 30px;
+  }
+  .banner .text-box .sub-title {
+    font-size: 26px;
+  }
+  .intro-card {
+    margin-top: -107px;
+  }
+  .intro-card .item {
+    margin: 0 10px;
+  }
+  .intro-card .item .head {
+    padding: 40px 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+  .banner {
+    height: 420px;
+  }
+  .banner .text-box .title {
+    font-size: 32px;
+    font-weight: bold;
+  }
+  .banner .text-box .sub-title {
+    font-size: 22px;
+  }
+  .intro-card .container {
+    width: 1040px;
+  }
 }
