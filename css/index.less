@@ -22,6 +22,27 @@ body,html,h1,h2,h3,h6{
     }
 }
 
+#dev-spt-box {
+    .title {
+        margin: 20px 0 10px;
+        line-height: 1.5;
+        color: #666;
+        font-weight: 700;
+        font-size: 16px;
+    }
+    .sub-title {
+        margin-top: 0;
+        margin-bottom: 50px;
+        line-height: 1.5;
+        color: #666;
+    }
+    .dialog__content{
+        background-image: none!important;
+        background: #fff!important;
+        padding: 2em 1.5em;
+    }
+}
+
 .btn-default-outline {
     color: #fff;
     border-color: #fff;
@@ -229,6 +250,21 @@ p {
                 }
             }
         }
+    }
+    .chat1 {
+        width: 100%!important;
+        right: 0!important;
+        bottom: 0!important;
+    }
+    #try-kefu{
+        .dialog__content{
+            background-image: none!important;
+            background-color: #fff;
+        }
+    }
+    .dialog__content{
+        width: 100%!important;
+        padding: 2em 1.2em!important;
     }
 }
 
@@ -957,6 +993,17 @@ p {
     position: relative;
     z-index: 5;
     display: none;
+    .close {
+        position: absolute;
+        top: 7px;
+        right: 10px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 1;
+        color: #000;
+        text-shadow: 0 1px 0 #fff;
+        opacity: .2;
+    }
 }
 .dialog {
     form {
