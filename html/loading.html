@@ -147,18 +147,19 @@
             color: #005cac;
         }
         
-        .main_footer button {
+        .main_footer input {
             float: right;
             width: 76px;
             height: 30px;
             color: #fff;
+            /* color: rgb(119, 115, 115); */
             font-size: 16px;
             text-align: center;
             line-height: 30px;
             border-radius: 5px;
             background: #333;
             opacity: 0.6;
-            cursor: pointer;
+            /* cursor: pointer; */
             border: 0;
         }
         
@@ -182,28 +183,28 @@
                 <span>
                        | <i class="glyphicon glyphicon-envelope"></i>
                 </span>
-                <p class="unamep">必填6~20位</p>
+                <p class="unamep ">必填6~20位</p>
             </div>
             <div>
-                <input type="text" placeholder="请输入密码" class="upassward">
+                <input type="text" placeholder="请输入密码" class="upassword">
                 <span>
                             |<i class="glyphicon glyphicon-lock"></i>
                     </span>
-                <p class="upasswardp">有效长度为6~20位</p>
+                <p class="upasswordp ">有效长度为6~20位</p>
             </div>
             <div>
                 <input type="text" placeholder="请输入性别" class="usex">
                 <span>
                                 |<i class="glyphicon glyphicon-lock"></i>
                         </span>
-                <p class="usexp">必填</p>
+                <p class="usexp ">必填 （男：1 女：0）</p>
             </div>
             <div>
                 <input type="text" placeholder="请输入电话" class="uphone">
                 <span>
                                     |<i class="glyphicon glyphicon-earphone"></i>
                             </span>
-                <p class="uphonep">必填</p>
+                <p class="uphonep ">必填</p>
             </div>
 
         </div>
@@ -215,8 +216,8 @@
             <p>【环信即时通讯云服务使用协议】</p>
         </div>
         <div class="main_footer">
-            <span>登录</span>
-            <button class="zhuce">注册</button>
+            <span class="denglu">登录</span>
+            <input class="zhuce " disabled="disabled" type="submit" value="注册">
         </div>
     </div>
 </div>
@@ -227,7 +228,7 @@
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
-    main_main
+    // main_main 正则表达
     var reg1 = /^\w{6,20}$/;
     $('.uname').on('keyup', function() {
         if (reg1.test($('.uname').val())) {
@@ -237,11 +238,11 @@
         }
     })
 
-    $('.upassward').on('keyup', function() {
-        if (reg1.test($('.upassward').val())) {
-            $('.upasswardp').css('color', 'green')
+    $('.upassword').on('keyup', function() {
+        if (reg1.test($('.upassword').val())) {
+            $('.upasswordp').css('color', 'green')
         } else {
-            $('.upasswardp').css('color', '#c7254e')
+            $('.upasswordp').css('color', '#c7254e')
         }
     })
 
@@ -270,15 +271,36 @@
         $('.main_bot div i').attr('class', 'glyphicon glyphicon-remove');
     })
     $('.main_bot div').on('mouseout', function() {
-        $('.main_bot div i').attr('class', 'glyphicon glyphicon-ok');
+            $('.main_bot div i').attr('class', 'glyphicon glyphicon-ok');
+        })
+        //判断是否所有都符合规范 激活注册
+    $("html").on('keyup', function() {
+        if ($('.unamep').css('color') == 'rgb(0, 128, 0)' &&
+            $('.upasswordp').css('color') == 'rgb(0, 128, 0)' &&
+            $('.usexp').css('color') == 'rgb(0, 128, 0)' &&
+            $('.uphonep').css('color') == 'rgb(0, 128, 0)') {
+            $('.zhuce').removeAttr('disabled');
+            $('.zhuce').css('background', 'green')
+        } else {
+            $('.zhuce').css('background', '#333')
+            $('.zhuce').attr('disabled', 'disabled')
+        }
+
     })
 
-    //ajax
+    //登录跳转
+    $('.denglu').on('click', function() {
+        window.location.href = 'load.html';
+    })
+
+
+
+    // 注册ajax
     $(function() {
         $(".zhuce").on('click', function() {
             var data1 = {
                 "myname": $(".uname").val(),
-                "mypassward": $(".upassward").val(),
+                "mypassword": $(".upassword").val(),
                 "mysex": $(".usex").val(),
                 "myphone": $(".uphone").val()
             };
@@ -292,11 +314,12 @@
                     console.log(data);
                     if (data.msg == "用户名已存在") {
                         $(".uname").val('');
-                        $(".upassward").val('');
+                        $(".upassword").val('');
                         $(".usex").val('');
                         $(".uphone").val('');
                     };
                     alert(data.msg);
+                    window.location.href = 'close.html';
                 },
                 error: function(err) {
                     console.log(err);
