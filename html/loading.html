@@ -197,7 +197,7 @@
                 <span>
                                 |<i class="glyphicon glyphicon-lock"></i>
                         </span>
-                <p class="usexp ">必填</p>
+                <p class="usexp ">必填 （男：1 女：0）</p>
             </div>
             <div>
                 <input type="text" placeholder="请输入电话" class="uphone">
@@ -216,7 +216,7 @@
             <p>【环信即时通讯云服务使用协议】</p>
         </div>
         <div class="main_footer">
-            <span>登录</span>
+            <span class="denglu">登录</span>
             <input class="zhuce " disabled="disabled" type="submit" value="注册">
         </div>
     </div>
@@ -228,7 +228,7 @@
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 <script>
-    // main_main
+    // main_main 正则表达
     var reg1 = /^\w{6,20}$/;
     $('.uname').on('keyup', function() {
         if (reg1.test($('.uname').val())) {
@@ -273,7 +273,7 @@
     $('.main_bot div').on('mouseout', function() {
             $('.main_bot div i').attr('class', 'glyphicon glyphicon-ok');
         })
-        //判断是否所有都符合规范
+        //判断是否所有都符合规范 激活注册
     $("html").on('keyup', function() {
         if ($('.unamep').css('color') == 'rgb(0, 128, 0)' &&
             $('.upasswordp').css('color') == 'rgb(0, 128, 0)' &&
@@ -288,9 +288,14 @@
 
     })
 
+    //登录跳转
+    $('.denglu').on('click', function() {
+        window.location.href = 'load.html';
+    })
 
 
-    //ajax
+
+    // 注册ajax
     $(function() {
         $(".zhuce").on('click', function() {
             var data1 = {
@@ -314,6 +319,7 @@
                         $(".uphone").val('');
                     };
                     alert(data.msg);
+                    window.location.href = 'close.html';
                 },
                 error: function(err) {
                     console.log(err);
