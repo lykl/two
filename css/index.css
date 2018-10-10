@@ -77,6 +77,10 @@ p {
   .sidemenu .item p {
     margin-top: -5px;
   }
+  .sidemenu .item .iconfont {
+    font-size: 25px;
+    display: block;
+  }
   .sidemenu .item:last-child {
     border-right: none;
   }
@@ -94,7 +98,6 @@ p {
     height: 50px;
     max-width: 800px;
     background-color: transparent;
-    transition: all 1s;
   }
   .header-mobile nav {
     position: absolute;
@@ -206,6 +209,10 @@ p {
   }
   .carousel-indicators {
     bottom: -6%;
+  }
+  .footer .right > div:nth-child(2) .social .iconfont {
+    margin-left: 9px!important;
+    margin-right: 0!important;
   }
 }
 @media (max-width: 991px) and (min-width: 768px) {
@@ -396,6 +403,7 @@ p {
     background-color: #eaa800!important;
   }
   .sidemenu .top-item {
+    background-color: #fff!important;
     display: none;
   }
   .sidemenu .dev-wrap {
@@ -830,19 +838,13 @@ p {
   margin-left: 5px;
   margin-right: 5px;
 }
-.easeicon {
-  font-family: "easeicon" !important;
-  font-size: 16px;
-  font-style: normal;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
 .sidemenu {
   position: fixed;
   z-index: 2;
 }
 .sidemenu .item {
-  background-color: #fff;
+  color: #fff;
+  background-color: #4fc0ff;
   text-align: center;
   position: relative;
 }

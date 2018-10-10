@@ -79,6 +79,10 @@ p {
             p {
                 margin-top: -5px;
             }
+            .iconfont{
+                font-size: 25px;
+                display: block;
+            }
         }
         .item:last-child {
             border-right: none;
@@ -99,7 +103,7 @@ p {
         height: 50px;
         max-width: 800px;
         background-color: transparent;
-        transition: all 1s;
+        // transition: all 1s;
         nav{
             position: absolute;
             right: 50px;
@@ -215,6 +219,16 @@ p {
     }
     .carousel-indicators {
         bottom: -6%;
+    }
+    .footer{
+        .right>div:nth-child(2){
+            .social{
+                .iconfont{
+                    margin-left: 9px!important;
+                    margin-right: 0!important;
+                }
+            }
+        }
     }
 }
 
@@ -414,7 +428,7 @@ p {
             background-color: #eaa800!important;
         }
         .top-item {
-            // background-color: #fff!important;
+            background-color: #fff!important;
             display: none;
         }
         .dev-wrap{
@@ -883,18 +897,13 @@ p {
     }    
 }
 
-.easeicon {
-    font-family: "easeicon" !important;
-    font-size: 16px;
-    font-style: normal;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
+
 .sidemenu {
     position: fixed;
     z-index: 2;
     .item {
-        background-color: #fff;
+        color: #fff;
+        background-color: #4fc0ff;
         text-align: center;
         position: relative;
         a {

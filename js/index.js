@@ -28,6 +28,7 @@ $('.login-register a').hover(function() {
         'color': '#fff',
         'background': '#52b0ef'
     });
+    // $('.login-register').removeClass('white').addClass('blue');
 }, function() {
     $('.login-register a').css({
         'color': '#52b0ef',
@@ -43,18 +44,23 @@ $('.login-register a').hover(function() {
     });
 });
 
-$('.login-register a').eq(0).on('mouseover', function() {
-    $('.login-register').eq(0).removeClass('white').addClass('blue');
+$('.login-register a').eq(0).hover(function() {
+    $('.login-register').removeClass('white').addClass('blue');
+}, function() {
+    $('.login-register').removeClass('blue').addClass('white');
 });
-$('.login-register a').eq(1).on('mouseover', function() {
-    $('.login-register').eq(0).removeClass('blue').addClass('white');
+// $('.login-register a').eq(1).on('mouseover', function() {
+//     $('.login-register').eq(0).removeClass('blue').addClass('white');
+// });
+$('.login-register a').eq(2).hover(function() {
+    $('.login-register').removeClass('white').addClass('blue');
+}, function() {
+    $('.login-register').removeClass('blue').addClass('white');
 });
-$('.login-register a').eq(2).on('mouseover', function() {
-    $('.login-register').eq(1).removeClass('white').addClass('blue');
-});
-$('.login-register a').eq(3).on('mouseover', function() {
-    $('.login-register').eq(1).removeClass('blue').addClass('white');
-});
+// $('.login-register a').eq(3).on('mouseover', function() {
+//     $('.login-register').eq(1).removeClass('blue').addClass('white');
+// });
+
 
 //导航栏登录按钮特效
 $('.header .btn-default-outline').hover(function() {
@@ -123,7 +129,8 @@ if (window.innerWidth < 992) {
     });
 } else {
     $('.head .owl-stage').css({
-        'width': $('.head .owl-item').eq(0).width() * $('.head .owl-item').length + 1
+        'width': $('.head .owl-item').eq(0).width() * $('.head .owl-item').length + 1,
+        'left': 0
     });
 }
 
@@ -166,7 +173,7 @@ btns.hover(function() {
     $(this).children().addClass('current');
     $(this).siblings().children().removeClass('current');
     if (window.innerWidth < 992) {
-        btns.parent().animate({
+        btns.parent().stop().animate({
             'left': btns.parent().parent().width() / 2 - b / 2 - b * i
         });
     }
@@ -186,23 +193,23 @@ function start() {
         btns.eq(0).children().addClass('current');
         btns.eq(0).siblings().children().removeClass('current');
         if (window.innerWidth < 992) {
-            btns.parent().animate({
+            btns.parent().stop().animate({
                 'left': btns.parent().parent().width() / 2 - b / 2
             });
         }
-        banner.animate({
+        banner.stop().animate({
             'left': 0
         });
     } else {
         if (window.innerWidth < 992) {
-            btns.parent().animate({
+            btns.parent().stop().animate({
                 'left': btns.parent().parent().width() / 2 - b / 2 - b * i
             });
         }
         btns.eq(i).addClass('active').siblings().removeClass('active');
         btns.eq(i).children().addClass('current');
         btns.eq(i).siblings().children().removeClass('current');
-        banner.animate({
+        banner.stop().animate({
             'left': -width * i
         });
     }
@@ -259,7 +266,6 @@ $('.chat1 .icon-min').on('click', function() {
 
 $('.chat-header').on('mousedown', function(e) {
     e = e || event;
-    console.log(e.target, $('.chat1 .icon-min')[0]);
     if (e.target == $('.chat1 .icon-min')[0]) {
         $('.chat1 .icon-min').trigger('click');
     }
