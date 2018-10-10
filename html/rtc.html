@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
-    <!-- <script src="../node_modules/jquery/dist/jquery.min.js"></script> -->
     <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
     <link rel="stylesheet" href="../icon/cy/rtc-iconfont.css">
@@ -23,7 +22,7 @@
 <body>
     <!-- 头部导航栏 -->
     <div class="header-mobile">
-        <a href="" class="logo"></a>
+        <a href="javascript:;" class="logo"></a>
         <nav>
             <a href="" class="im">即时通讯云</a>
             <a href="" class="cs">客户互动云</a>
@@ -594,7 +593,7 @@
         </section>
     </div>
     <!-- 产品使用申请框 -->
-    <!-- <div class="try-hidden">
+    <div class="try-hidden">
         <div class="dialog">
             <div class="dialog_overlay"></div>
             <div class="dialog_content">
@@ -616,10 +615,10 @@
                 </form>
             </div>
         </div>
-    </div> -->
+    </div>
     <!--右 侧边栏 -->
     <div class="sidemenu text-center">
-        <div class="item item-color1">
+        <div class="item item-color1 biz-item">
             <a href="javascript:;">
                 <i class="glyphicon glyphicon-user"></i>
                 <p>商务咨询</p>
@@ -635,6 +634,38 @@
             <a href="javascript:;">
                 <i class="glyphicon glyphicon-chevron-up"></i>
             </a>
+        </div>
+    </div>
+    <!-- 对话框 -->
+    <div class="chat1">
+        <div class="chat-header">
+            <p>环信商务咨询</p>
+            <i class="iconfont icon-min"></i>
+            <i class="iconfont icon-audio2"></i>
+        </div>
+        <div class="wrapper">
+            <div class="chat-wrapper">
+                <div class="chat-container">
+                    <div class="date"></div>
+                    <div class="left">
+                        <img src="https://kefu.easemob.com/ossimages/kefu-prod-avatar.img-cn-hangzhou.aliyuncs.com/avatar/387/e2edbb10-7a49-4c50-a1fc-99ec8fd57682@0-0-200-200a%7C300h_300w%7C.png" alt="">
+                        <div class="chat-content">
+                            <span>尊敬的客户您好：感谢您对环信的支持，我们的人工服务时间是周一至周五9:00-18:00，请问您有什么需要帮助的呢？</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-wrapper">
+                <div class="toolbar">
+                    <i class="iconfont icon-face"></i>
+                    <i class="iconfont icon-picture"></i>
+                    <i class="iconfont icon-attachment"></i>
+                    <i class="iconfont icon-sendVideo"></i>
+                    <i class="iconfont icon-note"></i>
+                </div>
+                <textarea class="inp" style="resize: none" placeholder="点击输入内容..." cols="30" rows="10"></textarea>
+                <span class="send disabled">发送</span>
+            </div>
         </div>
     </div>
     <!-- 底部 -->
@@ -808,6 +839,7 @@
         </div>
     </footer>
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="../js/index.js"></script>
     <script src="../js/rtc.js"></script>
