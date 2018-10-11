@@ -18,6 +18,24 @@
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+<div class="indicator">
+    <ul class="nav">
+        <li class="active">
+            <a href="#section-scene" title="在线客服"></a>
+        </li>
+        <li class="">
+            <a href="#section-bi" title="低成本、高效率，六大场景试听"></a>
+        </li>
+        <li class="">
+            <a href="#section-architecture" title="环信外呼机器人技术架构图"></a>
+        </li>
+        <li class="">
+            <a href="#section-advantage" title="国内领军企业级服务商，AI服务优势明显"></a>
+        </li>
+
+    </ul>
+</div>
+
 <div class="header-mobile">
     <a href="" class="logo"></a>
     <nav>
@@ -487,7 +505,7 @@
             <p>商务咨询</p>
         </a>
     </div>
-    <div class="item transition dev-item dev-trigger">
+    <!-- <div class="item transition dev-item dev-trigger">
         <a href="javascript:;" class="dev"> <i class="iconfont icon-jszx"></i>
             <p>技术咨询</p>
         </a>
@@ -499,12 +517,12 @@
                 <a class="kf btn btn-primary btn-block" href="https://kefu.easemob.com/" target="_blank">登录客户互动云</a> <a class="kf btn btn-info btn-block" href="http://www.imgeek.org/" target="_blank">IMGeek社区</a>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="item transition try-item">
         <a href="javascript:;" class="free-trial"> <span class="trigger"> <i class="iconfont icon-mianfeishiyong"></i> <p>免费试用</p> </span> </a>
     </div>
     <div class="item transition top-item hidden-xs">
-        <a href="javascript:;" class="scroll-top" style="margin-top:10px"> <i class="iconfont icon-huidaodingbu"></i> </a>
+        <a href="#" class="scroll-top" style="margin-top:10px"> <i class="iconfont icon-huidaodingbu"></i> </a>
     </div>
 </div>
 
@@ -736,6 +754,35 @@
             992: {
                 items: 4
             }
+        }
+    });
+
+
+    //页面滚动事件
+    var flag1 = true;
+
+    $(window).scroll(function() {
+        // var tp = $(window).scrollTop();
+        if (flag1) {
+            flag1 = false;
+            setTimeout(function() {
+                //锚点
+                if ($(window).scrollTop() >= 360.4375) {
+                    $('.indicator').fadeIn();
+                    $('.indicator li').eq(0).addClass('active').siblings().removeClass('active');
+                } else if ($(window).scrollTop() < 360.4375) {
+                    $('.indicator').fadeOut();
+                }
+
+                if ($(window).scrollTop() > 2788.25) {
+                    $('.indicator li').eq(3).addClass('active').siblings().removeClass('active');
+                } else if ($(window).scrollTop() > 1905.3499) {
+                    $('.indicator li').eq(2).addClass('active').siblings().removeClass('active');
+                } else if ($(window).scrollTop() > 1245.9499) {
+                    $('.indicator li').eq(1).addClass('active').siblings().removeClass('active');
+                }
+                flag1 = true;
+            }, 200);
         }
     });
 </script>

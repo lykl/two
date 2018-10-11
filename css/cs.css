@@ -574,3 +574,44 @@ body {
     margin-bottom: 0;
   }
 }
+.indicator {
+  position: fixed;
+  left: 20px;
+  z-index: 2;
+  top: 40%;
+  display: none;
+}
+.indicator .nav > li {
+  margin-bottom: 10px;
+}
+.indicator .nav > li > a {
+  padding: 0;
+  width: 12px;
+  height: 12px;
+  background-color: transparent;
+  display: block;
+  border-radius: 12px;
+  border: 2px solid #17ad6d;
+  transition: all .2s ease .1s;
+  opacity: 0.6;
+}
+.indicator .nav > li.active > a {
+  background-color: #6bcea5;
+}
+@media (max-width: 992px) {
+  .indicator {
+    left: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .indicator {
+    left: unset!important;
+    right: 5px!important;
+  }
+  .indicator .nav > li > a {
+    width: 4px;
+    height: 8px;
+    border-radius: 0;
+    border-width: 1px;
+  }
+}

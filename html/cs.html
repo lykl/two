@@ -17,6 +17,27 @@
 </head>
 
 <body>
+    <div class="indicator">
+        <ul class="nav">
+            <li class="active">
+                <a href="#section-scene" title="在线客服"></a>
+            </li>
+
+            <li class="">
+                <a href="#section-ai" title="人工智能"></a>
+            </li>
+            <li class="">
+                <a href="#section-bi" title="商业智能"></a>
+            </li>
+            <li class="">
+                <a href="#section-open" title="开放平台"></a>
+            </li>
+            <li class="">
+                <a href="#section-customer" title="客户案例"></a>
+            </li>
+        </ul>
+    </div>
+
     <div class="header-mobile">
         <a href="" class="logo"></a>
         <nav>
@@ -469,7 +490,7 @@
         </div>
     </section>
     <!-- ai -->
-    <section class="section ai">
+    <section id="section-ai" class="section ai">
         <div class="service" style="background:#fff">
             <div class="container">
                 <h2 class="title">未来已来<span class="hidden-xs">，</span><br class="visible-xs-inline">人工客服向智能客服升级</h2>
@@ -826,7 +847,7 @@
                 <p>商务咨询</p>
             </a>
         </div>
-        <div class="item transition dev-item dev-trigger">
+        <!-- <div class="item transition dev-item dev-trigger">
             <a href="javascript:;" class="dev"> <i class="iconfont icon-jszx"></i>
                 <p>技术咨询</p>
             </a>
@@ -838,12 +859,12 @@
                     <a class="kf btn btn-primary btn-block" href="https://kefu.easemob.com/" target="_blank">登录客户互动云</a> <a class="kf btn btn-info btn-block" href="http://www.imgeek.org/" target="_blank">IMGeek社区</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="item transition try-item">
             <a href="javascript:;" class="free-trial"> <span class="trigger"> <i class="iconfont icon-mianfeishiyong"></i> <p>免费试用</p> </span> </a>
         </div>
         <div class="item transition top-item hidden-xs">
-            <a href="javascript:;" class="scroll-top" style="margin-top:10px"> <i class="iconfont icon-huidaodingbu"></i> </a>
+            <a href="#" class="scroll-top" style="margin-top:10px"> <i class="iconfont icon-huidaodingbu"></i> </a>
         </div>
     </div>
 
@@ -1054,6 +1075,71 @@
     <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="../js/test.js"></script>
     <script src="../js/cs.js"></script>
+    <script>
+        //页面滚动事件
+        var flag = true;
+
+        $(window).scroll(function() {
+            // var tp = $(window).scrollTop();
+            if (flag) {
+                flag = false;
+                setTimeout(function() {
+                    // if ($(window).scrollTop() < tp) {
+                    //     $('.hd').stop().slideUp(500);
+                    // } else {
+                    //     $('.hd').stop().slideDown(500);
+                    // }
+                    //导航栏
+                    if ($('.header').offset().top > 0) {
+                        $('.header').stop().animate({
+                            'backgroundColor': '#4eb1f4'
+                        }, 1000);
+                    } else if ($('.header').offset().top == 0) {
+                        $('.header').stop().animate({
+                            'backgroundColor': 'transparent'
+                        }, 1000);
+                    }
+                    if ($('.header-mobile').offset().top > 0) {
+                        $('.header-mobile').stop().animate({
+                            'backgroundColor': '#4eb1f4'
+                        }, 1000);
+                    } else if ($('.header-mobile').offset().top == 0) {
+                        $('.header-mobile').stop().animate({
+                            'backgroundColor': 'transparent'
+                        }, 1000);
+                    }
+                    if ($('.sidemenu').offset().top > 1109) {
+                        $('.top-item').fadeIn();
+                    } else {
+                        $('.top-item').fadeOut();
+                    }
+
+                    //锚点
+                    if ($(window).scrollTop() >= 360.4375) {
+                        $('.indicator').fadeIn();
+                        $('.indicator li').eq(0).addClass('active').siblings().removeClass('active');
+                    } else if ($(window).scrollTop() < 360.4375) {
+                        $('.indicator').fadeOut();
+                    }
+
+                    if ($(window).scrollTop() > 5358.2127) {
+                        $('.indicator li').eq(6).addClass('active').siblings().removeClass('active');
+                    } else if ($(window).scrollTop() > 4118.2501) {
+                        $('.indicator li').eq(5).addClass('active').siblings().removeClass('active');
+                    } else if ($(window).scrollTop() > 3623.4500) {
+                        $('.indicator li').eq(4).addClass('active').siblings().removeClass('active');
+                    } else if ($(window).scrollTop() > 2788.25) {
+                        $('.indicator li').eq(3).addClass('active').siblings().removeClass('active');
+                    } else if ($(window).scrollTop() > 1905.3499) {
+                        $('.indicator li').eq(2).addClass('active').siblings().removeClass('active');
+                    } else if ($(window).scrollTop() > 1245.9499) {
+                        $('.indicator li').eq(1).addClass('active').siblings().removeClass('active');
+                    }
+                    flag = true;
+                }, 200);
+            }
+        });
+    </script>
 </body>
 
 </html>
