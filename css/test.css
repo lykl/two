@@ -191,7 +191,7 @@
   .header-mobile .nav-collapse .entry a {
     border: 1px solid #fff;
   }
-  .header1 {
+  .header {
     display: none;
   }
   .footer .right > div:nth-child(2) .social .iconfont {
@@ -241,57 +241,57 @@
     padding: 15px 8px;
     background: 0 0;
   }
-  .header1 {
+  .header {
     position: fixed;
     z-index: 2;
     left: 50%;
     transform: translateX(-50%);
     width: 100%;
   }
-  .header1 .container {
+  .header .container {
     padding: 0;
   }
-  .header1 .navbar-brand {
+  .header .navbar-brand {
     padding: 10px 15px;
     overflow: hidden;
   }
-  .header1 .sub-menu.blue::before {
+  .header .sub-menu.blue::before {
     border-bottom: 8px solid #52b0ef;
   }
-  .header1 .sub-menu.white::before {
+  .header .sub-menu.white::before {
     border-bottom: 8px solid #fdfdfd;
   }
-  .header1 .sub-menu.login-register::before {
+  .header .sub-menu.login-register::before {
     top: -16px;
     left: 65px;
   }
-  .header1 .nav > li > a {
+  .header .nav > li > a {
     color: #fff;
   }
-  .header1 .nav > li > a:hover {
+  .header .nav > li > a:hover {
     background: none;
   }
-  .header1 .nav > li:hover .sub-menu {
+  .header .nav > li:hover .sub-menu {
     display: block;
   }
-  .header1 .lite {
+  .header .lite {
     width: 120px;
     margin-left: -60px;
     padding: 10px;
     text-align: center;
   }
-  .header1 .lite a {
+  .header .lite a {
     display: block;
     width: 100px;
     height: 35px;
     line-height: 35px;
   }
-  .header1 .lite a:hover {
+  .header .lite a:hover {
     text-decoration: none;
     border-bottom: 2px solid #337ab7;
     color: #337ab7;
   }
-  .header1 .sub-menu {
+  .header .sub-menu {
     display: none;
     position: absolute;
     top: 50px;
@@ -299,13 +299,13 @@
     border-top: 2px solid #fff;
     background-color: rgba(23, 34, 48, 0.7);
   }
-  .header1 .sub-menu a {
+  .header .sub-menu a {
     color: #fff;
   }
-  .header1 .sub-menu.lite::before {
+  .header .sub-menu.lite::before {
     left: 52px;
   }
-  .header1 .sub-menu::before {
+  .header .sub-menu::before {
     position: absolute;
     top: -18px;
     left: 50%;
@@ -316,7 +316,7 @@
     border-bottom: 8px solid #fff;
     content: "";
   }
-  .header1 .login-register {
+  .header .login-register {
     width: 142px;
     margin-left: -72px;
     top: 50px;
@@ -327,23 +327,23 @@
     border-radius: 3px;
     background: #fdfdfd;
   }
-  .header1 .login-register li:nth-child(1) a {
+  .header .login-register li:nth-child(1) a {
     background: #52b0ef;
     color: #fff;
     margin: 0;
     border-bottom: none;
     border-radius: 3px 3px 0 0;
   }
-  .header1 .login-register li a {
+  .header .login-register li a {
     display: block;
     height: 40px;
     line-height: 40px;
     color: #53b2f1;
   }
-  .header1 .login-register li a:hover {
+  .header .login-register li a:hover {
     text-decoration: none;
   }
-  .header1 .navbar-nav > li > button {
+  .header .navbar-nav > li > button {
     margin-right: 5px;
     margin-left: 5px;
     padding-right: 20px;
@@ -429,7 +429,7 @@
   }
 }
 @media (min-width: 992px) {
-  .header1 .navbar-nav > li > a {
+  .header .navbar-nav > li > a {
     padding: 15px 16px;
   }
   h2 {

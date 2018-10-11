@@ -57,7 +57,7 @@ $('.login-register a').eq(3).on('mouseover', function() {
 });
 
 //导航栏登录按钮特效
-$('.header1 .btn-default-outline').hover(function() {
+$('.header .btn-default-outline').hover(function() {
     $(this).stop(true, true).animate({
         'backgroundColor': '#fff',
         'color': 'black'
@@ -74,10 +74,10 @@ var flag = true;
 $(window).scroll(function() {
     if (flag) {
         setTimeout(function() {
-            if ($('.header1').offset().top > 0) {
-                $('.header1').stop().animate({ 'backgroundColor': '#4eb1f4' }, 1000);
-            } else if ($('.header1').offset().top == 0) {
-                $('.header1').stop(true, true).animate({ 'backgroundColor': 'transparent' }, 1000);
+            if ($('.header').offset().top > 0) {
+                $('.header').stop().animate({ 'backgroundColor': '#4eb1f4' }, 1000);
+            } else if ($('.header').offset().top == 0) {
+                $('.header').stop(true, true).animate({ 'backgroundColor': 'transparent' }, 1000);
             }
             if ($('.header-mobile').offset().top > 0) {
                 $('.header-mobile').stop().animate({ 'backgroundColor': '#4eb1f4' }, 1000);
