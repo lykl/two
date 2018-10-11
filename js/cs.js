@@ -133,3 +133,33 @@ $(function() {
         }
     })
 })
+
+//页面滚动事件
+var flag1 = true;
+
+$(window).scroll(function() {
+    // var tp = $(window).scrollTop();
+    if (flag1) {
+        flag1 = false;
+        setTimeout(function() {
+            //锚点
+            if ($(window).scrollTop() >= 360.4375) {
+                $('.indicator').fadeIn();
+                $('.indicator li').eq(0).addClass('active').siblings().removeClass('active');
+            } else if ($(window).scrollTop() < 360.4375) {
+                $('.indicator').fadeOut();
+            }
+
+            if ($(window).scrollTop() > 3623.4500) {
+                $('.indicator li').eq(4).addClass('active').siblings().removeClass('active');
+            } else if ($(window).scrollTop() > 2788.25) {
+                $('.indicator li').eq(3).addClass('active').siblings().removeClass('active');
+            } else if ($(window).scrollTop() > 1905.3499) {
+                $('.indicator li').eq(2).addClass('active').siblings().removeClass('active');
+            } else if ($(window).scrollTop() > 1245.9499) {
+                $('.indicator li').eq(1).addClass('active').siblings().removeClass('active');
+            }
+            flag1 = true;
+        }, 200);
+    }
+});
