@@ -1,13 +1,13 @@
 //侧栏
-// $(".dw4").on("click", function(e) {
-//     e = e || event;
-//     $("html").animate({ scrollTop: 0 }, 400)
-// })
-// $(window).scroll(function() {
-//     if ($(".dw1").offset().top > 600) {
-//         $('.dw4').css('display', 'block')
-//     } else { $('.dw4').css('display', 'none') }
-// })
+$(".top-item").on("click", function(e) {
+        e = e || event;
+        $("html").animate({ scrollTop: 0 }, 400)
+    })
+    // $(window).scroll(function() {
+    //     if ($(".dw1").offset().top > 600) {
+    //         $('.dw4').css('display', 'block')
+    //     } else { $('.dw4').css('display', 'none') }
+    // })
 
 // $(".suoxiao").on("click", function(e) {
 //     console.log(1);
