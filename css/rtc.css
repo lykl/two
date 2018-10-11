@@ -233,6 +233,7 @@
 .tab .quality .container .item>div:last-child p {
     min-height: 140px;
     width: 80%;
+    color: #fff;
 }
 
 .tab .intergration {
