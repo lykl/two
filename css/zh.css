@@ -383,6 +383,7 @@
     background-color: #eaa800!important;
   }
   .sidemenu .top-item {
+    background: #f7f7f7 !important;
     display: none;
   }
   .sidemenu .dev-wrap {
