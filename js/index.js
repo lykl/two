@@ -298,20 +298,43 @@ $('.chat1 textarea').on('keyup', function() {
 
 //技术咨询滑动框
 $('.dev-item').on('click', function() {
-    if ($('.dev-wrap').attr('style') == 'display: none; left: -750px; opacity: 0;') {
-        $('.dev-wrap').stop(true, true).css('display', 'block').animate({
-            'left': '-390px',
-            'opacity': 1
-        });
+    if (window.innerWidth > 768) {
+        if ($('.dev-wrap').attr('style') == 'display: none; left: -750px; opacity: 0;') {
+            $('.dev-wrap').stop(true, true).css('display', 'block').animate({
+                'left': '-390px',
+                'opacity': 1
+            });
+        } else {
+            $('.dev-wrap').stop(true, true).animate({
+                'left': '-750px',
+                'opacity': 0
+            }, function() {
+                $('.dev-wrap').hide();
+            });
+        }
     } else {
-        $('.dev-wrap').stop(true, true).animate({
-            'left': '-750px',
-            'opacity': 0
-        }, function() {
-            $('.dev-wrap').hide();
+        $('#dev-spt-box').fadeIn();
+        $('#dev-spt-box .dialog__overlay').fadeIn();
+        $('#dev-spt-box .dialog__content').css({
+            'transform': 'scale(1)',
+            'display': 'block'
         });
     }
 });
+
+function close1() {
+    $('#dev-spt-box').fadeOut();
+    $('#dev-spt-box .dialog__content').css({
+        'transform': 'scale(0.9)'
+    }).fadeOut(function() {
+        $('#dev-spt-box .dialog__content').css({
+            'transform': 'scale(1.1)'
+        });
+    });
+}
+
+$('#dev-spt-box .dialog__overlay').on('click', close1);
+$('#dev-spt-box .close').on('click', close1);
 
 //客服界面特效
 $('.dialog__content').css({
@@ -321,25 +344,25 @@ $('.dialog__content').css({
 
 function close() {
     $('#try-kefu').fadeOut();
-    $('.dialog__content').css({
+    $('#try-kefu .dialog__content').css({
         'transform': 'scale(0.9)'
     }).fadeOut(function() {
-        $('.dialog__content').css({
+        $('#try-kefu .dialog__content').css({
             'transform': 'scale(1.1)'
         });
     });
-    $(this).fadeOut();
+    $('#try-kefu .dialog__overlay').fadeOut();
 }
 $('.try-item').on('click', function() {
     $('#try-kefu').css('display', 'flex');
-    $('.dialog__content').css({
+    $('#try-kefu .dialog__content').css({
         'transform': 'scale(1)',
         'display': 'block'
     });
-    $('.dialog__overlay').fadeIn();
+    $('#try-kefu .dialog__overlay').fadeIn();
 });
 
-$('.dialog__overlay').on('click', close);
+$('#try-kefu .dialog__overlay').on('click', close);
 $('.do-close').on('click', close);
 
 //底部二维码

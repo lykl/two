@@ -96,7 +96,7 @@ $('.login').on('click', function() {
             dataType: 'json',
             success: function(data) {
                 if (data.msg == '用户存在且密码正确') {
-                    // location.href = '../html/close.html';
+                    location.href = '../html/closing.html';
                     if ($('.checkbox').children('i').hasClass('check')) {
                         var date = new Date();
                         date.setDate(date.getDate() + 3);
