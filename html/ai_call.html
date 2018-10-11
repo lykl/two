@@ -11,30 +11,11 @@
     <link rel="stylesheet" href="../css/test.css">
     <link rel="stylesheet" href="../css/cs.css">
     <link rel="stylesheet" href="../css/ai_call.css">
-
-    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <!--[if lt IE 9]>
     <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
     <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<div class="indicator">
-    <ul class="nav">
-        <li class="active">
-            <a href="#section-scene" title="在线客服"></a>
-        </li>
-        <li class="">
-            <a href="#section-bi" title="低成本、高效率，六大场景试听"></a>
-        </li>
-        <li class="">
-            <a href="#section-architecture" title="环信外呼机器人技术架构图"></a>
-        </li>
-        <li class="">
-            <a href="#section-advantage" title="国内领军企业级服务商，AI服务优势明显"></a>
-        </li>
-
-    </ul>
-</div>
 
 <div class="header-mobile">
     <a href="" class="logo"></a>
@@ -104,11 +85,11 @@
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button>
+                                            <span class="sr-only">Toggle navigation</span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                            <span class="icon-bar"></span>
+                                        </button>
             <a class="navbar-brand" href="" title="IM,即时通讯云,CEC,客户互动云,在线客服,在线客服系统">
                 <img src="https://www.easemob.com/themes/official_v3/Public/img/logo.png" class="logo hidden-xs hidden-sm">
                 <i class="logo easeicon ease-logo visible-xs-inline-block visible-sm-inline-block"></i>
@@ -116,7 +97,6 @@
         </div>
         <div id="main-navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-                <!--li><a href="/" rel="nofollow">首页</a></li-->
                 <li>
                     <a href="/product/im">即时通讯云</a>
                     <div class="sub-menu lite">
@@ -231,7 +211,6 @@
         </div>
     </div>
 </div>
-
 <!-- banner start -->
 <div class="banner container-fluid image-background"></div>
 <!-- banner end-->
@@ -439,6 +418,7 @@
     </div>
 </section>
 <!-- main end -->
+
 <div id="try-kefu" class="dialog">
     <div class="dialog__overlay"></div>
     <div class="dialog__content image-background">
@@ -460,8 +440,8 @@
                     <div class="input-group">
                         <input type="text" class="form-control" name="verify" placeholder="验证码" required="" autocomplete="off">
                         <span class="input-group-addon">
-                            <img class="verify_img" src=""  style="cursor:pointer;vertical-align: top;" title="点击获取">
-                        </span>
+                                    <img class="verify_img" src=""  style="cursor:pointer;vertical-align: top;" title="点击获取">
+                                </span>
                     </div>
                 </div>
             </div>
@@ -505,7 +485,7 @@
             <p>商务咨询</p>
         </a>
     </div>
-    <!-- <div class="item transition dev-item dev-trigger">
+    <div class="item transition dev-item dev-trigger">
         <a href="javascript:;" class="dev"> <i class="iconfont icon-jszx"></i>
             <p>技术咨询</p>
         </a>
@@ -517,7 +497,7 @@
                 <a class="kf btn btn-primary btn-block" href="https://kefu.easemob.com/" target="_blank">登录客户互动云</a> <a class="kf btn btn-info btn-block" href="http://www.imgeek.org/" target="_blank">IMGeek社区</a>
             </div>
         </div>
-    </div> -->
+    </div>
     <div class="item transition try-item">
         <a href="javascript:;" class="free-trial"> <span class="trigger"> <i class="iconfont icon-mianfeishiyong"></i> <p>免费试用</p> </span> </a>
     </div>
@@ -557,6 +537,7 @@
         </div>
     </div>
 </div>
+
 
 <footer class="footer">
     <div class="container">
@@ -758,32 +739,26 @@
     });
 
 
-    //页面滚动事件
-    var flag1 = true;
+    // 页面指示器事件
+    $('body').scrollspy({
+        target: '.section-scrollspy'
+    });
+    $('.indicator').on('affix.bs.affix', function() {
+        $(this).removeClass('animated fadeOut').addClass('animated fadeIn');
+    })
+    $('.indicator').on('affix-top.bs.affix', function() {
+        $(this).removeClass('animated fadeIn').addClass('animated fadeOut');
+    })
 
-    $(window).scroll(function() {
-        // var tp = $(window).scrollTop();
-        if (flag1) {
-            flag1 = false;
-            setTimeout(function() {
-                //锚点
-                if ($(window).scrollTop() >= 360.4375) {
-                    $('.indicator').fadeIn();
-                    $('.indicator li').eq(0).addClass('active').siblings().removeClass('active');
-                } else if ($(window).scrollTop() < 360.4375) {
-                    $('.indicator').fadeOut();
-                }
-
-                if ($(window).scrollTop() > 2788.25) {
-                    $('.indicator li').eq(3).addClass('active').siblings().removeClass('active');
-                } else if ($(window).scrollTop() > 1905.3499) {
-                    $('.indicator li').eq(2).addClass('active').siblings().removeClass('active');
-                } else if ($(window).scrollTop() > 1245.9499) {
-                    $('.indicator li').eq(1).addClass('active').siblings().removeClass('active');
-                }
-                flag1 = true;
-            }, 200);
-        }
+    $('.btn.play').click(function() {
+        $(this).hide();
+        $(this).next('.btn').show();
+        $(this).prevAll('.image-background').find('img').show();
+    });
+    $('.btn.pause').click(function() {
+        $(this).hide();
+        $(this).prev('.btn').show();
+        $(this).prevAll('.image-background').find('img').hide();
     });
 </script>
 </body>
