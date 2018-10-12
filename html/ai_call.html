@@ -785,6 +785,28 @@
             }, 200);
         }
     });
+
+    // 页面指示器事件
+    $('body').scrollspy({
+        target: '.section-scrollspy'
+    });
+    $('.indicator').on('affix.bs.affix', function() {
+        $(this).removeClass('animated fadeOut').addClass('animated fadeIn');
+    })
+    $('.indicator').on('affix-top.bs.affix', function() {
+        $(this).removeClass('animated fadeIn').addClass('animated fadeOut');
+    })
+
+    $('.btn.play').click(function() {
+        $(this).hide();
+        $(this).next('.btn').show();
+        $(this).prevAll('.image-background').find('img').show();
+    });
+    $('.btn.pause').click(function() {
+        $(this).hide();
+        $(this).prev('.btn').show();
+        $(this).prevAll('.image-background').find('img').hide();
+    });
 </script>
 </body>
 
