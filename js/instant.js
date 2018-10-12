@@ -351,14 +351,16 @@ $('.dialog__content').css({
     'transform': 'scale(1.1)',
     'display': 'none'
 });
-$('.try-item').on('click', function() {
+
+function open() {
     $('#try-kefu').css('display', 'flex');
     $('.dialog__content').css({
         'transform': 'scale(1)',
         'display': 'block'
     });
     $('.dialog__overlay').fadeIn();
-});
+}
+$('.try-item').on('click', open);
 
 function close() {
     $('#try-kefu').fadeOut();
@@ -369,10 +371,12 @@ function close() {
             'transform': 'scale(1.1)'
         });
     });
-    $(this).fadeOut();
+    $('.dialog__overlay').fadeOut();
 }
 $('.dialog__overlay').on('click', close);
 $('.do-close').on('click', close);
+
+$('.case .action .btn').on('click', open);
 
 //返回顶部
 $('.top-item').on('click', function() {

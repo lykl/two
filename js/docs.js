@@ -36,6 +36,36 @@ $(function() {
                     zIndex: 9999,
                 });
             }
+            if (window.innerWidth > 992 && window.innerWidth < 1200) {
+                $("article").css("marginLeft", "25%");
+                $("#dokuwiki-aside .slide-content").css({
+                    width: "155px",
+                    position: "fixed",
+                    top: 50,
+                    zIndex: 9999,
+                });
+                $("article>div>div .col-md-3>div").css({
+                    position: "fixed",
+                    top: 50,
+                    width: "194px"
+                })
+
+                if ($('.container-fluid').is(".container")) {
+                    $("#dokuwiki-aside .slide-content").css({
+                        width: "146px",
+                        position: "fixed",
+                        top: 50,
+                        zIndex: 9999,
+                    });
+                    $("article>div>div .col-md-3>div").css({
+                        position: "fixed",
+                        top: 50,
+                        width: "182px"
+
+                    })
+
+                }
+            }
             if (window.innerWidth < 992) {
                 $("article").css("marginLeft", "25%");
                 $("#dokuwiki-aside .slide-content").css({
@@ -77,7 +107,7 @@ $(function() {
         }
     }
 
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth > 768) {
         $(window).scroll(fn);
     } else {
         $(window).unbind('scroll', fn);

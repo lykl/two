@@ -375,3 +375,9 @@ $('.social .icon-wechat').hover(function() {
 }, function() {
     $('.erweima').hide(0);
 });
+
+//返回顶部
+$('.top-item').on('click', function() {
+    $(window).scrollTop(0);
+    return false;
+});
