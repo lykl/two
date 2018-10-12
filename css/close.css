@@ -3,7 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 
 li {
@@ -44,7 +44,28 @@ header>div {
 
 .more {
     float: right;
+    width: 115px;
+    overflow: hidden;
+    position: relative;
 }
+
+.more img {
+    position: absolute;
+    top: 15px;
+    left: 0;
+}
+
+.more span {
+    margin-left: 22px;
+    display: inline-block;
+}
+
+
+/* .more p {
+    width: 16px;
+    height: 11px;
+    background: url(../img/xh/login/flags.png) no-repeat;
+} */
 
 .more i {
     /* display: inline-block; */
@@ -71,6 +92,7 @@ header>div {
 
 .right {
     width: 84%;
+    /* cursor: alias; */
     position: relative;
     z-index: 2;
     /* width: %; */
