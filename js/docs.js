@@ -107,7 +107,7 @@ $(function() {
         }
     }
 
-    if (window.innerWidth >= 768) {
+    if (window.innerWidth > 768) {
         $(window).scroll(fn);
     } else {
         $(window).unbind('scroll', fn);
