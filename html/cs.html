@@ -1063,7 +1063,7 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Copyright © 2016-2017 环信 Co.,Ltd. 北京易掌云峰科技有限公司版权所有</p>
+            <p>Copyright © 2016-2017 环信 Co.,Ltd.<br class="visible-xs-block" /> 北京易掌云峰科技有限公司版权所有</p>
             <p>京ICP备14026002号
                 <a href="http://www.easemob.com/sla">SLA协议</a> 京ICP证160482
             </p>
@@ -1075,71 +1075,6 @@
     <script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
     <script src="../js/test.js"></script>
     <script src="../js/cs.js"></script>
-    <script>
-        //页面滚动事件
-        var flag = true;
-
-        $(window).scroll(function() {
-            // var tp = $(window).scrollTop();
-            if (flag) {
-                flag = false;
-                setTimeout(function() {
-                    // if ($(window).scrollTop() < tp) {
-                    //     $('.hd').stop().slideUp(500);
-                    // } else {
-                    //     $('.hd').stop().slideDown(500);
-                    // }
-                    //导航栏
-                    if ($('.header').offset().top > 0) {
-                        $('.header').stop().animate({
-                            'backgroundColor': '#4eb1f4'
-                        }, 1000);
-                    } else if ($('.header').offset().top == 0) {
-                        $('.header').stop().animate({
-                            'backgroundColor': 'transparent'
-                        }, 1000);
-                    }
-                    if ($('.header-mobile').offset().top > 0) {
-                        $('.header-mobile').stop().animate({
-                            'backgroundColor': '#4eb1f4'
-                        }, 1000);
-                    } else if ($('.header-mobile').offset().top == 0) {
-                        $('.header-mobile').stop().animate({
-                            'backgroundColor': 'transparent'
-                        }, 1000);
-                    }
-                    if ($('.sidemenu').offset().top > 1109) {
-                        $('.top-item').fadeIn();
-                    } else {
-                        $('.top-item').fadeOut();
-                    }
-
-                    //锚点
-                    if ($(window).scrollTop() >= 360.4375) {
-                        $('.indicator').fadeIn();
-                        $('.indicator li').eq(0).addClass('active').siblings().removeClass('active');
-                    } else if ($(window).scrollTop() < 360.4375) {
-                        $('.indicator').fadeOut();
-                    }
-
-                    if ($(window).scrollTop() > 5358.2127) {
-                        $('.indicator li').eq(6).addClass('active').siblings().removeClass('active');
-                    } else if ($(window).scrollTop() > 4118.2501) {
-                        $('.indicator li').eq(5).addClass('active').siblings().removeClass('active');
-                    } else if ($(window).scrollTop() > 3623.4500) {
-                        $('.indicator li').eq(4).addClass('active').siblings().removeClass('active');
-                    } else if ($(window).scrollTop() > 2788.25) {
-                        $('.indicator li').eq(3).addClass('active').siblings().removeClass('active');
-                    } else if ($(window).scrollTop() > 1905.3499) {
-                        $('.indicator li').eq(2).addClass('active').siblings().removeClass('active');
-                    } else if ($(window).scrollTop() > 1245.9499) {
-                        $('.indicator li').eq(1).addClass('active').siblings().removeClass('active');
-                    }
-                    flag = true;
-                }, 200);
-            }
-        });
-    </script>
 </body>
 
 </html>
