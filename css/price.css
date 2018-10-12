@@ -279,6 +279,9 @@ body {
     padding: 30px 30px;
   }
 }
+.dialog__content {
+  background: url(../img/xh/try-bg.jpg) !important;
+}
 @media (min-width: 992px) {
   .h4,
   h4 {

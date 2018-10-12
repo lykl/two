@@ -215,83 +215,138 @@
             </div>
         </div>
     </div>
-    <!-- <div class="nav"></div> -->
-    <!-- 右边定位 -->
 
-    <div class="dw1 hidden-xs">
-        <img src="../img/zhb/download/icon1.png" alt="">
-        <p>商务咨询</p>
+    <div id="try-kefu" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content image-background">
+            <form role="form" method="post" action="/api/guestbook/addmsg" class="form-horizontal">
+                <h2 class="title">申请试用</h2>
+                <h6 class="sub-title">提交后工作人员会尽快与您联系进行功能演示</h6>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="phone" maxlength="11" pattern="[0-9]{11}" placeholder="手机号" required="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="full_name" placeholder="姓名" required="">
+                    </div>
+                </div>
+                <div class="form-group verify">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="verify" placeholder="验证码" required="" autocomplete="off">
+                            <span class="input-group-addon">
+                                <img class="verify_img" src=""  style="cursor:pointer;vertical-align: top;" title="点击获取">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary btn-block submit">提交</button>
+                            <button type="button" class="btn btn-default btn-block do-close" data-dialog-close="">不了，谢谢</button>
+                        </div>
+                        <div class="loading" style="display:none">
+                            <div class="sk-cube-grid">
+                                <div class="sk-cube sk-cube1"></div>
+                                <div class="sk-cube sk-cube2"></div>
+                                <div class="sk-cube sk-cube3"></div>
+                                <div class="sk-cube sk-cube4"></div>
+                                <div class="sk-cube sk-cube5"></div>
+                                <div class="sk-cube sk-cube6"></div>
+                                <div class="sk-cube sk-cube7"></div>
+                                <div class="sk-cube sk-cube8"></div>
+                                <div class="sk-cube sk-cube9"></div>
+                            </div>
+                        </div>
+                        <div class="success" style="display:none"> <span class="iconfont icon-duigou_jiage" style="font-size:50px"></span>
+                            <p class="text-center">提交成功</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <!-- dw1点击事件 -->
-    <div class="dw1_dj hidden-xs">
-        <div class="dw1_top">
-            <p class="float">环信商务咨询</p>
 
-            <span class="icon-suoxiao iconfont suoxiao"></span>
-            <span class="icon-player_slider_dot iconfont "></span>
+    <div class="sidemenu">
+        <div class="item transition tel visible-xs-block">
+            <a href="" rel="nofollow">
+                <i class="iconfont icon-dianhuazixun"></i>
+                <p>400电话</p>
+            </a>
         </div>
-        <div class="dw1_main">
-            <img src="../img/zhb/download/e2edbb10-7a49-4c50-a1fc-99ec8fd57682@0-0-200-200a_300h_300w_.png" alt="">
-            <span class="span1">现在是下班时间，不能转人工哟，有问题您还是问我吧~</span>
+        <div class="item transition biz-item">
+            <a href="javascript:;" class="im-biz"> <i class="iconfont icon-swzx"></i>
+                <p>商务咨询</p>
+            </a>
         </div>
-        <div class="dw1_bot">
-            <div>
-                <span class="iconfont icon-tiezi"></span>
-                <span class="iconfont icon-tupian"></span>
-                <span class="iconfont icon-lianjie"></span>
-                <span class="iconfont icon-video"></span>
-                <span class="iconfont icon-shuye"></span>
-                <span class="iconfont icon-erji"></span>
+        <div class="item transition dev-item dev-trigger">
+            <a href="javascript:;" class="dev"> <i class="iconfont icon-jszx"></i>
+                <p>技术咨询</p>
+            </a>
+            <div class="dev-wrap" style="display: none; left: -750px; opacity: 0;">
+                <h6 class="title">提示：技术咨询已转移到管理后台，请先登录</h6>
+                <p class="sub-title">即时通讯云用户请在应用详情页提交工单，同时提供论坛互助支持服务。客户互动云用户请进入管理员模式在线咨询。</p>
+                <div>
+                    <a class="im btn btn-success btn-block" href="./login.html" target="_blank">登录即时通讯云</a>
+                    <a class="kf btn btn-primary btn-block" href="./loading.html" target="_blank">登录客户互动云</a> <a class="kf btn btn-info btn-block" href="http://www.imgeek.org/" target="_blank">IMGeek社区</a>
+                </div>
             </div>
-            <input type="text" name="" id="input" placeholder="点击输入内容...">
-            <button id="but">发送</button>
         </div>
-
-    </div>
-
-
-    <div class="dw2 hidden-xs">
-        <img src="../img/zhb/download/icon2.png" alt="">
-        <p>技术咨询</p>
-    </div>
-    <!--dw2 点击事件 -->
-    <div class="dw2_dj hidden-xs ">
-        <p>提示：技术咨询已转接到管理后台，请先登录</p>
-        <span>即时通讯云用户请在应用详情页提交工单，同时提供论坛互助支持服务。客户互动云用户请进入管理员模式在线咨询。</span>
-        <div>
-            <a href="#" class="dw2_a1">登录即时通讯云</a>
-            <a href="#" class="dw2_a2">登录客户互动云</a>
-            <a href="#" class="dw2_a3">IMGeek社区</a>
+        <div class="item transition try-item">
+            <a href="javascript:;" class="free-trial"> <span class="trigger"> <i class="iconfont icon-mianfeishiyong"></i> <p>免费试用</p> </span> </a>
         </div>
-
-    </div>
-
-
-    <div class="dw3 hidden-xs">
-        <img src="../img/zhb/download/icon3.png" alt="">
-        <p>免费试用</p>
-    </div>
-    <!-- dw3 点击事件 -->
-    <div class="hidden-xs dw3_dj">
-        <div>
-            <p> 申请试用</p>
-            <span>提交后工作人员会尽快与您联系进行功能演示</span><br>
-            <input type="text" placeholder="手机号"><br>
-            <input type="text" placeholder="姓名"><br>
-            <input type="text" placeholder="验证码" class="yzm float"> <span class="span1"><img src="../img/zhb/download/index.png" class="float" alt=""></span>
-            <div class="dw3_bt1">提交</div>
-            <div class="dw3_bt2">不了，谢谢</div>
+        <div class="item transition top-item hidden-xs">
+            <a href="javascript:;" class="scroll-top" style="margin-top:10px"> <i class="iconfont icon-huidaodingbu"></i> </a>
         </div>
-
     </div>
 
-    <div class="mb">
+    <div id="dev-spt-box" class="dialog" style="display: none;">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content">
+            <h6 class="title">技术咨询已转移到管理后台，请先登录</h6>
+            <p class="sub-title">即时通讯云使用者请在应用详情页面咨询<br>客户互动云使用者请进入管理员模式咨询</p>
+            <div class="rows">
+                <div class="col-xs-6"> <a class="im btn btn-success btn-block" href="./login.html" target="_blank">登录即时通讯云</a> </div>
+                <div class="col-xs-6"> <a class="kf btn btn-primary btn-block" href="./loading.html" target="_blank">登录客户互动云</a> </div>
+            </div>
+            <a class="close" href="javascript:;">×</a>
+        </div>
     </div>
 
-    <div class="dw4 hidden-xs">
-        <span class="icon-shouqi iconfont"></span>
+    <div class="chat1">
+        <div class="chat-header">
+            <p>环信商务咨询</p>
+            <i class="iconfont icon-min"></i>
+            <i class="iconfont icon-audio2"></i>
+        </div>
+        <div class="wrapper">
+            <div class="chat-wrapper">
+                <div class="chat-container">
+                    <div class="date"></div>
+                    <div class="left">
+                        <img src="https://kefu.easemob.com/ossimages/kefu-prod-avatar.img-cn-hangzhou.aliyuncs.com/avatar/387/e2edbb10-7a49-4c50-a1fc-99ec8fd57682@0-0-200-200a%7C300h_300w%7C.png" alt="">
+                        <div class="chat-content">
+                            <span>尊敬的客户您好：感谢您对环信的支持，我们的人工服务时间是周一至周五9:00-18:00，请问您有什么需要帮助的呢？</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-wrapper">
+                <div class="toolbar">
+                    <i class="iconfont icon-face"></i>
+                    <i class="iconfont icon-picture"></i>
+                    <i class="iconfont icon-attachment"></i>
+                    <i class="iconfont icon-sendVideo"></i>
+                    <i class="iconfont icon-note"></i>
+                </div>
+                <textarea class="inp" style="resize: none" placeholder="点击输入内容..." cols="30" rows="10"></textarea>
+                <span class="send disabled">发送</span>
+            </div>
+        </div>
     </div>
-
     <!-- banner -->
     <div class="banner container-fluid">
         <div class="row">

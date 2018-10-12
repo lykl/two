@@ -482,6 +482,9 @@ body{
         color: #fff;
     }
 }
+.dialog__content {
+    background: url(../img/xh/try-bg.jpg)!important;
+}
 
 // 媒体查询
 @media (min-width:768px){
@@ -619,3 +622,57 @@ body{
         margin-bottom:0;
     }
 }
+
+.indicator {
+    position: fixed;
+    left: 20px;
+    z-index: 2;
+    top: 40%;
+    display: none;
+    .nav{
+        >li{
+            margin-bottom: 10px;
+            >a{
+                padding: 0;
+                width: 12px;
+                height: 12px;
+                background-color: transparent;
+                display: block;
+                border-radius: 12px;
+                border: 2px solid rgb(23, 173, 109);
+                transition: all .2s ease .1s;
+                opacity: 0.6;
+            }
+        }
+        >li.active{
+            >a{
+                background-color: rgb(107, 206, 165);
+            }
+        }
+    }
+}
+
+@media(max-width:992px){
+    .indicator {
+        left: 10px;
+    }
+}
+
+
+@media(max-width:768px){
+ .indicator {
+        left: unset!important;
+        right: 5px!important;
+        .nav{
+            >li{
+                >a{
+                    width: 4px;
+                    height: 8px;
+                    border-radius: 0;
+                    border-width: 1px;
+                }
+            }
+        }
+    }
+}
+
