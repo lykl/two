@@ -354,7 +354,7 @@
     color: #000;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
     /*移动端：滚动监听部分*/
     .indicator {
         position: fixed;
@@ -478,7 +478,7 @@
     }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 767px) {
     /*背景图*/
     .banner {
         background-image: url('../img/cy/rtc/banner@2x\ \(2\).jpg');
