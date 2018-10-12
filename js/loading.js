@@ -98,7 +98,13 @@ $(function() {
                     $(".upassword").val('');
                     $(".usex").val('');
                     $(".uphone").val('');
-                };
+                } else {
+                    document.cookie = 'username=' + $(".uname").val();
+                    // documnet.cookie = $(".upassward").val();
+                    var d = new Date();
+                    d.setDate(d.getDate() + 3);
+                    document.cookie = 'expires=' + d;
+                }
                 alert(data.msg);
                 window.location.href = 'closing.html';
             },
