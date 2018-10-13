@@ -145,7 +145,7 @@ if (window.innerWidth > 1200) {
     $('.scene .owl-stage .owl-item').css('width', window.innerWidth / 3);
 }
 
-if (window.innerWidth < 992) {
+if (window.innerWidth < 1200) {
     $('.tab .owl-stage').css({
         'width': $('.scene .owl-stage .owl-item').eq(0).width() * $('.scene .owl-stage .owl-item').length,
         'left': btns.parent().parent().width() / 2 - b / 2
@@ -172,7 +172,7 @@ $(window).resize(function() {
     } else {
         $('.scene .owl-stage .owl-item').css('width', window.innerWidth / 3);
     }
-    if (window.innerWidth < 992) {
+    if (window.innerWidth < 1200) {
         $('.tab .owl-stage').css({
             'width': $('.scene .owl-stage .owl-item').eq(0).width() * $('.scene .owl-stage .owl-item').length,
             'left': btns.parent().parent().width() / 2 - b / 2
@@ -194,7 +194,7 @@ interval = setInterval(start, 2000);
 btns.hover(function() {
     i = $(this).index();
     $(this).addClass('active').siblings().removeClass('active');
-    if (window.innerWidth < 992) {
+    if (window.innerWidth < 1200) {
         btns.parent().stop().animate({
             'left': btns.parent().parent().width() / 2 - b / 2 - b * i
         });
@@ -212,7 +212,7 @@ function start() {
     if (i == len) {
         i = 0;
         btns.eq(0).addClass('active').siblings().removeClass('active');
-        if (window.innerWidth < 992) {
+        if (window.innerWidth < 1200) {
             btns.parent().stop().animate({
                 'left': btns.parent().parent().width() / 2 - b / 2
             });
@@ -221,7 +221,7 @@ function start() {
             'left': 0
         });
     } else {
-        if (window.innerWidth < 992) {
+        if (window.innerWidth < 1200) {
             btns.parent().stop().animate({
                 'left': btns.parent().parent().width() / 2 - b / 2 - b * i
             });
