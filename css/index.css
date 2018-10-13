@@ -58,6 +58,9 @@ p {
   h5 {
     font-size: 16px;
   }
+  .banner .item {
+    height: 200px!important;
+  }
   .action {
     margin-top: 20px;
   }
@@ -484,6 +487,11 @@ p {
   }
 }
 @media (max-width: 991px) {
+  body .banner .item {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
   .evaluate {
     background: #f0f0f0;
     text-align: center;
@@ -598,6 +606,24 @@ p {
 }
 .banner {
   cursor: pointer;
+}
+.banner .item {
+  height: 700px;
+}
+.banner .item:nth-child(1) {
+  background-image: url(../img/xh/index/aicall.jpg);
+}
+.banner .item:nth-child(2) {
+  background-image: url(../img/xh/index/rtc.jpg);
+}
+.banner .item:nth-child(3) {
+  background-image: url(../img/xh/index/im_upgrade2.jpg);
+}
+.banner .item:nth-child(4) {
+  background-image: url(../img/xh/index/zxzq.jpg);
+}
+.banner .item:nth-child(5) {
+  background-image: url(../img/xh/index/gartner_ai.jpg);
 }
 .banner .container-fluid {
   padding: 0;
