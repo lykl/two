@@ -105,6 +105,10 @@
 .contact .btn {
   margin-top: 0;
 }
+.contact .btn:hover {
+  color: #000;
+  background: #fff;
+}
 .contact .btn-default-outline {
   color: #fff;
   border-color: #fff;
