@@ -14,6 +14,7 @@ body {
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
+  display: none;
   position: fixed;
   left: 10px;
   top: 200px;
@@ -121,6 +122,8 @@ body {
 .header .search button {
   width: 20%;
   height: 35px;
+  padding: 0;
+  text-align: center;
   border: 1px solid #26389f;
   background-color: #26389f;
   color: #fff;
