@@ -206,7 +206,7 @@ function close() {
     });
     $('#try-kefu .dialog__overlay').fadeOut();
 }
-$('.try-item').on('click', function() {
+$('.try-item,.subbut').on('click', function() {
     $('#try-kefu').css('display', 'flex');
     $('#try-kefu .dialog__content').css({
         'transform': 'scale(1)',
