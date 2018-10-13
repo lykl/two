@@ -4,6 +4,9 @@
   background-image: -webkit-image-set(url(../img/zly/banner_ai.jpg) 1x, url(../img/zly/banner_ai.jpg) 2x);
   height: 160px;
 }
+.input-group {
+  z-index: 1;
+}
 .inptel {
   width: 100%;
   padding: 10px 0;

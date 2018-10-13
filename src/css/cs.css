@@ -171,11 +171,13 @@ body {
 .inptel .input-group input {
   border-radius: 0;
   border: 1px solid #87c8fa;
+  z-index: 1;
 }
 .inptel .input-group button {
   border-radius: 0;
   background: #87c8fa;
   color: #fff;
+  z-index: 1;
 }
 .scene {
   padding: 0!important;
@@ -266,6 +268,9 @@ body {
 }
 .owl-carousel .owl-darg .owl-item {
   user-select: none;
+}
+.carousel-indicators {
+  z-index: 1;
 }
 .section-muted {
   width: 100%;
@@ -614,4 +619,10 @@ body {
     border-radius: 0;
     border-width: 1px;
   }
+}
+.carousel-indicators {
+  z-index: 1;
+}
+.input-group {
+  z-index: 1;
 }
