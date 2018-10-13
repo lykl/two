@@ -1,0 +1,343 @@
+@charset "UTF-8";
+
+//初始样式
+h1,h2,h3,h4,h5,h6{
+    font-family: inherit;
+    font-weight: 500;
+    line-height: 1.1;
+}
+h1,h2,h3{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+h4 {
+    font-size: 18px;
+}
+h5{
+    font-size: 16px;
+}
+p{
+    color: #7a7a7a;
+    margin: 0 0 10px;
+}
+body{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+}
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.glyphicon-ok{
+    color:rgb(78, 177, 244);
+}
+.image-background {
+    background: transparent none no-repeat scroll center center/cover;
+}
+
+// 价格
+.banner{
+    height: 160px;
+    background-image:url(../img/zly/banner.jpg);
+    background-image:-webkit-image-set(url(../img/zly/banner.jpg) 1x,url(../img/zly/banner.jpg) 2x);
+    .text-box{
+        margin-top:60px;
+        color:#fff;
+        .title{
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .sub-title{
+            font-size: 12px;
+            margin-top: 20px;
+        }
+    }
+}
+.intro-card{
+    margin-top: 50px;
+    margin-bottom:30px;
+    text-align: center;
+    .item{
+        margin-bottom:30px;
+        box-shadow: 0px 0px 5px 2px rgba(144, 144, 144, 0.18);
+        .rmb::before {
+            content: "￥";
+            position: relative;
+            font-size: 30px;
+            color: rgb(96,115,147);
+            top: -8px;
+            margin-right: 8px;
+            font-weight: normal;
+        }
+        .head{
+            padding: 40px 30px;
+            color: #fff;
+            font-size: 24px;
+            margin: 0;
+        }
+        .price{
+            margin-top: 40px;
+            color: #607393;
+            font-weight: bold;
+            strong{
+                font-size: 40px;
+                color: #153060;
+                vertical-align: sub;
+            }
+            small{
+                font-size:85%;
+            }
+        }
+        .text{
+            margin: 30px 40px 20px;
+            font-size: 14px;
+            min-height: 60px;
+        }
+        .action{
+            padding: 0 60px 30px;
+            margin-top: 0;
+            .btn{
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+        
+    }  
+    .free{
+        border: 1px solid rgb(162, 195, 123);
+        .head{
+            background: rgb(162, 195, 123);
+        }
+        .text{
+            color: rgba(162, 195, 123, 0.8);
+        }
+        .btn{
+            border: 1px solid rgb(162, 195, 123);
+            color: rgb(162, 195, 123);
+            transition: all .2s;
+            -webkit-transition: all .2s;
+        }
+        .btn:hover {
+            background-color: rgb(162, 195, 123);
+            color: #fff;
+        }
+    }
+    .standard{
+        border: 1px solid rgb(77, 189, 236);
+        .head{
+            background: rgb(77, 189, 236);
+        }
+        .text{
+            color: rgb(77, 189, 236, 0.8);
+        }
+        .btn{
+            border: 1px solid rgb(77, 189, 236);
+            color: rgb(77, 189, 236);
+            transition: all .2s;
+            -webkit-transition: all .2s;
+        }
+        .btn:hover {
+            background-color: rgb(77, 189, 236);
+            color: #fff;
+        }
+    }
+    .ultimate{
+        border: 1px solid rgb(48, 108, 182);
+        .head{
+            background-image:url(../img/zly/ultimate.png);
+        }
+        .text{
+            color:rgb(48, 108, 182, 0.8);
+        }
+        .btn{
+            border: 1px solid rgb(48, 108, 182);
+            color: rgb(48, 108, 182);
+            transition: all .2s;
+            -webkit-transition: all .2s;
+        }
+        .btn:hover {
+            background-color: rgb(48, 108, 182);
+            color: #fff;
+        }
+    }    
+}
+
+//表格
+.detail{
+    .title{
+        width: 240px;
+        margin: 0 auto 40px;
+        padding: 6px 10px;
+        color: #fff;
+        background-color: rgb(78, 177, 244);
+        font-weight: 500;
+        text-align: center;
+        border-radius: 40px;
+    }
+    .table-responsive {
+        box-shadow: 0px 0px 5px 2px rgba(144, 144, 144, 0.18);
+        border: none;
+    }
+    table{
+        border: 0;
+        margin-bottom: 0;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 14px;
+        color: #7a7a7a;
+        sup {
+            color: rgb(51, 122, 183);
+        }
+        .free{
+            color: rgb(162, 195, 123);
+        }
+        .standard{
+            color: rgb(77, 189, 236);
+        }
+        .ultimate{
+            color: rgb(48, 108, 182);
+        }
+        .td-padding{
+            padding:20px;
+            .btn{
+                display: inline-block;
+                width: 100%;
+                padding: 12px 25px;
+                color: rgb(255, 255, 255);
+            }
+            .free{
+                background-color: rgb(162, 195, 123);
+            }
+            .standard{
+                background-color: rgb(77, 189, 236);
+            }
+            .ultimate{
+                background-color: rgb(48, 108, 182);
+            }
+            
+        }
+        tr{
+            &:last-child td {
+                border-bottom: 0;
+            }
+            td{
+                vertical-align: middle;
+                height:60px;
+                
+                &:first-child {
+                    border-left: 0;
+                }
+                &:first-child td{
+                    border-top: 0;
+                }
+            }
+        }
+        .left {
+            text-align: left;
+        }       
+    }
+    .highlight {
+        color: rgb(78, 177, 244);
+        font-weight: bold;
+        vertical-align: middle;
+    }
+    .note {
+        margin-top: 45px;
+        margin-bottom: 80px;
+        .item{
+            margin-bottom:15px;
+            &>p{
+                color: #5CB85C;
+                font-weight: bold;
+            }
+        }
+        .indent {
+            margin-left: 15px;
+        } 
+    }
+}
+// 媒体查询
+@media (min-width:768px){
+    .h4, h4 {
+        font-size: 20px;
+    }
+    .container {
+        width: 750px;
+    }
+    .banner{
+        height:340px;
+        .text-box{
+            .title {
+                font-size: 22px;
+            }
+            .sub-title {
+                font-size: 18px;
+            }
+        }
+    }
+    .intro-card {
+        margin-top: -87px;
+        margin-bottom: 80px;
+        text-align: center;
+        .item{
+            .head {
+                padding: 30px 30px;
+            }
+        }
+    }
+}
+.dialog__content {
+    background: url(../img/xh/try-bg.jpg)!important;
+}
+
+@media (min-width:992px){
+    .h4, h4 {
+        font-size: 22px;
+    }
+    .container {
+        width: 970px;
+    }
+   .banner {
+        height: 400px;
+        .text-box{
+            .title {
+                font-size: 30px;
+            }
+            .sub-title {
+                font-size: 26px;
+            }
+        }
+    }
+    .intro-card {
+        margin-top: -107px;
+        .item{
+            margin:0 10px;
+            .head{
+                padding: 40px 30px;
+            }
+        }
+    }
+}
+@media (min-width:1200px){
+    .container {
+        width: 1170px;
+    }
+    .banner {
+        height: 420px;
+        .text-box{
+            .title {
+                font-size: 32px;
+                font-weight: bold;
+            }
+            .sub-title {
+                font-size: 22px;
+            }
+        }
+    }
+    .intro-card .container {
+        width: 1040px;
+    }
+}

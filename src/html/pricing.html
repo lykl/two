@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>pricing</title>
+    <link href="../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/jquery-ui.min.css">
+    <link rel="stylesheet" href="../icon/xh/iconfont.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/pricing.css">
+
+    <style>
+        p,
+        ul,
+        li,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            padding: 0;
+            margin: 0;
+        }
+    </style>
+
+    <!--[if lt IE 9]>
+<script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+<script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+
+    <div class="header-mobile">
+        <a href="" class="logo"></a>
+        <nav>
+            <a href="../html/instant.html" class="im">即时通讯云</a>
+            <a href="../html/cs.html" class="cs">客户互动云</a>
+        </nav>
+        <div class="menu">
+            <i class="iconfont icon-category"></i>
+        </div>
+        <div class="nav-collapse" style="display: none;">
+            <div id="dummy" class="dummy">
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-default-outline" href="../html/instant.html">即时通讯云产品</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-default-outline" href="../html/cs.html">客户互动云产品</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="./customer.html">案例</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="javascript:;">案例</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="./pricing.html">价格</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="./price.html">价格</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="./download.html">下载</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="javascript:;">下载</a>
+                    </div>
+                </div>
+                <div class="dummy__item row">
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="./docs.html" target="_blank">文档</a>
+                    </div>
+                    <div class="col-xs-6 column">
+                        <a class="btn btn-sm" href="./docs.html" target="_blank">文档</a>
+                    </div>
+                </div>
+            </div>
+            <div class="entry container-fluid">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a class="btn btn-default-outline btn-block" href="./loading.html" target="_blank">注册即时通讯云</a>
+                    </div>
+                    <div class="col-xs-6">
+                        <a class="btn btn-default-outline btn-block" href="https://kefu.easemob.com/mo/register" target="_blank">注册客户互动云</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="" title="IM,即时通讯云,CEC,客户互动云,在线客服,在线客服系统">
+                    <img src="../img/xh/index/logo.png" class="logo hidden-xs hidden-sm">
+                    <i class="logo easeicon ease-logo visible-xs-inline-block visible-sm-inline-block"></i>
+                </a>
+            </div>
+            <div id="main-navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="./instant.html">即时通讯云</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="./instant.html">功能</a></li>
+                                <li><a href="./customer.html" rel="nofollow">案例</a></li>
+                                <li><a href="./pricing.html">价格</a></li>
+                                <li><a href="./docs.html" target="_blank">文档</a></li>
+                                <li><a href="./download.html">下载</a></li>
+                                <li><a href="javascript:;">直播方案</a></li>
+                                <li><a href="javascript:;">智能反垃圾</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./cs.html">客户互动云</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="./cs.html">功能</a></li>
+                                <li><a href="./customer.html" rel="nofollow">案例</a></li>
+                                <li><a href="./price.html">价格</a></li>
+                                <li><a href="./docs.html" target="_blank">文档</a></li>
+                                <li><a href="javascript:;">下载</a></li>
+                                <li><a href="./vpc.html">私有云</a></li>
+                                <li><a href="./video.html">视频客服</a></li>
+                                <li><a href="javascript:;">客户声音</a></li>
+                                <li><a href="javascript:;">智慧工单</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="./rtc.html">音视频云</a> </li>
+                    <li> <a href="./robot.html">机器人</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="./robot.html">功能</a></li>
+                                <li><a href="./customer.html" rel="nofollow">案例</a></li>
+                                <li><a href="./docs.html" target="_blank">文档</a></li>
+                                <li><a href="./ai_call.html">外呼机器人</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;">案例</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="./customer.html" rel="nofollow">即时通讯云</a></li>
+                                <li><a href="javascript:;" rel="nofollow">客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;">价格</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="./pricing.html">即时通讯云</a></li>
+                                <li><a href="./price.html">客户互动云</a></li>
+                                <li><a href="javascript:;">私有化部署</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;" target="_blank">文档</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="./docs.html" target="_blank">即时通讯云</a></li>
+                                <li><a href="./docs.html" target="_blank">客户互动云</a></li>
+                                <li><a href="./docs.html" target="_blank">机器人</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="javascript:;">下载</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="./download.html">即时通讯云</a></li>
+                                <li><a href="javascript:;">客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li> <a href="./community.html" rel="nofollow">社区</a>
+                        <div class="sub-menu lite">
+                            <ul class="list-unstyled">
+                                <li><a href="./index.html" target="_blank">问题</a></li>
+                                <li><a href="javascript:;" rel="nofollow">活动</a></li>
+                                <li><a href="javascript:;" rel="nofollow">视频</a></li>
+                                <li><a href="javascript:;" rel="nofollow">代码</a></li>
+                                <li><a href="javascript:;" rel="nofollow">文章</a></li>
+                                <li><a href="javascript:;" rel="nofollow">帮助</a></li>
+                                <li><a href="javascript:;" rel="nofollow">话题</a></li>
+                            </ul>
+                            <ul class="list-unstyled extend">
+                                <li><a href="javascript:;" rel="nofollow">环信周刊</a></li>
+                                <li><a href="javascript:;" rel="nofollow">新闻资讯</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-sm btn-default-outline navbar-btn" href="javascript:;" rel="nofollow">登录</button>
+                        <div class="sub-menu login-register blue">
+                            <ul class="list-unstyled">
+                                <li><a href="./login.html" target="_blank" rel="nofollow">登录即时通讯云</a></li>
+                                <li class="active"><a href="javascript:;" rel="nofollow">登录客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-sm btn-danger navbar-btn" href="javascript:;" rel="nofollow">注册</button>
+                        <div class="sub-menu login-register blue">
+                            <ul class="list-unstyled">
+                                <li><a href="./loading.html" target="_blank" rel="nofollow">注册即时通讯云</a></li>
+                                <li class="active"><a href="javascript:;" rel="nofollow">注册客户互动云</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="banner">
+        <a class="link-holder" href="/event/upgrade" target="_blank"></a>
+    </div>
+
+    <div class="sec-first">
+        <div class="container">
+            <div class="item comnity">
+                <div class="row">
+                    <div class="col-md-7">
+                        <img class="img-responsive" src="../img/wzx/pricing/sqb.png" />
+                    </div>
+                    <div class="col-md-5">
+                        <h5 class="head">社区版</h5>
+                        <ul class="list">
+                            <li>基础的即时通讯云功能及存储空间</li>
+                            <li>多平台SDK及代码示例</li>
+                            <li>按需购买的实时音视频服务</li>
+                            <li><a href="http://www.imgeek.org" target="_blank">环信社区</a>互助支持</li>
+                            <li>100个账号（环信ID）以内免费使用</li>
+                        </ul>
+                        <div class="action"> <a class="btn" href="./login.html" target="_blank" rel="nofollow">即刻使用</a> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item2 company">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="price-unbiz">
+                            <div class="price-month">
+                                折合每月￥<span>750</span>
+                            </div>
+                            <div class="price">
+                                按年计价<strong><small>￥</small><span>9,000</span></strong>
+                            </div>
+                        </div>
+                        <div class="price-biz item transition biz-item" style="display:none">
+                            <button type="button" class="btn btn-primary cnt"><a href="javascript:;" style="color:white">联系商务</a></button>
+                        </div>
+                        <p class="tips"># 每AppKey按自然月内第三高日活（日活跃用户）区间收费</p>
+                        <p class="service">工单优先处理</p>
+                        <div class="slider">
+                            <span class="slspan"></span>
+                            <span id="line-0" style="left:0%">
+                            <span class="ui-slider-line" style="opacity: 0"></span>
+                            <span class="ui-slider-label">DAU</span>
+                            </span>
+                            <span style="left:7.1429%">
+                            <span class="ui-slider-line"></span>
+                            </span>
+                            <span style="left:14.2857%">
+                            <span class="ui-slider-line"></span>
+                            <span class="ui-slider-label">2千</span>
+                            </span>
+                            <span id="line-3" style="left:21.4286%">
+                            <span  class="ui-slider-line"></span>
+                            </span>
+                            <span style="left:28.5714%">
+                            <span class="ui-slider-line"></span>
+                            <span class="ui-slider-label">1万</span>
+                            </span>
+                            <span id="line-5" style="left:35.7143%">
+                            <span class="ui-slider-line"></span>
+                            </span>
+                            <span style="left:42.8571%">
+                            <span  class="ui-slider-line"></span>
+                            <span class="ui-slider-label">5万</span>
+                            </span>
+                            <span id="line-7" style="left:50%">
+                            <span class="ui-slider-line"></span>
+                            </span>
+                            <span style="left:57.1429%">
+                            <span  class="ui-slider-line"></span>
+                            <span class="ui-slider-label">10万</span>
+                            </span>
+                            <span id="line-9" style="left:64.2857%">
+                            <span class="ui-slider-line"></span>
+                            </span>
+                            <span style="left:71.4286%">
+                            <span class="ui-slider-line"></span>
+                            <span class="ui-slider-label">50万</span>
+                            </span>
+                            <span id="line-11" style="left:78.5714%">
+                            <span  class="ui-slider-line"></span>
+                            </span>
+                            <span style="left:85.7143%">
+                            <span class="ui-slider-line"></span>
+                            <span class="ui-slider-label">100万</span>
+                            </span>
+                            <span id="line-13" style="left:92.8571%">
+                            <span class="ui-slider-line"></span>
+                            </span>
+                            <span id="line-14" style="left:100%">
+                            <span class="ui-slider-line" style="opacity: 0"></span>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="col-md-5">
+                        <h5 class="head">企业版</h5>
+                        <ul class="list">
+                            <li>更大的吞吐量支持</li>
+                            <li>优先工单技术支持，可选购的专属QQ群支持</li>
+                            <li>按日活用户数阶梯弹性付费，灵活扩容</li>
+                            <li>可提供多项增值服务</li>
+                            <li>可迁移至VIP集群享更高服务保障</li>
+                            <li>实时音视频服务更优惠</li>
+                            <li>获得环信即时通讯云商业授权</li>
+                        </ul>
+                        <div class="action item transition biz-item"> <a class="btn im-biz" href="javascript:;" class="im-biz">联系商务</a> </div>
+                    </div>
+                    <div>
+                        <p class="indurce">服务说明：环信即时通讯云企业版支持消息总分发量支持高达 1,500 万条/日，可满足绝大多数互联网业务的基本需求。消息量超过 1,500 万条/日，我们将为你提供量身定做的专属技术和商务方案。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sec-detail">
+        <div class="container">
+            <h2 class="title text-center">版本功能比较</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <tr class="table-head text-center">
+                        <td class="left only" style="background-color:rgb(92, 184, 92)">功能模块</td>
+                        <td class="bg-success" style="background-color:rgb(92, 184, 92)"><strong>社区版</strong></td>
+                        <td class="bg-primary"><strong>企业版</strong></td>
+                    </tr>
+                    <tr class="group-head bg-info">
+                        <td colspan="3" class="left">基础通信功能</td>
+                    </tr>
+                    <tr>
+                        <td class="left">单聊</td>
+                        <td class="text-center" style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center" style="color: rgb(10, 105, 154)"><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">群聊</td>
+                        <td class="text-center " style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center " style="color: rgb(10, 105, 154) "><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">富媒体消息<br>
+                            <small class="text-muted ">文字/表情/语音/地理位置/照片/视频/名片/自定义消息</small>
+                        </td>
+                        <td class="text-center" style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center" style="color: rgb(10, 105, 154)"><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">消息回执</td>
+                        <td class="text-center " style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center " style="color: rgb(10, 105, 154) "><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">集成第三方用户体系</td>
+                        <td class="text-center" style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center" style="color: rgb(10, 105, 154)"><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">离线消息</td>
+                        <td class="text-center " style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center " style="color: rgb(10, 105, 154) "><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">离线消息推送</td>
+                        <td class="text-center" style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center" style="color: rgb(10, 105, 154)"><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">实时音屏</td>
+                        <td class="text-center " style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center " style="color: rgb(10, 105, 154) "><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">实时视屏</td>
+                        <td class="text-center" style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center" style="color: rgb(10, 105, 154)"><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr class="group-head">
+                        <td colspan="3 " class="left">多平台SDK及代码示例</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">iOS SDK + DEMO</td>
+                        <td class="text-center " style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center " style="color: rgb(10, 105, 154) "><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">Android SDK + DEMO</td>
+                        <td class="text-center" style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center" style="color: rgb(10, 105, 154)"><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">Web IM SDK + DEMO</td>
+                        <td class="text-center " style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center " style="color: rgb(10, 105, 154) "><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">Windows SDK + DEMO</td>
+                        <td class="text-center" style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center" style="color: rgb(10, 105, 154)"><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">Linux SDK</td>
+                        <td class="text-center " style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center " style="color: rgb(10, 105, 154) "><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">React Native SDK</td>
+                        <td class="text-center" style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center" style="color: rgb(10, 105, 154)"><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">React Native SDK</td>
+                        <td class="text-center " style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center " style="color: rgb(10, 105, 154) "><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">WebIM H5</td>
+                        <td class="text-center" style="color: rgb(92, 184, 92) "><span class="glyphicon glyphicon-ok "></span></td>
+                        <td class="text-center" style="color: rgb(10, 105, 154)"><span class=" glyphicon glyphicon-ok "></span></td>
+                    </tr>
+                    <tr class="group-head">
+                        <td colspan="3 " class="left">使用限制</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">注册用户</td>
+                        <td>100以内</td>
+                        <td>无限制</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">每日系统体送消息数<sup>1</sup></td>
+                        <td>2万以下</td>
+                        <td>请联系商务</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">创建聊天室/群组数量</td>
+                        <td>2万以下</td>
+                        <td>10万以下<br><small class="text-muted">如需增加群组/聊天室数量请联系商务</small></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">注册/发消息接口限流</td>
+                        <td>10次/秒<br><small class="text-muted">不可增加限流</small></td>
+                        <td>30次/秒<br><small class="text-muted">如需提高限流请联系商务</small></td>
+                    </tr>
+                    <tr>
+                        <td class="left ">
+                            <a>其他接口限流（下载聊天记录除外）</a>
+                        </td>
+                        <td><a href="http://docs.easemob.com/start/450errorcode/45restastrict" target="blank">10次/秒</a><br><small class="text-muted">不可增加限流</small></td>
+                        <td><a href="http://docs.easemob.com/start/450errorcode/45restastrict" target="blank">30次/秒</a><br><small class="text-muted">如需提高限流请联系商务</small></td>
+                    </tr>
+                    <tr class="group-head">
+                        <td colspan="3 " class="left">存储空间</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">
+                            单用户离线消息保存时间
+                        </td>
+                        <td>7天</td>
+                        <td>7天</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">单聊离线消息保存数量</td>
+                        <td>500条</td>
+                        <td>500条</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">群聊离线消息保存数量</td>
+                        <td>500条（单个群上限200条）</td>
+                        <td>500条（单个群上限200条）</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">聊天历史记录保存时间<br>
+                            <small class="text-muted ">包括图片语音等附件类型，不限容量和条数</small>
+                        </td>
+                        <td>3天</td>
+                        <td>3天<br><small class="text-muted">如需延长时间请联系商务</small></td>
+                    </tr>
+                    <tr class="group-head ">
+                        <td colspan="3 " class="left">增长服务</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">铭感词过滤</td>
+                        <td>不可开通</td>
+                        <td>免费开通默认词库<br><small class="text-muted">如需自定义词库请联系商务</small></td>
+                    </tr>
+                    <tr>
+                        <td class="left "><a>反垃圾服务</a><sup>2</sup></td>
+                        <td>不可开通</td>
+                        <td>如需开通请联系商务</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">实时路由<sup>3</sup></td>
+                        <td>不可开通</td>
+                        <td>如需开通请联系商务</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">多端同步<sup>4</sup></td>
+                        <td>不可开通</td>
+                        <td>如需开通请联系商务</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">多设备同步<sup>5</sup></td>
+                        <td>不可开通</td>
+                        <td>如需开通请联系商务</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">实时音视屏<sup>6</sup></td>
+                        <td colspan="2" class="td-padding">免费体验1000分钟<br><small class="text-muted">体验期过后按照如下标准收费：<br>一对一语音通话（单个用户）：5元/1000分钟<br>一对一视频通话（单个用户）：12元/1000分钟<br>多人语音通话（单个下行音频流）：5元/1000分钟<br>多人视频通话（单个下行视频流）：15元/1000分钟</small></td>
+                    </tr>
+                    <tr>
+                        <td class="left "><a>大数据平台</a></td>
+                        <td>基础指标</td>
+                        <td>企业特权指标及VIP开通权限</td>
+                    </tr>
+                    <tr>
+                        <td class="left ">VIP群<sup>7</sup></td>
+                        <td>普通集群<br><small class="text-muted">不可迁移VIP集群</small></td>
+                        <td>默认使用普通集群<br><small class="text-muted">申请迁移到VIP集群请联系商务</small></td>
+                    </tr>
+                    <tr>
+                        <td class="left "></td>
+                        <td><button type="button " class="btn btn-success "><a href="./login.html" style="color: white">即刻使用</a></button></td>
+                        <td><button type="button " class="btn btn-primary item transition biz-item">联系商务</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="note">
+        <div class="container">
+            <div class="foot-note1">
+                <p>1. 每日系统消息推送数</p>
+                <p class="indent">每日系统推送消息数是指APP每天通过REST接口发送给用户的消息数量（以消息接收方计算）。</p>
+            </div>
+            <div class="foot-note2">
+                <p>2. 反垃圾服务</p>
+                <p class="indent">环信反垃圾服务包括基于行为分析的spammer识别系统和关键词过滤系统，使用高效、准确的机器学习模型对恶意机器程序和用户spam进行智能识别，自动拦截垃圾信息，过滤非法政治言论以及色情信息。同时支持实时策略部署，帮助客户紧急拦截临时爆发的spam，使您的APP和用户免受垃圾信息骚扰，降低政策方面的违规风险。在反垃圾过程中，环信会对所有应用的用户ID做匿名处理，充分保护用户隐私。</p>
+            </div>
+            <div class="foot-note3">
+                <p>3. 实时路由</p>
+                <div class="indent-v">
+                    <p>实时消息路由可以把发送至环信的上行消息实时推送给指定的服务器。从而实时获取聊天记录或者实现一些定制化的业务场景，比如针对客户消息的内容进行自动回复等等。<a href="http://docs.easemob.com/doku.php?id=start:000quickstart:70rtmsgcallback" target="_blank">[详细使用指南]</a></p>
+                    <p>
+                        <small>注：如果您对获取聊天消息没有实时性需求，可以直接通过免费的 <a href="http://docs.easemob.com/doku.php?id=start:100serverintegration:30chatlog" target="_blank">[聊天记录拉取REST API]</a> 获取聊天记录。</small>
+                        <p>实时消息路由可以把发送至环信的上行消息实时推送给指定的服务器。从而实时获取聊天记录或者实现一些定制化的业务场景，比如针对客户消息的内容进行自动回复等等。<a href="http://docs.easemob.com/doku.php?id=start:000quickstart:70rtmsgcallback" target="_blank">[详细使用指南]</a></p>
+                    </p>
+                </div>
+            </div>
+            <div class="foot-note4">
+                <p>4. 多端同步</p>
+                <p class="indent">多端同步是指允许同一ID在不同的平台(如Web和APP)同时登录，并实时同步消息。</p>
+            </div>
+            <div class="foot-note5">
+                <p>5. 多设备同步</p>
+                <p class="indent">多设备同步是指用户在同一平台可同时登录多个设备并且在线消息在这些设备之间实时同步。</p>
+            </div>
+            <div class="foot-note6">
+                <p>6. 实时音视频</p>
+                <p class="indent">免费赠送1万分钟体验；不足1分钟按照1分钟计算；视频通话不区分视频分辨率统一计费，720P清晰度价格另议；多人音视频单次会议通话费用=单价*所有参与者通话时长（单位：千分钟）总和；月度费用=当月所有会议通话费用总和（以会议结束时间为标准）。</p>
+            </div>
+            <div class="foot-note7">
+                <p>7. VIP视频群</p>
+                <p class="indent">VIP集群提供更高的系统冗余度和专职运维响应，确保SLA不低于99.9%，与普通集群的对比如下表所示。</p>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tr class="th">
+                            <td width="25%"> 项目 </td>
+                            <td width="35%"> 普通集群 </td>
+                            <td width="40%"> VIP集群</td>
+                        </tr>
+                        <tr>
+                            <td>群集冗余度</td>
+                            <td>20%</td>
+                            <td>50%</td>
+                        </tr>
+                        <tr>
+                            <td>运维保障</td>
+                            <td>标准运维保障，1小时内响应</td>
+                            <td>专职运维保障，1小时内响应</td>
+                        </tr>
+                        <tr>
+                            <td>用户成熟度</td>
+                            <td>任何用户都可上线</td>
+                            <td>用户下通过测试</td>
+                        </tr>
+                        <tr>
+                            <td>版本发布策略</td>
+                            <td>最新版本优先上线</td>
+                            <td>晚于普通集群，验证通过的稳定版本</td>
+                        </tr>
+                        <tr>
+                            <td>SLA承诺</td>
+                            <td>99.90%</td>
+                            <td>99.90%</td>
+                        </tr>
+                        <tr>
+                            <td>是否开放注册环境</td>
+                            <td>是</td>
+                            <td>否</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="try-kefu" class="dialog">
+        <div class="dialog__overlay"></div>
+        <div class="dialog__content image-background">
+            <form role="form" method="post" action="/api/guestbook/addmsg" class="form-horizontal">
+                <h2 class="title">申请试用</h2>
+                <h6 class="sub-title">提交后工作人员会尽快与您联系进行功能演示</h6>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="phone" maxlength="11" pattern="[0-9]{11}" placeholder="手机号" required="">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <input type="text" class="form-control" name="full_name" placeholder="姓名" required="">
+                    </div>
+                </div>
+                <div class="form-group verify">
+                    <div class="col-sm-12">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="verify" placeholder="验证码" required="" autocomplete="off">
+                            <span class="input-group-addon">
+                                <img class="verify_img" src=""  style="cursor:pointer;vertical-align: top;" title="点击获取">
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                        <div class="button-group">
+                            <button type="submit" class="btn btn-primary btn-block submit">提交</button>
+                            <button type="button" class="btn btn-default btn-block do-close" data-dialog-close="">不了，谢谢</button>
+                        </div>
+                        <div class="loading" style="display:none">
+                            <div class="sk-cube-grid">
+                                <div class="sk-cube sk-cube1"></div>
+                                <div class="sk-cube sk-cube2"></div>
+                                <div class="sk-cube sk-cube3"></div>
+                                <div class="sk-cube sk-cube4"></div>
+                                <div class="sk-cube sk-cube5"></div>
+                                <div class="sk-cube sk-cube6"></div>
+                                <div class="sk-cube sk-cube7"></div>
+                                <div class="sk-cube sk-cube8"></div>
+                                <div class="sk-cube sk-cube9"></div>
+                            </div>
+                        </div>
+                        <div class="success" style="display:none"> <span class="iconfont icon-duigou_jiage" style="font-size:50px"></span>
+                            <p class="text-center">提交成功</p>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="sidemenu">
+        <div class="item transition tel visible-xs-block">
+            <a href="" rel="nofollow">
+                <i class="iconfont icon-dianhuazixun"></i>
+                <p>400电话</p>
+            </a>
+        </div>
+        <div class="item transition biz-item">
+            <a href="javascript:;" class="im-biz"> <i class="iconfont icon-swzx"></i>
+                <p>商务咨询</p>
+            </a>
+        </div>
+        <!-- <div class="item transition dev-item dev-trigger">
+            <a href="javascript:;" class="dev"> <i class="iconfont icon-jszx"></i>
+                <p>技术咨询</p>
+            </a>
+            <div class="dev-wrap" style="display: none; left: -750px; opacity: 0;">
+                <h6 class="title">提示：技术咨询已转移到管理后台，请先登录</h6>
+                <p class="sub-title">即时通讯云用户请在应用详情页提交工单，同时提供论坛互助支持服务。客户互动云用户请进入管理员模式在线咨询。</p>
+                <div>
+                    <a class="im btn btn-success btn-block" href="https://console.easemob.com/index.html" target="_blank">登录即时通讯云</a>
+                    <a class="kf btn btn-primary btn-block" href="https://kefu.easemob.com/" target="_blank">登录客户互动云</a> <a class="kf btn btn-info btn-block" href="http://www.imgeek.org/" target="_blank">IMGeek社区</a>
+                </div>
+            </div>
+        </div> -->
+        <div class="item transition try-item">
+            <a href="javascript:;" class="free-trial"> <span class="trigger"> <i class="iconfont icon-mianfeishiyong"></i> <p>免费试用</p> </span> </a>
+        </div>
+        <div class="item transition top-item hidden-xs">
+            <a href="#" class="scroll-top" style="margin-top:10px"> <i class="iconfont icon-huidaodingbu"></i> </a>
+        </div>
+    </div>
+
+    <div class="chat1">
+        <div class=" chat-header ">
+            <p>环信商务咨询</p>
+            <i class="iconfont icon-min "></i>
+            <i class="iconfont icon-audio2 "></i>
+        </div>
+        <div class="wrapper ">
+            <div class="chat-wrapper ">
+                <div class="chat-container ">
+                    <div class="date "></div>
+                    <div class="left ">
+                        <img src="https://kefu.easemob.com/ossimages/kefu-prod-avatar.img-cn-hangzhou.aliyuncs.com/avatar/387/e2edbb10-7a49-4c50-a1fc-99ec8fd57682@0-0-200-200a%7C300h_300w%7C.png " alt=" ">
+                        <div class="chat-content ">
+                            <span>尊敬的客户您好：感谢您对环信的支持，我们的人工服务时间是周一至周五9:00-18:00，请问您有什么需要帮助的呢？</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="send-wrapper ">
+                <div class="toolbar ">
+                    <i class="iconfont icon-face "></i>
+                    <i class="iconfont icon-picture "></i>
+                    <i class="iconfont icon-attachment "></i>
+                    <i class="iconfont icon-sendVideo "></i>
+                    <i class="iconfont icon-note "></i>
+                </div>
+                <textarea class="inp " style="resize: none " placeholder="点击输入内容... " cols="30 " rows="10 "></textarea>
+                <span class="send disabled ">发送</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer ">
+        <div class="container ">
+            <div class="row ">
+                <div class="col-md-6 left ">
+                    <div>
+                        <h6>即时通讯云</h6>
+                        <ul class="list-unstyled list-inline ">
+                            <li>
+                                <a href=" ">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href=" ">客户案例</a>
+                            </li>
+                            <li>
+                                <a href=" ">产品价格</a>
+                            </li>
+                            <li>
+                                <a href=" ">集成文档</a>
+                            </li>
+                            <li>
+                                <a href=" ">快速下载</a>
+                            </li>
+                            <li>
+                                <a href=" ">直播方案</a>
+                            </li>
+                            <li>
+                                <a href=" ">人脸特效</a>
+                            </li>
+                            <li>
+                                <a href=" ">智能反垃圾</a>
+                            </li>
+                            <li>
+                                <a href=" ">社交大数据</a>
+                            </li>
+                            <li>
+                                <a href=" ">发现SDK</a>
+                            </li>
+                            <li>
+                                <a href=" ">短信服务</a>
+                            </li>
+                            <li>
+                                <a href=" ">使用协议</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>客户互动云</h6>
+                        <ul class="list-unstyled list-inline ">
+                            <li>
+                                <a href=" ">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href=" ">产品价格</a>
+                            </li>
+                            <li>
+                                <a href=" ">客户案例</a>
+                            </li>
+                            <li>
+                                <a href=" ">产品文档</a>
+                            </li>
+                            <li>
+                                <a href=" ">快速下载</a>
+                            </li>
+                            <li>
+                                <a href=" ">客户声音</a>
+                            </li>
+                            <li>
+                                <a href=" ">视频客服</a>
+                            </li>
+                            <li>
+                                <a href=" ">智慧工单</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>机器人</h6>
+                        <ul class="list-unstyled list-inline ">
+                            <li>
+                                <a href=" ">产品介绍</a>
+                            </li>
+                            <li>
+                                <a href=" ">产品价格</a>
+                            </li>
+                            <li>
+                                <a href=" ">客户案例</a>
+                            </li>
+                            <li>
+                                <a href=" ">产品文档</a>
+                            </li>
+                            <li>
+                                <a href=" ">快速下载</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 right ">
+                    <div>
+                        <h6>关于我们</h6>
+                        <ul class="list-unstyled ">
+                            <li>
+                                <a href=" ">公司介绍</a>
+                            </li>
+                            <li>
+                                <a href=" ">荣誉资质</a>
+                            </li>
+                            <li>
+                                <a href=" ">市场报告</a>
+                            </li>
+                            <li>
+                                <a href=" ">媒体报道</a>
+                            </li>
+                            <li>
+                                <a href=" ">合作伙伴</a>
+                            </li>
+                            <li>
+                                <a href=" ">投资机构</a>
+                            </li>
+                            <li>
+                                <a href=" ">加入我们</a>
+                            </li>
+                            <li>
+                                <a href=" ">品牌标识</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6>联系我们</h6>
+                        <p>咨询热线</p>
+                        <hr>
+                        <a href=" " rel="nofollow "><big>400-612-1986</big></a>
+                        <p>商务合作</p>
+                        <hr>
+                        <a href=" ">bd@easemob.com</a>
+                        <p>投诉建议</p>
+                        <hr>
+                        <a href=" ">issues@easemob.com</a>
+                        <div class="social ">
+                            <i class="iconfont icon-wechat qrcode-weixin "></i>
+                            <a href=" ">
+                                <i class="iconfont icon-weibo "></i>
+                            </a>
+                            <div class="erweima ">
+                                <img width="120 " src="../img/xh/instant/qrcode-weixin.png " alt=" ">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden-xs ">
+                        <h6>权威认证</h6>
+                        <div class="certificate ">
+                            <a class="item " href=" ">
+                                <i class="item iconfont icon-CMMI " style="line-height:20px "></i>
+                            </a>
+                            <a class="item " href=" ">
+                                <i class="item iconfont icon-kexinyun "></i>
+                            </a>
+                            <i class="item iconfont icon-ISO9001 "></i>
+                            <i class="item iconfont icon-ISO27001 "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright ">
+            <p>Copyright © 2016-2017 环信 Co.,Ltd.<br class="visible-xs-block " /> 北京易掌云峰科技有限公司版权所有</p>
+            <p>京ICP备14026002号
+                <a href="http://www.easemob.com/sla ">SLA协议</a> 京ICP证160482
+            </p>
+        </div>
+
+    </footer>
+
+
+
+    <script src="../node_modules/jquery/dist/jquery.min.js "></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js "></script>
+    <script src="../js/jquery-ui.min.js "></script>
+    <script src="../js/pricing.js "></script>
+    <script src="../js/index.js "></script>
+
+</body>
+
+</html>

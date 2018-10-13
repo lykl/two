@@ -16,7 +16,11 @@
     "url": "https://github.com/lykl/two/issues"
   },
   "homepage": "https://github.com/lykl/two#readme",
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-uglify": "^3.0.1"
+  },
   "dependencies": {
     "bootstrap": "^3.3.7",
     "jquery": "^3.3.1",
