@@ -16,6 +16,19 @@ html {
 .banner {
   cursor: pointer;
 }
+.banner .item {
+  background-size: cover!important;
+  background-position: center!important;
+}
+.banner .item:nth-child(1) {
+  background: url(../img/xh/instant/im.jpg);
+}
+.banner .item:nth-child(2) {
+  background: url(../img/xh/instant/case.jpg);
+}
+.banner .item:nth-child(3) {
+  background: url(../img/xh/instant/zyzx.jpg);
+}
 .banner .container-fluid {
   padding: 0;
 }
@@ -940,6 +953,9 @@ html {
   h5 {
     font-size: 16px;
   }
+  .banner .item {
+    height: 160px;
+  }
   .carousel-indicators {
     bottom: -6%;
   }
@@ -1217,6 +1233,9 @@ html {
   .h6,
   h6 {
     font-size: 14px;
+  }
+  .banner .item {
+    height: 300px;
   }
   .carousel-indicators {
     bottom: 2%;
@@ -1548,6 +1567,9 @@ html {
   h6 {
     font-size: 16px;
   }
+  .banner .item {
+    height: 400px;
+  }
   .action {
     margin-top: 30px;
   }
@@ -1623,6 +1645,9 @@ html {
   }
   .header .nav > li > a {
     padding: 15px 20px;
+  }
+  .banner .item {
+    height: 500px;
   }
   .section .container {
     width: 960px;
