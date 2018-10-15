@@ -376,7 +376,7 @@ function close() {
 $('.dialog__overlay').on('click', close);
 $('.do-close').on('click', close);
 
-$('.case .action .btn').on('click', open);
+$('.case .action .btn,.try .btn').on('click', open);
 
 //返回顶部
 $('.top-item').on('click', function() {
