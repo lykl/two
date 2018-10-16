@@ -102,6 +102,15 @@ $('.login').on('click', function() {
                         date.setDate(date.getDate() + 3);
                         document.cookie = 'username=' + $('.username').val();
                         document.cookie = 'password=' + $('.password').val();
+                        document.cookie = 'clear=0';
+                        document.cookie = 'expires=' + date;
+                        console.log(document.cookie);
+                    } else {
+                        var date = new Date();
+                        date.setDate(date.getDate() + 3);
+                        document.cookie = 'username=' + $('.username').val();
+                        document.cookie = 'password=' + $('.password').val();
+                        document.cookie = 'clear=1';
                         document.cookie = 'expires=' + date;
                         console.log(document.cookie);
                     }

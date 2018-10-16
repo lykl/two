@@ -12,6 +12,18 @@ for (var i = 0; i < arr2.length; i++) {
 console.log(obj);
 $('.diyi a').html(obj['username']);
 
+function clearAllCookie() {
+    var keys = document.cookie.match(/[^ =;]+(?=\=)/g);
+    if (keys) {
+        for (var i = keys.length; i--;)
+            document.cookie = keys[i] + '=0;expires=' + new Date(0).toUTCString()
+    }
+}
+
+if (obj['clear'] == 1) {
+    clearAllCookie();
+}
+
 // $.ajax({
 //     type: "post",
 //     url: "../html/close.php",
