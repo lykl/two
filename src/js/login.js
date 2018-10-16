@@ -12,7 +12,7 @@ $('.dropdown-menu a').on('click', function() {
 
 //缓存的账号密码
 var arr = document.cookie.split("; ");
-console.log(arr);
+// console.log(arr);
 var arr2 = [],
     obj = {};
 for (var i = 0; i < arr.length; i++) {
@@ -21,7 +21,7 @@ for (var i = 0; i < arr.length; i++) {
 for (var j = 0; j < arr2.length; j++) {
     obj[arr2[j][0]] = arr2[j][1];
 }
-console.log(obj);
+// console.log(obj);
 $('.username').val(obj.username);
 $('.password').val(obj.password);
 

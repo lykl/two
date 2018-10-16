@@ -85,14 +85,14 @@ $(function() {
             "mysex": sex,
             "myphone": $(".uphone").val()
         };
-        console.log(data1);
+        // console.log(data1);
         $.ajax({
             type: "post",
             url: "../php/htjh.php",
             data: data1,
             dataType: "json",
             success: function(data) {
-                console.log(data);
+                // console.log(data);
                 if (data.msg == "用户名已存在") {
                     $(".uname").val('');
                     $(".upassword").val('');
