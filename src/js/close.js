@@ -1,5 +1,5 @@
 var arr = document.cookie.split('; ');
-console.log(arr);
+// console.log(arr);
 var obj = {},
     arr2 = [];
 for (var j = 0; j < arr.length; j++) {
@@ -9,7 +9,7 @@ for (var j = 0; j < arr.length; j++) {
 for (var i = 0; i < arr2.length; i++) {
     obj[arr2[i][0]] = arr2[i][1];
 }
-console.log(obj);
+// console.log(obj);
 $('.diyi a').html(obj['username']);
 
 function clearAllCookie() {

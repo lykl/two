@@ -97,23 +97,18 @@ $('.login').on('click', function() {
             success: function(data) {
                 if (data.msg == '用户存在且密码正确') {
                     location.href = '../html/closing.html';
+                    var date = new Date();
+                    date.setDate(date.getDate() + 3);
+                    document.cookie = 'username=' + $('.username').val();
+                    document.cookie = 'password=' + $('.password').val();
                     if ($('.checkbox').children('i').hasClass('check')) {
-                        var date = new Date();
-                        date.setDate(date.getDate() + 3);
-                        document.cookie = 'username=' + $('.username').val();
-                        document.cookie = 'password=' + $('.password').val();
                         document.cookie = 'clear=0';
-                        document.cookie = 'expires=' + date;
-                        console.log(document.cookie);
+                        // console.log(document.cookie);
                     } else {
-                        var date = new Date();
-                        date.setDate(date.getDate() + 3);
-                        document.cookie = 'username=' + $('.username').val();
-                        document.cookie = 'password=' + $('.password').val();
                         document.cookie = 'clear=1';
-                        document.cookie = 'expires=' + date;
-                        console.log(document.cookie);
+                        // console.log(document.cookie);
                     }
+                    document.cookie = 'expires=' + date;
                 } else if (data.msg == '用户名或密码错误') {
                     $('.msgbox').fadeIn();
                 }
